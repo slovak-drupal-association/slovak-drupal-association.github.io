@@ -7,9 +7,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Ako vytvoriť abecedný index pre view v Drupale? | Drupal.SK</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="prev" href="../587/index.html" />
-<link rel="up" href="../587/index.html" />
-<link rel="next" href="../588/index.html" />
+<link rel="prev" href="../587/" />
+<link rel="up" href="../587/" />
+<link rel="next" href="../588/" />
 <link rel="shortcut icon" href="../../files/arthemia_favicon/index.png" type="image/x-icon" />
     <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?9" />
 <link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
@@ -46,17 +46,17 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOut
 
       <div class="clearfloat">
         <div id="logo">
-          <a href="../../index/index.html" title="Drupal.SK"><img src="../../files/logo/index.jpg" alt="Drupal.SK" /></a>                </div>
+          <a href="../../index/" title="Drupal.SK"><img src="../../files/logo/index.jpg" alt="Drupal.SK" /></a>                </div>
 
               </div>
 
       <div id="navbar" class="clearfloat">
-          <div id="page-bar"><ul class="menu"><li class="leaf first"><a href="../../blog/index.html">Blogy</a></li>
-<li class="leaf"><a href="../../forum/index.html">Fórum</a></li>
-<li class="collapsed"><a href="../../prirucky/index.html" title="Naučte sa s nami Drupal">Príručky</a></li>
-<li class="leaf"><a href="../../stahuj/index.html">Sťahuj</a></li>
-<li class="leaf"><a href="../../komunita/index.html">Komunita</a></li>
-<li class="leaf last"><a href="../../aggregator/index.html" title="">Zo sveta</a></li>
+          <div id="page-bar"><ul class="menu"><li class="leaf first"><a href="../../blog/">Blogy</a></li>
+<li class="leaf"><a href="../../forum/">Fórum</a></li>
+<li class="collapsed"><a href="../../prirucky/" title="Naučte sa s nami Drupal">Príručky</a></li>
+<li class="leaf"><a href="../../stahuj/">Sťahuj</a></li>
+<li class="leaf"><a href="../../komunita/">Komunita</a></li>
+<li class="leaf last"><a href="../../aggregator/" title="">Zo sveta</a></li>
 </ul></div>              </div>
     </div>
 
@@ -66,32 +66,32 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOut
       
       <div id="content" class="main-content with-sidebar">
         
-        <div class="breadcrumb"><a href="../../index/index.html">Domov</a> &rsaquo; <a href="../../blog/index.html">Blogy</a> &rsaquo; <a href="../../blog/534/index.html">Blog používateľa petiar </a></div>                        <h1>Ako vytvoriť abecedný index pre view v Drupale?</h1>                                        <div id="node-546" class="node clear-block">
+        <div class="breadcrumb"><a href="../../index/">Domov</a> &rsaquo; <a href="../../blog/">Blogy</a> &rsaquo; <a href="../../blog/534/">Blog používateľa petiar </a></div>                        <h1>Ako vytvoriť abecedný index pre view v Drupale?</h1>                                        <div id="node-546" class="node clear-block">
 
 
 
-      <span class="submitted">7 január, 2010 - 05:21 poslal <a href="../../user/534/index.html" title="Zobraziť profil používateľa">petiar</a></span>
+      <span class="submitted">7 január, 2010 - 05:21 poslal <a href="../../user/534/" title="Zobraziť profil používateľa">petiar</a></span>
   
   <div class="content">
     <p>Predvčerom mi z&aacute;kazn&iacute;k poslal e-mailom požiadavku, že chce ist&yacute; zoznam na jeho webe zoradiť podľa abecedy a pridať k nemu aj abecedn&yacute; index. Tak&yacute;, kde je každ&eacute; p&iacute;smeno abecedy odkazom za str&aacute;nku, na ktorej bud&uacute; zobrazen&eacute; len tie položky zoznamu, ktor&eacute; zač&iacute;naj&uacute; na konkr&eacute;tne p&iacute;smeno. Vďaka tomu, že jeho web je postaven&yacute; na Drupale som to mal hotov&eacute; veľmi r&yacute;chlo a odozva to potvrdila. <em>&quot;Nuž, niet nad spokojn&eacute;ho z&aacute;kazn&iacute;ka&quot;</em>, vrav&iacute;m si v tak&yacute;ch chv&iacute;ľach. St&aacute;le mi v&scaron;ak vŕtalo hlavou, či na to rie&scaron;enie, ktor&eacute; som spravil bez použitia na to určen&eacute;ho modulu, predsalen nejak&yacute; neexistuje. Existuje. Vol&aacute; sa <a href="http://drupal.org/project/views_alpha_pager">Views Alpha Pager</a> a jeho jedinou chybou je, že pre Drupal 6, resp. pre Views 2 neexistuje vydanie. A tak bolo pravdepodobne moje rie&scaron;enie asi jedin&yacute;m možn&yacute;m (i keď vari&aacute;ci&iacute; naň m&ocirc;že byť viacero). Tak sa na to poďme pozrieť:Cel&yacute; trik je v tom, že p&iacute;smeno abecedy budeme Drupalu pods&uacute;vať v URI, teda v odkaze. Takže v&scaron;etky čl&aacute;nky zač&iacute;naj&uacute;ce na A bud&uacute; mať adresu <code>www.nasweb.sk/clanky/a</code>. Tak&yacute;to parameter pred&aacute;van&yacute; v URI sa vo Views terminol&oacute;gii vol&aacute; argument. Jeden si teda v na&scaron;om view aj hneď prid&aacute;me a nastav&iacute;me ho zhruba podľa priložen&eacute;ho obr&aacute;zku. <img src="http://drupal.sk/files/screen.png" /> Kľ&uacute;čov&yacute;m nastaven&iacute;m je v ňom tzv. <strong>Glossary mode</strong>, ktor&yacute; zaruč&iacute; pr&aacute;ve to, že si budeme m&ocirc;cť nastaviť limit pre počet p&iacute;smen v argumente. My kontrolujeme len prv&eacute;, takže limit bude celkom logicky 1. Toto je t&aacute; jednoduch&scaron;ia, klikacia časť. Ak chceme pridať nad view aj abecedn&yacute; index tak n&aacute;s čak&aacute; aj tro&scaron;ku p&iacute;sania k&oacute;du, i keď je to k&oacute;d veľmi primit&iacute;vny a v&auml;č&scaron;inu čas budeme aj tak použ&iacute;vať len CTRL+C a CTRL+V. Tento k&oacute;d bude vyzerať nejako takto: <code> &lt;div class=&quot;abeceda&quot;&gt; &lt;a href=&quot;http://www.nasweb.sk/clanky/a&quot;&gt;a&lt;/a&gt; &lt;a href=&quot;http://www.nasweb.sk/clanky/b&quot;&gt;b&lt;/a&gt; &lt;a href=&quot;http://www.nasweb.sk/clanky/c&quot;&gt;c&lt;/a&gt; </code> a tak ďalej až po Z. A nap&iacute;&scaron;eme ho, samozrejme, do hlavičky view. Nezabudnite zvoliť pr&iacute;slu&scaron;n&yacute; vstupn&yacute; form&aacute;t tak, aby akceptoval v&scaron;etky HTML tagy, ktor&eacute; ste použili, pretože ako som už naznačil, vari&aacute;ci&iacute; na tento n&aacute;pad m&ocirc;že byť viac a možno pr&iacute;dete na niečo in&eacute;, čo by sa v&aacute;m e&scaron;te zi&scaron;lo. Ja v&aacute;m pre tentokr&aacute;t m&ocirc;žem sľ&uacute;biť len to že ak sa mi podar&iacute; zistiť ako nastaviť variabiln&uacute; dĺžku argumentu, nap&iacute;&scaron;em e&scaron;te lep&scaron;&iacute; n&aacute;vod. Totižto, jedin&yacute;m probl&eacute;mom s ktor&yacute;m si zatiaľ neviem rady je nastavenie view tak aby bral do &uacute;vahy argumenty o r&ocirc;znej dĺžke. To znamen&aacute;, že čl&aacute;nok zač&iacute;naj&uacute;ci napr&iacute;klad slovom Drupal sa objav&iacute; na str&aacute;nke <code>www.nasweb.sk/clanok/d</code> ale aj <code>www.nasweb.sk/clanok/dru</code>. Zatiaľ som sa dozvedel len toľko, že si na to budem musieť nap&iacute;sať vlastn&yacute; argument handler. Ak sa mi to podar&iacute;, r&aacute;d sa oň s vami podel&iacute;m.</p>
   <div id="book-navigation-379" class="book-navigation">
     
         <div class="page-links clear-block">
-              <a href="../587/index.html" class="page-previous" title="Prejsť na predchádzajúcu stranu">‹ Návody</a>
-                    <a href="../587/index.html" class="page-up" title="Prejsť na nadradenú stranu">^</a>
-                    <a href="../588/index.html" class="page-next" title="Prejsť na ďalšiu stranu">Zdroje tretích strán ›</a>
+              <a href="../587/" class="page-previous" title="Prejsť na predchádzajúcu stranu">‹ Návody</a>
+                    <a href="../587/" class="page-up" title="Prejsť na nadradenú stranu">^</a>
+                    <a href="../588/" class="page-next" title="Prejsť na ďalšiu stranu">Zdroje tretích strán ›</a>
           </div>
     
   </div>
   </div>
   
-  <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../blog/534/index.html" title="Read petiar&#039;s latest blog entries.">Blog používateľa petiar</a></li>
-<li class="book_printer"><a href="../../book/export/html/546/index.html" title="Zobraziť túto stranu a jej podstrany vo verzii pre tlač.">Verzia pre tlač</a></li>
+  <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../blog/534/" title="Read petiar&#039;s latest blog entries.">Blog používateľa petiar</a></li>
+<li class="book_printer"><a href="../../book/export/html/546/" title="Zobraziť túto stranu a jej podstrany vo verzii pre tlač.">Verzia pre tlač</a></li>
 <li class="comment_forbidden last"></li>
 </ul></div><div id="comments"><h2 class="comments">Komentáre</h2><a id="comment-1067"></a>
 <div class="comment comment-published clear-block">
   <div class="comment-header clearfloat">
-    <div class="submitted">27 január, 2010 - 10:20 poslal <a href="../../user/568/index.html" title="Zobraziť profil používateľa">borgo</a>.</div>
+    <div class="submitted">27 január, 2010 - 10:20 poslal <a href="../../user/568/" title="Zobraziť profil používateľa">borgo</a>.</div>
     <div class="comment-link"><a href="index.html#comment-1067" class="active">#1</a></div>
   </div>
   
@@ -112,7 +112,7 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOut
 <a id="comment-1021"></a>
 <div class="comment comment-published clear-block">
   <div class="comment-header clearfloat">
-    <div class="submitted">8 január, 2010 - 17:55 poslal <a href="../../user/944/index.html" title="Zobraziť profil používateľa">valdo</a>.</div>
+    <div class="submitted">8 január, 2010 - 17:55 poslal <a href="../../user/944/" title="Zobraziť profil používateľa">valdo</a>.</div>
     <div class="comment-link"><a href="index.html#comment-1021" class="active">#2</a></div>
   </div>
   
@@ -136,7 +136,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 <div class="indented"><a id="comment-1044"></a>
 <div class="comment comment-published clear-block">
   <div class="comment-header clearfloat">
-    <div class="submitted">19 január, 2010 - 16:42 poslal <a href="../../user/534/index.html" title="Zobraziť profil používateľa">petiar</a>.</div>
+    <div class="submitted">19 január, 2010 - 16:42 poslal <a href="../../user/534/" title="Zobraziť profil používateľa">petiar</a>.</div>
     <div class="comment-link"><a href="index.html#comment-1044" class="active">#3</a></div>
   </div>
   
@@ -178,7 +178,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
     <ul>
           <li class="views-row views-row-1 views-row-odd views-row-first">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+                <span class="field-content"><a href="../2386/">Problem s funkcnostou stranky</a></span>
   </div>
   
   <div class="views-field-changed">
@@ -187,7 +187,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-2 views-row-even">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+                <span class="field-content"><a href="../2376/">Aplikácia podobný k moodlu</a></span>
   </div>
   
   <div class="views-field-changed">
@@ -196,7 +196,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-3 views-row-odd">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2366/index.html">Hľadáme drupal programátora</a></span>
+                <span class="field-content"><a href="../2366/">Hľadáme drupal programátora</a></span>
   </div>
   
   <div class="views-field-changed">
@@ -205,7 +205,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-4 views-row-even">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2361/index.html">Validácia prekladov</a></span>
+                <span class="field-content"><a href="../2361/">Validácia prekladov</a></span>
   </div>
   
   <div class="views-field-changed">
@@ -214,7 +214,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-5 views-row-odd">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+                <span class="field-content"><a href="../2356/">drupal.sk</a></span>
   </div>
   
   <div class="views-field-changed">
@@ -223,7 +223,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-6 views-row-even">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2351/index.html">Obstarávanie webovej verzie Encyklopédie Beliana</a></span>
+                <span class="field-content"><a href="../2351/">Obstarávanie webovej verzie Encyklopédie Beliana</a></span>
   </div>
   
   <div class="views-field-changed">
@@ -232,7 +232,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-7 views-row-odd">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2346/index.html">Views</a></span>
+                <span class="field-content"><a href="../2346/">Views</a></span>
   </div>
   
   <div class="views-field-changed">
@@ -241,7 +241,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-8 views-row-even">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2341/index.html">Stránka v novom okne</a></span>
+                <span class="field-content"><a href="../2341/">Stránka v novom okne</a></span>
   </div>
   
   <div class="views-field-changed">
@@ -250,7 +250,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-9 views-row-odd">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2336/index.html">b2b a drupal/ubercart</a></span>
+                <span class="field-content"><a href="../2336/">b2b a drupal/ubercart</a></span>
   </div>
   
   <div class="views-field-changed">
@@ -259,7 +259,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-10 views-row-even views-row-last">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2331/index.html">Bezpecnost sprav - Drupal 8</a></span>
+                <span class="field-content"><a href="../2331/">Bezpecnost sprav - Drupal 8</a></span>
   </div>
   
   <div class="views-field-changed">
@@ -292,11 +292,11 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
           <label class="views-label-title">
         Ad:
       </label>
-                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+                <span class="field-content"><a href="../2411/">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
   </div>
   
   <span class="views-field-name">
-                <span class="field-content"><a href="../../user/239/index.html" title="Zobraziť profil používateľa">frankye</a></span>
+                <span class="field-content"><a href="../../user/239/" title="Zobraziť profil používateľa">frankye</a></span>
   </span>
   
   <span class="views-field-timestamp">
@@ -311,7 +311,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
           <label class="views-label-title">
         Ad:
       </label>
-                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+                <span class="field-content"><a href="../2356/">drupal.sk</a></span>
   </div>
   
   <span class="views-field-name">
@@ -330,11 +330,11 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
           <label class="views-label-title">
         Ad:
       </label>
-                <span class="field-content"><a href="../72/index.html">Preklad Drupal 4.7.0</a></span>
+                <span class="field-content"><a href="../72/">Preklad Drupal 4.7.0</a></span>
   </div>
   
   <span class="views-field-name">
-                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+                <span class="field-content"><a href="../../user/137/" title="Zobraziť profil používateľa">kubrob</a></span>
   </span>
   
   <span class="views-field-timestamp">
@@ -349,11 +349,11 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
           <label class="views-label-title">
         Ad:
       </label>
-                <span class="field-content"><a href="../219/index.html">Realitna kancelaria</a></span>
+                <span class="field-content"><a href="../219/">Realitna kancelaria</a></span>
   </div>
   
   <span class="views-field-name">
-                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+                <span class="field-content"><a href="../../user/137/" title="Zobraziť profil používateľa">kubrob</a></span>
   </span>
   
   <span class="views-field-timestamp">
@@ -368,11 +368,11 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
           <label class="views-label-title">
         Ad:
       </label>
-                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+                <span class="field-content"><a href="../2386/">Problem s funkcnostou stranky</a></span>
   </div>
   
   <span class="views-field-name">
-                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+                <span class="field-content"><a href="../../user/2542/" title="Zobraziť profil používateľa">mirom</a></span>
   </span>
   
   <span class="views-field-timestamp">
@@ -387,11 +387,11 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
           <label class="views-label-title">
         Ad:
       </label>
-                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+                <span class="field-content"><a href="../2376/">Aplikácia podobný k moodlu</a></span>
   </div>
   
   <span class="views-field-name">
-                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+                <span class="field-content"><a href="../../user/2542/" title="Zobraziť profil používateľa">mirom</a></span>
   </span>
   
   <span class="views-field-timestamp">
@@ -406,11 +406,11 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
           <label class="views-label-title">
         Ad:
       </label>
-                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+                <span class="field-content"><a href="../2356/">drupal.sk</a></span>
   </div>
   
   <span class="views-field-name">
-                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+                <span class="field-content"><a href="../../user/2756/" title="Zobraziť profil používateľa">EdizonTN</a></span>
   </span>
   
   <span class="views-field-timestamp">
@@ -425,11 +425,11 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
           <label class="views-label-title">
         Ad:
       </label>
-                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+                <span class="field-content"><a href="../2356/">drupal.sk</a></span>
   </div>
   
   <span class="views-field-name">
-                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+                <span class="field-content"><a href="../../user/2756/" title="Zobraziť profil používateľa">EdizonTN</a></span>
   </span>
   
   <span class="views-field-timestamp">
@@ -462,7 +462,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
     <ul>
           <li class="views-row views-row-1 views-row-odd views-row-first">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+                <span class="field-content"><a href="../2411/">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
   </div>
   
   <div class="views-field-created">
@@ -471,7 +471,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-2 views-row-even">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2296/index.html">RESTful Drupal 8 - meetup - 14.4.2016</a></span>
+                <span class="field-content"><a href="../2296/">RESTful Drupal 8 - meetup - 14.4.2016</a></span>
   </div>
   
   <div class="views-field-created">
@@ -480,7 +480,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-3 views-row-odd">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2256/index.html">Prvý kontakt s Drupalom (Workshop: Základy Drupal 8)</a></span>
+                <span class="field-content"><a href="../2256/">Prvý kontakt s Drupalom (Workshop: Základy Drupal 8)</a></span>
   </div>
   
   <div class="views-field-created">
@@ -489,7 +489,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-4 views-row-even">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2196/index.html">PF 2016</a></span>
+                <span class="field-content"><a href="../2196/">PF 2016</a></span>
   </div>
   
   <div class="views-field-created">
@@ -498,7 +498,7 @@ Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu View
 </li>
           <li class="views-row views-row-5 views-row-odd views-row-last">  
   <div class="views-field-title">
-                <span class="field-content"><a href="../2181/index.html">Pripravované akcie v novembri</a></span>
+                <span class="field-content"><a href="../2181/">Pripravované akcie v novembri</a></span>
   </div>
   
   <div class="views-field-created">
