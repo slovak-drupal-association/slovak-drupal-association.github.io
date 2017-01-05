@@ -1,0 +1,684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" dir="ltr">
+  
+<!-- Mirrored from www.drupal.sk/node/267 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:47:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>.htaccess | Drupal.SK</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/arthemia_favicon/index.png" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/ckeditor/ckeditor/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/logintoboggan/logintoboggan/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/mail/simplenews/simplenews/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/texy/lib/fshl/styles/COHEN_style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/ribbon/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/aggregator/index.css?9" />
+    <script type="text/javascript" src="../../files/js/js_b60786b42cf28c172793b3f9255432b6/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip" } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://www.google-analytics.com/analytics.js","ga");ga("create", "UA-11573462-1", { "cookieDomain": "auto" });ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+  </head>
+  <body>
+    <div id="head" class="clearfloat">
+
+      <div class="clearfloat">
+        <div id="logo">
+          <a href="../../index/index.html" title="Drupal.SK"><img src="../../files/logo/index.jpg" alt="Drupal.SK" /></a>                </div>
+
+              </div>
+
+      <div id="navbar" class="clearfloat">
+          <div id="page-bar"><ul class="menu"><li class="leaf first"><a href="../../blog/index.html">Blogy</a></li>
+<li class="leaf"><a href="../../forum/index.html">Fórum</a></li>
+<li class="collapsed"><a href="../../prirucky/index.html" title="Naučte sa s nami Drupal">Príručky</a></li>
+<li class="leaf"><a href="../../stahuj/index.html">Sťahuj</a></li>
+<li class="leaf"><a href="../../komunita/index.html">Komunita</a></li>
+<li class="leaf last"><a href="../../aggregator/index.html" title="">Zo sveta</a></li>
+</ul></div>              </div>
+    </div>
+
+    <div id="page" class="clearfloat">
+
+            
+      
+      <div id="content" class="main-content with-sidebar">
+        
+        <div class="breadcrumb"><a href="../../index/index.html">Domov</a> &rsaquo; <a href="../../forum/index.html">Fórum</a> &rsaquo; <a href="../../forum/7/index.html">cms drupal</a> &rsaquo; <a href="../../forum/11/index.html">instalacia</a></div>                        <h1>.htaccess</h1>                                        <div id="node-267" class="node clear-block">
+
+
+
+      <span class="submitted">29 marec, 2008 - 22:23 poslal <a href="../../user/573/index.html" title="Zobraziť profil používateľa">brblos</a></span>
+  
+  <div class="content">
+    
+<p>Zdravim, som zaciatocnik, a chcel som vyskusat nejaky system CMS. Chcem
+skusit Drupal, no ostal som visiet hned na instalacii:</p>
+
+<h1>Prekopiroval som vsetky subory na domenu. Vytvoril som si tam databazu. No
+po zadani do prehliadaca <a
+href="http://www.web.sk/drupal/install.php">www.web.sk/…/install.php</a> mi
+napisalo:</h1>
+
+<p>Internal Server Error</p>
+
+<p>The server encountered an internal error or misconfiguration and was unable
+to complete your request.</p>
+
+<p>Please contact the server administrator, <a
+href="mailto:root&#64;nameserver.sk">root&#64;<!---->nameserver.sk</a> and
+inform them of the time the error occurred, and anything you might have done
+that may have caused the error.</p>
+
+<h1>More information about this error may be available in the server
+error log.</h1>
+
+<h1>Po odstaneni .htaccess mi vypisalo:</h1>
+
+<p>Incompatible environment The following error must be resolved before you can
+continue the installation process:</p>
+
+<h1>register_globals is enabled. Drupal requires this configuration directive to
+be disabled. Your site may not be secure when register_globals is enabled. The
+PHP manual has instructions for how to change configuration settings. (Currently
+using PHP register globals Enabled (‚1‘))</h1>
+
+<p>Ak mate niekto s tym skusenosti, prosim poradte, verziu mam 5.7</p>
+
+<p>Dakujem</p>
+
+<!-- by Texy2! -->  <div class="forum-topic-navigation clear-block">
+          <a href="../327/index.html" class="topic-previous" title="Prejsť na predchádzajúcu tému diskusie.">‹ Stagnacia pri kroku 3</a>
+              <a href="../687/index.html" class="topic-next" title="Prejsť na nasledujúcu tému diskusie.">The directory /var/tmp does not exist ›</a>
+      </div>
+  </div>
+      <div class="taxonomy">Tags: 
+    <div class="terms terms-inline"><ul class="links inline"><li class="taxonomy_term_11 first last"><a href="../../forum/11/index.html" rel="tag" title="instalacia systemu a s nou spojene problemy">instalacia</a></li>
+</ul></div>
+    </div>
+  
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul></div><div id="comments"><a id="comment-547"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">30 marec, 2008 - 20:06 poslal <a href="../../user/3/index.html" title="Zobraziť profil používateľa">Havran</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-547" class="active">#1</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 4 november 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 5 týždňov 4 dni</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        
+<p>V .htaccess zapoznamkovat vsetky riadky s Options (pridat na zaciatok #) a
+tiez s php_value. Vypnut register globals ti musi hosting (alebo ak mozes tak
+ty sam v php.ini).</p>
+
+<p><em>ICQ: 1872888<br />
+WEB: <a
+href="http://www.fem.uniag.sk/havran/blog/">http://www.fem.uniag.sk/havran/blog/</a></em></p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-765"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">16 marec, 2009 - 09:02 poslal <a href="../../user/774/index.html" title="Zobraziť profil používateľa">hoko77</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-765" class="active">#2</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 9 marec 2009</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 6 rokov 45 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        
+<p>Zdravím, mám hosting inet.sk aj keď zaremujem všetky riadky, kt.
+začínajú s Options, alebo PHP_value zahlási mi Internal server error 500,
+keď odmažem .htaccess tak mi drupal síce ide, ale v hláseniach sa mi
+objaví HTTP požiadavky zlyhalo a nechce mi zobrazovať obrázky, neviete
+niekto pomôcť ?</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-766"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">16 marec, 2009 - 12:26 poslal <a href="../../user/3/index.html" title="Zobraziť profil používateľa">Havran</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-766" class="active">#3</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 4 november 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 5 týždňov 4 dni</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        
+<p>Opytaj sa na supporte ci je povoleny .htaccess a pripadne im ho posli.</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-1313"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">12 júl, 2010 - 08:41 poslal <a href="../../user/1258/index.html" title="Zobraziť profil používateľa">NiNu</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-1313" class="active">#4</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 10 júl 2010</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 6 rokov 15 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Dobry den,<br />
+nechcem zakladat novu temu, kedze sa chcem len informovat.<br />
+Robim jednu stranku a chcel by som tam nasadit Drupal, len si nie som celkom isty narokmi Drupalu.<br />
+Pre PHP som zvysil memory limit na 20MB, ale chcem sa spytat na ine.<br />
+Web hosting, ktory je zaplateny nema podporu .htaccess a ani cron, preto sa chcem spytat, ci mi Drupal pojde aj bez tychto veci ???</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-1315"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">12 júl, 2010 - 10:43 poslal <a href="../../user/3/index.html" title="Zobraziť profil používateľa">Havran</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-1315" class="active">#5</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 4 november 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 5 týždňov 4 dni</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Bez .htaccess nepojdu pekne url. Memory limit 20Mb je tak na vyskusanie ci to ide. Akonahle zacnes pridvat viac modulov prestane to ist... (najdi si na google Drupal WSOD).</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-1317"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">12 júl, 2010 - 14:59 poslal <a href="../../user/1258/index.html" title="Zobraziť profil používateľa">NiNu</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-1317" class="active">#6</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 10 júl 2010</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 6 rokov 15 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>OK, pozrel som si to WSOD, otazka vsak znie kolko modulo zvladne tych 20MB ?<br />
+Pekne url nepotrebujem, zaobidem sa aj bez toho, len aby system bol funkcny inak budem musiet zvolit nieco ine =(</p>
+<p>Okrem tych zakladnych modulov, ktore tam su, by som potreboval: wysiwyg, TinyMCE, nieco na fotogaleriu, spravu obrazkov a na spravu suborov (upload a menezovanie cez system) to je asi tak vsetko co by som potreboval.<br />
+Ide o pomerne jednoduchu stranku, nic zlozite.</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-1321"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">12 júl, 2010 - 18:30 poslal <a href="../../user/3/index.html" title="Zobraziť profil používateľa">Havran</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-1321" class="active">#7</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 4 november 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 5 týždňov 4 dni</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>No to zalezi od toho ci je tam 32bit alebo 64bit system. 64bit spotrebuje dvojnasobne mnozstvo pamate. Pokial na danom hostingu nie je APC (co s velkou pravdepodobnostou nebude) tak to bude brat okolo 8MB pamate na jeden beh. A kazdy modul si nejakych par desiatok az stovak kB prida. Vyskusaj ale je mozne ze ti to bude padat napriklad prave pri sprave modulov. A to nemusi byt jediny problem ktory sa tam moze vyskutnut (ked je to uz v zaklade taky osekany hosting).</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-1327"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">14 júl, 2010 - 09:38 poslal <a href="../../user/1258/index.html" title="Zobraziť profil používateľa">NiNu</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-1327" class="active">#8</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 10 júl 2010</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 6 rokov 15 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>no webhosting je tam bohuzial tento ::: <a href="http://www.euronet.sk/webhosting/webhosting-porovnanie.html">http://www.euronet.sk/webhosting/webhosting-porovnanie.html</a><br />
+konkretne ten BASIC s tym, ze v klientskej zone som si nastavil PHP memory_limit na 20MB co bolo maximum co som mohol a mam aj jednu databazu k dispozicii.<br />
+Keby som sa dohodol s adminom o navyseni toho memory limitu (teoreticky), kolko by bolo idealne pre Drupal, aby to v pohode funovalo ?</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div>
+        
+      </div>
+
+              <div id="sidebar">
+          <div id="block-block-9" class="block block-block odd">
+  <h3>Drupal SK na Facebooku</h3>
+
+  <div class="content">
+    <p><iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FDrupalSlovensko&amp;width=300&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=false&amp;appId=172291972850481" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:558px;" allowTransparency="true"></iframe></p>
+  </div>
+</div>
+<div id="block-views-latest_topics-block_1" class="block block-views even">
+  <h3>Nové témy vo fóre</h3>
+
+  <div class="content">
+    <div class="view view-latest-topics view-id-latest_topics view-display-id-block_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">3 týždne 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">4 týždne 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2366/index.html">Hľadáme drupal programátora</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">6 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2361/index.html">Validácia prekladov</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">7 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">7 týždňov 3 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2351/index.html">Obstarávanie webovej verzie Encyklopédie Beliana</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">10 týždňov 5 dní</span>
+  </div>
+</li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2346/index.html">Views</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">11 týždňov 9 hod</span>
+  </div>
+</li>
+          <li class="views-row views-row-8 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2341/index.html">Stránka v novom okne</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">24 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-9 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2336/index.html">b2b a drupal/ubercart</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">27 týždňov 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-10 views-row-even views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2331/index.html">Bezpecnost sprav - Drupal 8</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">29 týždňov 2 dni</span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+<div id="block-views-latest_comments-block_1" class="block block-views odd">
+  <h3>Posledné komentáre</h3>
+
+  <div class="content">
+    <div class="view view-latest-comments view-id-latest_comments view-display-id-block_1 view-dom-id-2">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/239/index.html" title="Zobraziť profil používateľa">frankye</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 deň 9 hod</span>
+  </span>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content">Anonymous</span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../72/index.html">Preklad Drupal 4.7.0</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 4 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../219/index.html">Realitna kancelaria</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 4 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">3 týždne 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">4 týždne 2 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">6 týždňov 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-8 views-row-even views-row-last">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">6 týždňov 1 deň</span>
+  </span>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+<div id="block-views-Najnovsie-block_4" class="block block-views even">
+  <h3>Najnovšie v blogoch</h3>
+
+  <div class="content">
+    <div class="view view-Najnovsie view-id-Najnovsie view-display-id-block_4 view-dom-id-3">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">3 dni 18 hod</span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2296/index.html">RESTful Drupal 8 - meetup - 14.4.2016</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">38 týždňov 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2256/index.html">Prvý kontakt s Drupalom (Workshop: Základy Drupal 8)</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">47 týždňov 3 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2196/index.html">PF 2016</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">1 rok 6 dní</span>
+  </div>
+</li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2181/index.html">Pripravované akcie v novembri</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">1 rok 8 týždňov</span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+        </div>
+      
+          </div>
+
+    <div id="footer-region" class="clearfloat">
+      <div id="footer-left" class="clearfloat">
+              </div> 		
+
+      <div id="footer-middle" class="clearfloat">
+              </div>
+
+      <div id="footer-right" class="clearfloat">
+              </div>
+    </div>
+
+    <div id="footer-message">
+      2005 - 2011 Drupal.sk | Drupal is a <a href="http://drupal.com/copyright">registered trademark</a> of <a href="http://buytaert.net/">Dries Buytaert</a>. | <a href="http://drupal.org/project/arthemia">Arthemia</a> is based on the original design by <a href="http://michaelhutagalung.com/">Michael Hutagalung</a>.    </div>
+      </body>
+
+<!-- Mirrored from www.drupal.sk/node/267 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:47:41 GMT -->
+</html>

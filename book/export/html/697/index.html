@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sk" xml:lang="sk">
+  
+<!-- Mirrored from www.drupal.sk/book/export/html/697 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:41:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Vývoj modulov pre Drupal</title>
+    <base  />
+    <link type="text/css" rel="stylesheet" href="http://drupal.sk/misc/print.css" />
+      </head>
+  <body>
+              <div class="section-1">
+                <div class="section-2">
+          
+    <div id="node-697" class="section-3">
+  <h1 class="book-heading">Vývoj modulov pre Drupal</h1>
+  
+<p>K napísaniu tohto príspevku ma motivoval posledný post používateľa
+jasom s názvom <a href="../../../../node/696/index.html">Semantic views: Drupal
+video návod od Jasom.net</a>. Niekedy pred skroo troma rokmi som v rámci
+našich <a href="http://www.cnl.sk/">labákových</a> seminárov začal robiť
+sériu ľahkých developerských vzdelávacích seminárov, z ktorých nakoniec
+vznikli len dva ;) Jedná sa o úvod do vývoja modulov v Drupal-e. V tom
+čase sa jednalo o verziu 5.x, čo je už dnes neaktuálne, ale čo sa modulov
+týka, tak až taká veľká zmena sa neudiala a teda minimálne ako odrazový
+mostík tieto dva príspevky niekomu môžu poslúžiť. Kvalita prého
+príspevku nie je valná, ale druhý je už úplne v pohode.</p>
+
+<h1>Drupal module development, časť 1.</h1>
+
+<p>Inštalácia, úvod do CCK a Views</p>
+
+<div id="video-player" align="center"><object
+classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="450" height="358"
+codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+	<param name="movie"
+	value="http://videoserver.cnl.sk/files/output/mediaplayer.swf" />
+	<param name="wmode" value="window" />
+	<param name="allowfullscreen" value="true" />
+	<param name="FlashVars"
+	value="file=http://videoserver.cnl.sk/files/output/drupal_mirek1.flv&amp;streamscript=lighttpd&amp;recommendations=http://videoserver.cnl.tuke.sk/recommendedvideos?nid=533&amp;image=http://videoserver.cnl.sk/files/output/drupal_mirek1.jpg&amp;rotatetime=3&amp;logo=http://videoserver.cnl.sk/files/output/logo_video.png&amp;autostart=false"
+	/>
+	<param name="quality" value="high" />
+	<embed allowscriptaccess="always"
+	src="http://videoserver.cnl.sk/files/output/mediaplayer.swf" width="450"
+	height="358" border="0" type="application/x-shockwave-flash"
+	pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="window"
+	allowfullscreen="true" quality="high"
+	flashvars="file=http://videoserver.cnl.sk/files/output/drupal_mirek1.flv&amp;streamscript=lighttpd&amp;recommendations=http://videoserver.cnl.tuke.sk/recommendedvideos?nid=533&amp;image=http://videoserver.cnl.sk/files/output/drupal_mirek1.jpg&amp;rotatetime=3&amp;logo=http://videoserver.cnl.sk/files/output/logo_video.png&amp;autostart=false"
+	/></object></div>
+
+<h1>Drupal module development, časť 2.</h1>
+
+<p>Úvod do tvorby vlastných modulov, post spracovanie odoslaných informácií
+z formulára vytvoreného pomocou CCK (validácia e-mailu, odoslanie
+potvrdzujúceho e-mailu)</p>
+
+<div id="video-player" align="center"><object
+classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="450" height="358"
+codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+	<param name="movie"
+	value="http://videoserver.cnl.sk/files/output/mediaplayer.swf" />
+	<param name="wmode" value="window" />
+	<param name="allowfullscreen" value="true" />
+	<param name="FlashVars"
+	value="file=http://videoserver.cnl.sk/files/output/drupal_mirek2.flv&amp;streamscript=lighttpd&amp;recommendations=http://videoserver.cnl.tuke.sk/recommendedvideos?nid=525&amp;image=http://videoserver.cnl.sk/files/output/drupal_mirek2.jpg&amp;rotatetime=3&amp;logo=http://videoserver.cnl.sk/files/output/logo_video.png&amp;autostart=false"
+	/>
+	<param name="quality" value="high" />
+	<embed allowscriptaccess="always"
+	src="http://videoserver.cnl.sk/files/output/mediaplayer.swf" width="450"
+	height="358" border="0" type="application/x-shockwave-flash"
+	pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="window"
+	allowfullscreen="true" quality="high"
+	flashvars="file=http://videoserver.cnl.sk/files/output/drupal_mirek2.flv&amp;streamscript=lighttpd&amp;recommendations=http://videoserver.cnl.tuke.sk/recommendedvideos?nid=525&amp;image=http://videoserver.cnl.sk/files/output/drupal_mirek2.jpg&amp;rotatetime=3&amp;logo=http://videoserver.cnl.sk/files/output/logo_video.png&amp;autostart=false"
+	/></object></div>
+
+<p>Pôvodný zdroj je umiestnený na stránkach <a
+href="http://www.videoserver.cnl.sk/">www.videoserver.cnl.sk/</a></p>
+
+<!-- by Texy2! -->  </div>
+    </div></div>
+  </body>
+
+<!-- Mirrored from www.drupal.sk/book/export/html/697 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:41:18 GMT -->
+</html>

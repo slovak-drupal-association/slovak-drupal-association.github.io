@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" dir="ltr">
+  
+<!-- Mirrored from www.drupal.sk/node/546 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 18:31:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ako vytvoriť abecedný index pre view v Drupale? | Drupal.SK</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="prev" href="../587/index.html" />
+<link rel="up" href="../587/index.html" />
+<link rel="next" href="../588/index.html" />
+<link rel="shortcut icon" href="../../files/arthemia_favicon/index.png" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/ckeditor/ckeditor/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/logintoboggan/logintoboggan/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/mail/simplenews/simplenews/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/texy/lib/fshl/styles/COHEN_style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/ribbon/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/aggregator/index.css?9" />
+    <script type="text/javascript" src="../../files/js/js_b60786b42cf28c172793b3f9255432b6/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip" } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://www.google-analytics.com/analytics.js","ga");ga("create", "UA-11573462-1", { "cookieDomain": "auto" });ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+  </head>
+  <body>
+    <div id="head" class="clearfloat">
+
+      <div class="clearfloat">
+        <div id="logo">
+          <a href="../../index/index.html" title="Drupal.SK"><img src="../../files/logo/index.jpg" alt="Drupal.SK" /></a>                </div>
+
+              </div>
+
+      <div id="navbar" class="clearfloat">
+          <div id="page-bar"><ul class="menu"><li class="leaf first"><a href="../../blog/index.html">Blogy</a></li>
+<li class="leaf"><a href="../../forum/index.html">Fórum</a></li>
+<li class="collapsed"><a href="../../prirucky/index.html" title="Naučte sa s nami Drupal">Príručky</a></li>
+<li class="leaf"><a href="../../stahuj/index.html">Sťahuj</a></li>
+<li class="leaf"><a href="../../komunita/index.html">Komunita</a></li>
+<li class="leaf last"><a href="../../aggregator/index.html" title="">Zo sveta</a></li>
+</ul></div>              </div>
+    </div>
+
+    <div id="page" class="clearfloat">
+
+            
+      
+      <div id="content" class="main-content with-sidebar">
+        
+        <div class="breadcrumb"><a href="../../index/index.html">Domov</a> &rsaquo; <a href="../../blog/index.html">Blogy</a> &rsaquo; <a href="../../blog/534/index.html">Blog používateľa petiar </a></div>                        <h1>Ako vytvoriť abecedný index pre view v Drupale?</h1>                                        <div id="node-546" class="node clear-block">
+
+
+
+      <span class="submitted">7 január, 2010 - 05:21 poslal <a href="../../user/534/index.html" title="Zobraziť profil používateľa">petiar</a></span>
+  
+  <div class="content">
+    <p>Predvčerom mi z&aacute;kazn&iacute;k poslal e-mailom požiadavku, že chce ist&yacute; zoznam na jeho webe zoradiť podľa abecedy a pridať k nemu aj abecedn&yacute; index. Tak&yacute;, kde je každ&eacute; p&iacute;smeno abecedy odkazom za str&aacute;nku, na ktorej bud&uacute; zobrazen&eacute; len tie položky zoznamu, ktor&eacute; zač&iacute;naj&uacute; na konkr&eacute;tne p&iacute;smeno. Vďaka tomu, že jeho web je postaven&yacute; na Drupale som to mal hotov&eacute; veľmi r&yacute;chlo a odozva to potvrdila. <em>&quot;Nuž, niet nad spokojn&eacute;ho z&aacute;kazn&iacute;ka&quot;</em>, vrav&iacute;m si v tak&yacute;ch chv&iacute;ľach. St&aacute;le mi v&scaron;ak vŕtalo hlavou, či na to rie&scaron;enie, ktor&eacute; som spravil bez použitia na to určen&eacute;ho modulu, predsalen nejak&yacute; neexistuje. Existuje. Vol&aacute; sa <a href="http://drupal.org/project/views_alpha_pager">Views Alpha Pager</a> a jeho jedinou chybou je, že pre Drupal 6, resp. pre Views 2 neexistuje vydanie. A tak bolo pravdepodobne moje rie&scaron;enie asi jedin&yacute;m možn&yacute;m (i keď vari&aacute;ci&iacute; naň m&ocirc;že byť viacero). Tak sa na to poďme pozrieť:Cel&yacute; trik je v tom, že p&iacute;smeno abecedy budeme Drupalu pods&uacute;vať v URI, teda v odkaze. Takže v&scaron;etky čl&aacute;nky zač&iacute;naj&uacute;ce na A bud&uacute; mať adresu <code>www.nasweb.sk/clanky/a</code>. Tak&yacute;to parameter pred&aacute;van&yacute; v URI sa vo Views terminol&oacute;gii vol&aacute; argument. Jeden si teda v na&scaron;om view aj hneď prid&aacute;me a nastav&iacute;me ho zhruba podľa priložen&eacute;ho obr&aacute;zku. <img src="http://drupal.sk/files/screen.png" /> Kľ&uacute;čov&yacute;m nastaven&iacute;m je v ňom tzv. <strong>Glossary mode</strong>, ktor&yacute; zaruč&iacute; pr&aacute;ve to, že si budeme m&ocirc;cť nastaviť limit pre počet p&iacute;smen v argumente. My kontrolujeme len prv&eacute;, takže limit bude celkom logicky 1. Toto je t&aacute; jednoduch&scaron;ia, klikacia časť. Ak chceme pridať nad view aj abecedn&yacute; index tak n&aacute;s čak&aacute; aj tro&scaron;ku p&iacute;sania k&oacute;du, i keď je to k&oacute;d veľmi primit&iacute;vny a v&auml;č&scaron;inu čas budeme aj tak použ&iacute;vať len CTRL+C a CTRL+V. Tento k&oacute;d bude vyzerať nejako takto: <code> &lt;div class=&quot;abeceda&quot;&gt; &lt;a href=&quot;http://www.nasweb.sk/clanky/a&quot;&gt;a&lt;/a&gt; &lt;a href=&quot;http://www.nasweb.sk/clanky/b&quot;&gt;b&lt;/a&gt; &lt;a href=&quot;http://www.nasweb.sk/clanky/c&quot;&gt;c&lt;/a&gt; </code> a tak ďalej až po Z. A nap&iacute;&scaron;eme ho, samozrejme, do hlavičky view. Nezabudnite zvoliť pr&iacute;slu&scaron;n&yacute; vstupn&yacute; form&aacute;t tak, aby akceptoval v&scaron;etky HTML tagy, ktor&eacute; ste použili, pretože ako som už naznačil, vari&aacute;ci&iacute; na tento n&aacute;pad m&ocirc;že byť viac a možno pr&iacute;dete na niečo in&eacute;, čo by sa v&aacute;m e&scaron;te zi&scaron;lo. Ja v&aacute;m pre tentokr&aacute;t m&ocirc;žem sľ&uacute;biť len to že ak sa mi podar&iacute; zistiť ako nastaviť variabiln&uacute; dĺžku argumentu, nap&iacute;&scaron;em e&scaron;te lep&scaron;&iacute; n&aacute;vod. Totižto, jedin&yacute;m probl&eacute;mom s ktor&yacute;m si zatiaľ neviem rady je nastavenie view tak aby bral do &uacute;vahy argumenty o r&ocirc;znej dĺžke. To znamen&aacute;, že čl&aacute;nok zač&iacute;naj&uacute;ci napr&iacute;klad slovom Drupal sa objav&iacute; na str&aacute;nke <code>www.nasweb.sk/clanok/d</code> ale aj <code>www.nasweb.sk/clanok/dru</code>. Zatiaľ som sa dozvedel len toľko, že si na to budem musieť nap&iacute;sať vlastn&yacute; argument handler. Ak sa mi to podar&iacute;, r&aacute;d sa oň s vami podel&iacute;m.</p>
+  <div id="book-navigation-379" class="book-navigation">
+    
+        <div class="page-links clear-block">
+              <a href="../587/index.html" class="page-previous" title="Prejsť na predchádzajúcu stranu">‹ Návody</a>
+                    <a href="../587/index.html" class="page-up" title="Prejsť na nadradenú stranu">^</a>
+                    <a href="../588/index.html" class="page-next" title="Prejsť na ďalšiu stranu">Zdroje tretích strán ›</a>
+          </div>
+    
+  </div>
+  </div>
+  
+  <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../blog/534/index.html" title="Read petiar&#039;s latest blog entries.">Blog používateľa petiar</a></li>
+<li class="book_printer"><a href="../../book/export/html/546/index.html" title="Zobraziť túto stranu a jej podstrany vo verzii pre tlač.">Verzia pre tlač</a></li>
+<li class="comment_forbidden last"></li>
+</ul></div><div id="comments"><h2 class="comments">Komentáre</h2><a id="comment-1067"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">27 január, 2010 - 10:20 poslal <a href="../../user/568/index.html" title="Zobraziť profil používateľa">borgo</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-1067" class="active">#1</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 26 marec 2008</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 5 rokov 24 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Super čl&aacute;nok, dal som ho na titluku. Sorry že až teraz.</p>
+<p>	Pros&iacute;m aj ostatn&yacute;ch, ktor&iacute; m&aacute;te admin pr&iacute;stup, to čo stoj&iacute; za to, zviditeľňujte na titlulku.</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-1021"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">8 január, 2010 - 17:55 poslal <a href="../../user/944/index.html" title="Zobraziť profil používateľa">valdo</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-1021" class="active">#2</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 25 október 2009</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 5 rokov 37 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Vďaka za zaujímavý článok, s jednou vecou si však dovolím nesúhlasiť:<br />
+<em>"Ak chceme pridať nad view aj abecedný index tak nás čaká aj trošku písania kódu, i keď je to kód veľmi primitívny a väčšinu čas budeme aj tak používať len CTRL+C a CTRL+V."</em><br />
+Tento prvok je možné vygenerovať a zobraziť v danom view pomocou "Attachment" display, stačí sa pozrieť ako je implementovaný default view Glossary:<br />
+<a href="http://img686.imageshack.us/img686/6981/glossary.gif">http://img686.imageshack.us/img686/6981/glossary.gif</a><br />
+Táto funkcionalita je dodávaná priamo so základnou inštaláciou modulu Views - odporúčam zapnúť tento default view a pozrieť sa ako je to implementované.</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-1044"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">19 január, 2010 - 16:42 poslal <a href="../../user/534/index.html" title="Zobraziť profil používateľa">petiar</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-1044" class="active">#3</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 22 február 2008</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 13 týždňov 23 hod</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Tak toto som nevedel, vďaka za komentár!</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div></div>
+        
+      </div>
+
+              <div id="sidebar">
+          <div id="block-block-9" class="block block-block odd">
+  <h3>Drupal SK na Facebooku</h3>
+
+  <div class="content">
+    <p><iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FDrupalSlovensko&amp;width=300&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=false&amp;appId=172291972850481" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:558px;" allowTransparency="true"></iframe></p>
+  </div>
+</div>
+<div id="block-views-latest_topics-block_1" class="block block-views even">
+  <h3>Nové témy vo fóre</h3>
+
+  <div class="content">
+    <div class="view view-latest-topics view-id-latest_topics view-display-id-block_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">3 týždne 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">4 týždne 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2366/index.html">Hľadáme drupal programátora</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">6 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2361/index.html">Validácia prekladov</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">7 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">7 týždňov 3 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2351/index.html">Obstarávanie webovej verzie Encyklopédie Beliana</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">10 týždňov 5 dní</span>
+  </div>
+</li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2346/index.html">Views</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">11 týždňov 8 hod</span>
+  </div>
+</li>
+          <li class="views-row views-row-8 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2341/index.html">Stránka v novom okne</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">24 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-9 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2336/index.html">b2b a drupal/ubercart</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">27 týždňov 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-10 views-row-even views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2331/index.html">Bezpecnost sprav - Drupal 8</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">29 týždňov 2 dni</span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+<div id="block-views-latest_comments-block_1" class="block block-views odd">
+  <h3>Posledné komentáre</h3>
+
+  <div class="content">
+    <div class="view view-latest-comments view-id-latest_comments view-display-id-block_1 view-dom-id-2">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/239/index.html" title="Zobraziť profil používateľa">frankye</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 deň 9 hod</span>
+  </span>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content">Anonymous</span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../72/index.html">Preklad Drupal 4.7.0</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 4 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../219/index.html">Realitna kancelaria</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 4 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">3 týždne 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">4 týždne 2 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">6 týždňov 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-8 views-row-even views-row-last">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">6 týždňov 1 deň</span>
+  </span>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+<div id="block-views-Najnovsie-block_4" class="block block-views even">
+  <h3>Najnovšie v blogoch</h3>
+
+  <div class="content">
+    <div class="view view-Najnovsie view-id-Najnovsie view-display-id-block_4 view-dom-id-3">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">3 dni 17 hod</span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2296/index.html">RESTful Drupal 8 - meetup - 14.4.2016</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">38 týždňov 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2256/index.html">Prvý kontakt s Drupalom (Workshop: Základy Drupal 8)</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">47 týždňov 3 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2196/index.html">PF 2016</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">1 rok 6 dní</span>
+  </div>
+</li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2181/index.html">Pripravované akcie v novembri</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">1 rok 8 týždňov</span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+        </div>
+      
+          </div>
+
+    <div id="footer-region" class="clearfloat">
+      <div id="footer-left" class="clearfloat">
+              </div> 		
+
+      <div id="footer-middle" class="clearfloat">
+              </div>
+
+      <div id="footer-right" class="clearfloat">
+              </div>
+    </div>
+
+    <div id="footer-message">
+      2005 - 2011 Drupal.sk | Drupal is a <a href="http://drupal.com/copyright">registered trademark</a> of <a href="http://buytaert.net/">Dries Buytaert</a>. | <a href="http://drupal.org/project/arthemia">Arthemia</a> is based on the original design by <a href="http://michaelhutagalung.com/">Michael Hutagalung</a>.    </div>
+      </body>
+
+<!-- Mirrored from www.drupal.sk/node/546 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 18:31:06 GMT -->
+</html>

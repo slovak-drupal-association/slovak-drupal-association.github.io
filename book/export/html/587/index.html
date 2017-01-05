@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sk" xml:lang="sk">
+  
+<!-- Mirrored from www.drupal.sk/book/export/html/587 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:50:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Návody</title>
+    <base  />
+    <link type="text/css" rel="stylesheet" href="http://drupal.sk/misc/print.css" />
+      </head>
+  <body>
+              <div class="section-1">
+                <div class="section-2">
+          
+    <div id="node-587" class="section-3">
+  <h1 class="book-heading">Návody</h1>
+  <p>Na tomto mieste budeme zhromažďovať návody na realizáciu rôznej funkcionality, ktorú zvládnete bez programovania.</p>
+  <div id="node-546" class="section-4">
+  <h1 class="book-heading">Ako vytvoriť abecedný index pre view v Drupale?</h1>
+  <p>Predvčerom mi z&aacute;kazn&iacute;k poslal e-mailom požiadavku, že chce ist&yacute; zoznam na jeho webe zoradiť podľa abecedy a pridať k nemu aj abecedn&yacute; index. Tak&yacute;, kde je každ&eacute; p&iacute;smeno abecedy odkazom za str&aacute;nku, na ktorej bud&uacute; zobrazen&eacute; len tie položky zoznamu, ktor&eacute; zač&iacute;naj&uacute; na konkr&eacute;tne p&iacute;smeno. Vďaka tomu, že jeho web je postaven&yacute; na Drupale som to mal hotov&eacute; veľmi r&yacute;chlo a odozva to potvrdila. <em>&quot;Nuž, niet nad spokojn&eacute;ho z&aacute;kazn&iacute;ka&quot;</em>, vrav&iacute;m si v tak&yacute;ch chv&iacute;ľach. St&aacute;le mi v&scaron;ak vŕtalo hlavou, či na to rie&scaron;enie, ktor&eacute; som spravil bez použitia na to určen&eacute;ho modulu, predsalen nejak&yacute; neexistuje. Existuje. Vol&aacute; sa <a href="http://drupal.org/project/views_alpha_pager">Views Alpha Pager</a> a jeho jedinou chybou je, že pre Drupal 6, resp. pre Views 2 neexistuje vydanie. A tak bolo pravdepodobne moje rie&scaron;enie asi jedin&yacute;m možn&yacute;m (i keď vari&aacute;ci&iacute; naň m&ocirc;že byť viacero). Tak sa na to poďme pozrieť:Cel&yacute; trik je v tom, že p&iacute;smeno abecedy budeme Drupalu pods&uacute;vať v URI, teda v odkaze. Takže v&scaron;etky čl&aacute;nky zač&iacute;naj&uacute;ce na A bud&uacute; mať adresu <code>www.nasweb.sk/clanky/a</code>. Tak&yacute;to parameter pred&aacute;van&yacute; v URI sa vo Views terminol&oacute;gii vol&aacute; argument. Jeden si teda v na&scaron;om view aj hneď prid&aacute;me a nastav&iacute;me ho zhruba podľa priložen&eacute;ho obr&aacute;zku. <img src="http://drupal.sk/files/screen.png" /> Kľ&uacute;čov&yacute;m nastaven&iacute;m je v ňom tzv. <strong>Glossary mode</strong>, ktor&yacute; zaruč&iacute; pr&aacute;ve to, že si budeme m&ocirc;cť nastaviť limit pre počet p&iacute;smen v argumente. My kontrolujeme len prv&eacute;, takže limit bude celkom logicky 1. Toto je t&aacute; jednoduch&scaron;ia, klikacia časť. Ak chceme pridať nad view aj abecedn&yacute; index tak n&aacute;s čak&aacute; aj tro&scaron;ku p&iacute;sania k&oacute;du, i keď je to k&oacute;d veľmi primit&iacute;vny a v&auml;č&scaron;inu čas budeme aj tak použ&iacute;vať len CTRL+C a CTRL+V. Tento k&oacute;d bude vyzerať nejako takto: <code> &lt;div class=&quot;abeceda&quot;&gt; &lt;a href=&quot;http://www.nasweb.sk/clanky/a&quot;&gt;a&lt;/a&gt; &lt;a href=&quot;http://www.nasweb.sk/clanky/b&quot;&gt;b&lt;/a&gt; &lt;a href=&quot;http://www.nasweb.sk/clanky/c&quot;&gt;c&lt;/a&gt; </code> a tak ďalej až po Z. A nap&iacute;&scaron;eme ho, samozrejme, do hlavičky view. Nezabudnite zvoliť pr&iacute;slu&scaron;n&yacute; vstupn&yacute; form&aacute;t tak, aby akceptoval v&scaron;etky HTML tagy, ktor&eacute; ste použili, pretože ako som už naznačil, vari&aacute;ci&iacute; na tento n&aacute;pad m&ocirc;že byť viac a možno pr&iacute;dete na niečo in&eacute;, čo by sa v&aacute;m e&scaron;te zi&scaron;lo. Ja v&aacute;m pre tentokr&aacute;t m&ocirc;žem sľ&uacute;biť len to že ak sa mi podar&iacute; zistiť ako nastaviť variabiln&uacute; dĺžku argumentu, nap&iacute;&scaron;em e&scaron;te lep&scaron;&iacute; n&aacute;vod. Totižto, jedin&yacute;m probl&eacute;mom s ktor&yacute;m si zatiaľ neviem rady je nastavenie view tak aby bral do &uacute;vahy argumenty o r&ocirc;znej dĺžke. To znamen&aacute;, že čl&aacute;nok zač&iacute;naj&uacute;ci napr&iacute;klad slovom Drupal sa objav&iacute; na str&aacute;nke <code>www.nasweb.sk/clanok/d</code> ale aj <code>www.nasweb.sk/clanok/dru</code>. Zatiaľ som sa dozvedel len toľko, že si na to budem musieť nap&iacute;sať vlastn&yacute; argument handler. Ak sa mi to podar&iacute;, r&aacute;d sa oň s vami podel&iacute;m.</p>
+  </div>
+</div>
+    </div></div>
+  </body>
+
+<!-- Mirrored from www.drupal.sk/book/export/html/587 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:50:38 GMT -->
+</html>

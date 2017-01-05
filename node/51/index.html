@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" dir="ltr">
+  
+<!-- Mirrored from www.drupal.sk/node/51 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:43:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>.htaccess  - tento súborík je pre mňa záhada | Drupal.SK</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/arthemia_favicon/index.png" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/ckeditor/ckeditor/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/logintoboggan/logintoboggan/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/mail/simplenews/simplenews/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/texy/lib/fshl/styles/COHEN_style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/ribbon/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/aggregator/index.css?9" />
+    <script type="text/javascript" src="../../files/js/js_b60786b42cf28c172793b3f9255432b6/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip" } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://www.google-analytics.com/analytics.js","ga");ga("create", "UA-11573462-1", { "cookieDomain": "auto" });ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+  </head>
+  <body>
+    <div id="head" class="clearfloat">
+
+      <div class="clearfloat">
+        <div id="logo">
+          <a href="../../index/index.html" title="Drupal.SK"><img src="../../files/logo/index.jpg" alt="Drupal.SK" /></a>                </div>
+
+              </div>
+
+      <div id="navbar" class="clearfloat">
+          <div id="page-bar"><ul class="menu"><li class="leaf first"><a href="../../blog/index.html">Blogy</a></li>
+<li class="leaf"><a href="../../forum/index.html">Fórum</a></li>
+<li class="collapsed"><a href="../../prirucky/index.html" title="Naučte sa s nami Drupal">Príručky</a></li>
+<li class="leaf"><a href="../../stahuj/index.html">Sťahuj</a></li>
+<li class="leaf"><a href="../../komunita/index.html">Komunita</a></li>
+<li class="leaf last"><a href="../../aggregator/index.html" title="">Zo sveta</a></li>
+</ul></div>              </div>
+    </div>
+
+    <div id="page" class="clearfloat">
+
+            
+      
+      <div id="content" class="main-content with-sidebar">
+        
+        <div class="breadcrumb"><a href="../../index/index.html">Domov</a> &rsaquo; <a href="../../forum/index.html">Fórum</a> &rsaquo; <a href="../../forum/7/index.html">cms drupal</a> &rsaquo; <a href="../../forum/10/index.html">ako na to</a></div>                        <h1>.htaccess  - tento súborík je pre mňa záhada</h1>                                        <div id="node-51" class="node clear-block">
+
+
+
+      <span class="submitted">25 február, 2006 - 22:28 poslal Anonymous</span>
+  
+  <div class="content">
+    <p>helow<br />
+v nastaveniach môjho drupalu som sa pokúšal zapnúť "čisté URL".<br />
+je tam poznámka že musí byť podporovaný ModRewrite (čo to je netuším) a<br />
+je tam odkaz na súbor .htaccess</p>
+<p>pri inštalácii DRUPALU bolo doporučené:<br />
+"V adresári sa bude nachádzať aj súbor s názvom .htaccess. S jeho nastavením<br />
+sa zaoberať nebudeme. Preto, aby nerobil problémy, ho môžete premenovať na<br />
+.htaccess.old"</p>
+<p>aj ja som tento súborík premenoval na ...old, lebo ak je tam bez toho .old<br />
+tak mi Drupal nechodí a vyhlasuje chybu.</p>
+<p>viete poradiť ako nastaviť ten .htaccess aby to neblblo a aby sa prípadne<br />
+aktivoval ten "ModRewrite" aby sa dalo zapnúť čisté URL ?</p>
+<p>na čo všetko slúži ten .htaccess?<br />
+všimol som si v ňom napríklad definíciu error stránky 404 a nejakú ochranu<br />
+niektorých adresárov proti nechcenému prístupu</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="../17/index.html" class="topic-previous" title="Prejsť na predchádzajúcu tému diskusie.">‹ Horizontalne menu</a>
+              <a href="../87/index.html" class="topic-next" title="Prejsť na nasledujúcu tému diskusie.">i18n a tinyMCE ›</a>
+      </div>
+  </div>
+      <div class="taxonomy">Tags: 
+    <div class="terms terms-inline"><ul class="links inline"><li class="taxonomy_term_10 first last"><a href="../../forum/10/index.html" rel="tag" title="drupal je nainstalovany, ale potreboval by som spravit...">ako na to</a></li>
+</ul></div>
+    </div>
+  
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul></div><div id="comments"><a id="comment-208"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">21 august, 2006 - 13:42 poslal <a href="../../user/135/index.html" title="Zobraziť profil používateľa">thepeter</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-208" class="active">#1</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 16 august 2006</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 9 rokov 46 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>postupne ako rozbehavam web co robim prichadzam na veci co v maualoch niesu <cite>(popisane)</cite> a myslim ze som prisiel k dalsej zah(r)adke, s ktorou suvisi tento prispevok bez odpovede uz pol roka<br />
+Apache mi dovoli mod_rewrite a aj to funguje dam si ze web/admin/settings a ide avsak neviem drupal dokopat k tomu aby ich aj pouzival ... kedze <cite>clean URL's enabled</cite> sa neda nastavit ...<br />
+vsak bude chyba niekde v apache nastaveniach saity (.htaccess) o ktorych sa nikto nezmienuje lebo z pohladu drupalu to bude problem apache a naopak? :P</p>
+<p>(no co som novy a chcem vediet vela tak sa pytam ;)</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-209"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">21 august, 2006 - 17:04 poslal <a href="../../user/8/index.html" title="Zobraziť profil používateľa">phacka</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-209" class="active">#2</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 28 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 9 rokov 43 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Subor .htaccess ako taky nema z Drupalom nic spolocne. Je to konfiguracny subor web serveru Apache v ktorom sa daju nastavit (podla toho co je povolene) rozne veci. Jednou s tych veci je tzv. rewrite (modul Apache ktory ho ma na starosti sa vola mod_rewrite) ktory umoznuje napriklad to aby sa volanie stranky typu moj.drupal.sk/node/1 (co normalne nefunguje lebo taka stranka neexistuje) prepisalo (interne v Apache) na moj.drupal.sk/index.php?q=node/1 (co je normalny sposob zapisu URL pre Drupal). To node/1 si nahrad cimkolvek a mas pekne URL (modul Pathauto vam ich dokaze krasne vyrabat). Na to aby to fungovalo by malo stacit mat v subore .htaccess toto (samozrejme musi byt povolene pouzivanie mod_rewrite).</p>
+<p><code><br />
+  RewriteEngine on<br />
+  # Rewrite current-style URLs of the form 'index.php?q=x'.<br />
+  RewriteCond %{REQUEST_FILENAME} !-f<br />
+  RewriteCond %{REQUEST_FILENAME} !-d<br />
+  RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]<br />
+</code></p>
+<p>V pripade ked mas tvoj Drupal web v adresari /mojdrupal musis to napisat takto:</p>
+<p><code><br />
+  RewriteEngine on<br />
+  # Modify the RewriteBase if you are using Drupal in a subdirectory and<br />
+  # the rewrite rules are not working properly.<br />
+  RewriteBase /mojdrupal<br />
+  # Rewrite current-style URLs of the form 'index.php?q=x'.<br />
+  RewriteCond %{REQUEST_FILENAME} !-f<br />
+  RewriteCond %{REQUEST_FILENAME} !-d<br />
+  RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]<br />
+</code></p>
+<p>Vsetko za mriezkov je poznamka a ignoruje sa...</p>
+<p>Pokial to ani potom nejde je pravdepodobne zakazany mod_rewrite... Pokial to mas na pocitaci doma treba v httpd.conf nastavit AllowOvveride v nastaveniach kde mas web - malo by tam byt napisane taketo cosi:</p>
+<p><code><br />
+#<br />
+# AllowOverride controls what directives may be placed in .htaccess files.<br />
+# It can be "All", "None", or any combination of the keywords:<br />
+#   Options FileInfo AuthConfig Limit<br />
+#<br />
+    AllowOverride All<br />
+</code></p>
+<p>Blizsie info napriklad tu:</p>
+<p><a href="http://httpd.apache.org/docs/2.0/misc/rewriteguide.html">URL Rewriting Guide</a> (ale nie je to ziadna sranda :) - ja tomu nechapem poriadne doteraz niekedy)</p>
+<p>--<br />
+<em>ICQ: 1872888<br />
+WEB: http://www.fem.uniag.sk/havran/blog/</em></p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-210"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">21 august, 2006 - 20:16 poslal <a href="../../user/135/index.html" title="Zobraziť profil používateľa">thepeter</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-210" class="active">#3</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 16 august 2006</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 9 rokov 46 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>lebo toto som mal nastavene uz ked som pisal predchadzajuci prispevok ... a ciste url mi idu pouzivat (apache ich prelozi) ale neide mi v drupale prepnut ten radio button aby si drupal ako taky zmenil generator liniek alebo ako to vlastne funguje</p>
+<p>Havran THX za explain :)</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-211"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">21 august, 2006 - 20:25 poslal <a href="../../user/8/index.html" title="Zobraziť profil používateľa">phacka</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-211" class="active">#4</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 28 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 9 rokov 43 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>No tu:</p>
+<p>This option makes Drupal emit "clean" URLs (i.e. without ?q= in the URL.) Before enabling clean URLs, you must perform a test to determine if your server is properly configured. If you are able to see this page again after clicking the "Run the clean URL test" link, the test has succeeded and the radio buttons above will be available. If instead you are directed to a "Page not found" error, you will need to change the configuration of your server. The handbook page on Clean URLs has additional troubleshooting information. Run the clean URL test</p>
+<p>je na konci napisane - Run the clean URL test... Ono si to tusim najprv otestuje a az potom ked to korektne zbehne povoli to zaskrtnut... Skusil si na to kliknut?</p>
+<p>(Je to hned pod tou moznostou zapnut ciste url co sa neda zapnut :)))</p>
+<p><em>ICQ: 1872888<br />
+WEB: http://www.fem.uniag.sk/havran/blog/</em></p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-212"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">22 august, 2006 - 09:36 poslal <a href="../../user/135/index.html" title="Zobraziť profil používateľa">thepeter</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-212" class="active">#5</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 16 august 2006</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 9 rokov 46 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>problem som vyriesil takymto sposobom:<br />
+v .htaccess v tagu &lt;Directory &gt; treba cestu k webu napisat v uvodzovkach :) co nebolo spomenute nikde len som si spomenul ze inde sa t pouziva aby medzery v ceste nerobili problemy<br />
+takze pre windows userov zarucene budu fungovat v style:</p>
+<p><cite> 	&lt;Directory "cesta"&gt;<br />
+RewriteEngine on<br />
+RewriteBase /<br />
+RewriteCond %{REQUEST_FILENAME} !-f<br />
+RewriteCond %{REQUEST_FILENAME} !-d<br />
+RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]<br />
+&lt;/Directory &gt;<br />
+</cite></p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div>
+        
+      </div>
+
+              <div id="sidebar">
+          <div id="block-block-9" class="block block-block odd">
+  <h3>Drupal SK na Facebooku</h3>
+
+  <div class="content">
+    <p><iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FDrupalSlovensko&amp;width=300&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=false&amp;appId=172291972850481" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:558px;" allowTransparency="true"></iframe></p>
+  </div>
+</div>
+<div id="block-views-latest_topics-block_1" class="block block-views even">
+  <h3>Nové témy vo fóre</h3>
+
+  <div class="content">
+    <div class="view view-latest-topics view-id-latest_topics view-display-id-block_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">3 týždne 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">4 týždne 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2366/index.html">Hľadáme drupal programátora</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">6 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2361/index.html">Validácia prekladov</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">7 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">7 týždňov 3 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2351/index.html">Obstarávanie webovej verzie Encyklopédie Beliana</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">10 týždňov 5 dní</span>
+  </div>
+</li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2346/index.html">Views</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">11 týždňov 9 hod</span>
+  </div>
+</li>
+          <li class="views-row views-row-8 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2341/index.html">Stránka v novom okne</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">24 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-9 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2336/index.html">b2b a drupal/ubercart</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">27 týždňov 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-10 views-row-even views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2331/index.html">Bezpecnost sprav - Drupal 8</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">29 týždňov 2 dni</span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+<div id="block-views-latest_comments-block_1" class="block block-views odd">
+  <h3>Posledné komentáre</h3>
+
+  <div class="content">
+    <div class="view view-latest-comments view-id-latest_comments view-display-id-block_1 view-dom-id-2">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/239/index.html" title="Zobraziť profil používateľa">frankye</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 deň 9 hod</span>
+  </span>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content">Anonymous</span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../72/index.html">Preklad Drupal 4.7.0</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 4 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../219/index.html">Realitna kancelaria</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 4 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">3 týždne 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">4 týždne 2 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">6 týždňov 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-8 views-row-even views-row-last">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">6 týždňov 1 deň</span>
+  </span>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+<div id="block-views-Najnovsie-block_4" class="block block-views even">
+  <h3>Najnovšie v blogoch</h3>
+
+  <div class="content">
+    <div class="view view-Najnovsie view-id-Najnovsie view-display-id-block_4 view-dom-id-3">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">3 dni 18 hod</span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2296/index.html">RESTful Drupal 8 - meetup - 14.4.2016</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">38 týždňov 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2256/index.html">Prvý kontakt s Drupalom (Workshop: Základy Drupal 8)</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">47 týždňov 3 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2196/index.html">PF 2016</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">1 rok 6 dní</span>
+  </div>
+</li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2181/index.html">Pripravované akcie v novembri</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">1 rok 8 týždňov</span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+        </div>
+      
+          </div>
+
+    <div id="footer-region" class="clearfloat">
+      <div id="footer-left" class="clearfloat">
+              </div> 		
+
+      <div id="footer-middle" class="clearfloat">
+              </div>
+
+      <div id="footer-right" class="clearfloat">
+              </div>
+    </div>
+
+    <div id="footer-message">
+      2005 - 2011 Drupal.sk | Drupal is a <a href="http://drupal.com/copyright">registered trademark</a> of <a href="http://buytaert.net/">Dries Buytaert</a>. | <a href="http://drupal.org/project/arthemia">Arthemia</a> is based on the original design by <a href="http://michaelhutagalung.com/">Michael Hutagalung</a>.    </div>
+      </body>
+
+<!-- Mirrored from www.drupal.sk/node/51 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:43:39 GMT -->
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sk" xml:lang="sk">
+  
+<!-- Mirrored from www.drupal.sk/book/export/html/679 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:41:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ako vytvoriť template (tému/theme) pre jednoduchý Drupal web.</title>
+    <base  />
+    <link type="text/css" rel="stylesheet" href="http://drupal.sk/misc/print.css" />
+      </head>
+  <body>
+              <div class="section-1">
+                <div class="section-2">
+          
+    <div id="node-679" class="section-3">
+  <h1 class="book-heading">Ako vytvoriť template (tému/theme) pre jednoduchý Drupal web.</h1>
+  
+<p>Hoci je redakčný systém <a href="http://drupal.org/">Drupal</a>
+v súčasnosti považovaný za jedno z najlepších (ak nie vôbec najlepšie)
+riešení pre realizáciu dynamického webu pomocou voľne dostupných
+nástrojov, v oblasti ponuky vzhľadov (či tém, ak chcete) zásadne
+pokrivkáva. Nie je to len môj názor – stretol som sa s ním pri mnohých
+porovnaniach jednotlivých redakčných sytémov, či dokonca pri stretnutiach
+s klientami (pričom v oboch prípadoch vždy jasne víťazil <a
+href="http://wordpress.org/">WordPress</a>). To, prečo to tak je, mi síce
+ostáva záhadou, pretože že Drupal má v tomto smere veľmi bohaté
+možnosti, ale v tomto článku to nechcem ani nebudeme riešiť.</p>
+
+<p>Poďme sa radšej pozrieť na to ako pripravíme grafickú tému pokiaľ
+nechcem použiť žiadnu z voľne dostupných (teda nechceme aby náš web
+vyzeral ako ďalšie stovky iných). Dá sa to urobiť tak, že nájdeme voľne
+dostupnú grafickú tému najviac sa podobajúcej výsledku, ktorý chceme
+dosiahnúť (napríklad počtom a umiestnením regiónov). Ťažisko celej
+práce je potom na nekonečnom upravovaní príslušných .css a .tpl súborov
+za významnej nejakého developer nástroja pre váš prehliadač. Táto
+možnosť mne osobne pripadá ako najzdĺhavejšia a „najšpinavšia“.</p>
+
+<p>Druhou možnosťou je použitie <a
+href="http://drupal.org/project/zen">grafickej témy Zen</a>. Táto sama o sebe
+žiadnu grafiku neobsahuje – je to skôr balík podrobne zdokumentovaných
+súborov pre vytvorenie novej témy. Ak ste náhodou o nej nevedeli,
+odporúčam aspoň vyskúšať. Pre jednoduchý template je to však ako ísť
+s tankom na zajace a ja osobne som sa často cítil ako Alenka v ríši
+<em>div</em>ov.</p>
+
+<p>Tretia možnosť, a tu sa konečne dostávame k niečomu konkrétnemu, je
+grafickú tému vytvoriť. V tomto prípade pôjdeme úplne opačným
+smerom – nebudeme upravovať žiadnu existujúcu tému, ale vytvoríme si
+svoju vlastnú na zelenej lúke a do nej neskôr pridáme Drupal. Skôr, než
+začneme, znovu si pripomeňme že ide o návod ako vytvoriť grafický vzhľad
+pre veľmi jednoduchý web – taký, v ktorého prípade by predchádzajúce
+dve možnosti znamenali množstvo nadbytočného HTML/CSS kódu.</p>
+
+<p>Najprv povedzme Drupalu niečo o našej novej téme. Nech má hlavičku, pod
+ňou menu a pod ním tradičný trojstĺpcový layout s fixnou šírkou.
+V adresári sites/default/the­mes vytvoríme nový podadresár a pomenujeme ho
+napríklad <code>test_theme</code>. V ňom ako prvý vytvoríme súbor
+test_theme.info a vložíme doň tieto informácie:</p>
+
+<pre
+class="txt"><code>name = Testovacia téma
+description = Téma pre účely článku
+version = 1.0
+core = 6.x
+engine = phptemplate
+
+regions[menu] = "Menu"
+regions[content] = "Hlavný obsah"
+regions[left] = "Vľavo"
+regions[right] = "Vpravo"</code></pre>
+
+<p>V prvých piatoch riadkoch sme postupne definovali názov tejto témy
+(zobrazený v admin rozhraní na stránke so zoznamom vzhľadov), jej popis
+(tamtiež), verziu, ďalej verziu Drupalu s ktorou je téma kompatibilná a
+engine, ktorý bude táto téma používať. Štandardný
+<code>PHPtemplate</code> je fajn.</p>
+
+<p>V ďalších štyroch riadkoch sme definovali regióny, do ktorých budeme
+umiestňovať jednotlivé časti obsahu. Ak nechcete používať iné časti
+webu ako <code>left, right, content, header, footer</code>, tak ich nemusíte
+definovať vôbec – tieto vymenované predpokladá Drupal automaticky (a
+počnúc Drupalom 7 aj región <code>help</code>).</p>
+
+<p><strong>Čas tejto akcie: 5 minút.</strong></p>
+
+<p>Aby sme mali pekný zoznam tém na stránke ich administrácie, vytvorme
+z nášho grafického návrhu súbor <code>screenshot.png</code> a
+nakopírujeme ho do tohto adresára. Dodržte rozmer 150*90 pixelov.</p>
+
+<p><strong>Čas tejto akcie: 1 minúta.</strong></p>
+
+<p>Teraz sa pozrieme na samotné html. Náš čistý návrh bude vyzerať takto
+nejako:</p>
+
+<pre
+class="html"><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" lang="sk"&gt;
+        &lt;head&gt;
+                &lt;title&gt;Názov webu&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+                &lt;div id="wrapper"&gt;
+                        &lt;div id="header"&gt;&lt;/div&gt;
+                        &lt;div id="menu"&gt;Menu&lt;/div&gt;
+                        &lt;div id="left"&gt;Stĺpec vľavo&lt;/div&gt;
+                        &lt;div id="content"&gt;
+                                Obsah
+                        &lt;/div&gt;
+                        &lt;div id="right"&gt;Stĺpec vpravo&lt;/div&gt;
+                &lt;/div&gt;
+        &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<p>Tento zdrojový kód treba umiestniť do súboru ktorý sa volá page.tpl.php
+a hovorí Drupalu ako bude vyzerať layout stránky. Nie je ešte finálny –
+budeme ho upravovať.</p>
+
+<p><strong>Čas tejto akcie: 5 minút.</strong></p>
+
+<p>Analogicky k nemu bude css vyzerať podobne tomuto:</p>
+
+<pre
+class="css"><code>body            {margin:0px;padding:0px;font-family: Arial, "MS Trebuchet", sans-serif;color:#333;}
+
+#wrapper        {width:1024;margin-left:auto;margin-right:auto;}
+#header         {height:200px;background-image:url('images/header.jpg');}
+#menu           {height:30px;}
+#left           {width:212px;float:left;padding:0px;margin:0px;}
+#right          {width:212px;float:left;padding:0px;margin:0px;}
+#content        {width:600px;float:left;padding:0px;margin:0px;}</code></pre>
+
+<p>Pomenujeme ho <code>style.css</code> a uložíme do adresára k ostatným
+súborom. CSS súbor s týmto názvom prečíta Drupal automaticky. Ak vám
+nekontrolovane nabobtná a budete ho chcieť rozdeliť na viac css súborov,
+budete to Drupalu musieť povedať v súbore .info pomocou kľúča
+<code>stylesheets</code>. Všimnite si, že obrázok pre hlavičku webu
+„ťahám“ z adresára images – je to podadresár v adresári našej
+témy. Toto je, samozrejme, to úplne najnutnejšie css. Vy budete pravdepodobne
+chcieť iné rozmery jednotlivých častí webu, iný typ písma, pridať farbu
+pozadia alebo obrázok, atď. V tomto konkrétnom prípade bude napríklad
+pomocou css prerobiť menu na horizontálne, aby sa nám tam vmestilo.</p>
+
+<p><strong>Čas tejto akcie: 5 minút.</strong></p>
+
+<p>Poďme teraz späť k nášmu súboru HTML. Toto je ten moment, kedy téma
+prestane byť len statickou HTML stránkou pretože k nej pridáme „motor“
+z Drupalu. Robím sa to pomocou premenných, ktoré obsahujú Drupalom
+dynamicky vygenerovaný obsah. Pozrime sa najprv na hlavičku HTML. V nej
+budeme určite chcieť zahrnúť naše CSS a neskôr prípadne i javascriptové
+súbory. Môžme to urobiť tak, že tam príslušné tagy napíšeme
+„natvrdo“, ale prečo si komplikovať život – nech to Drupal urobí
+za nás.</p>
+
+<p>Miesto textu v tagu title teda napíšeme <code>&lt;?php print $head_title;
+?&gt;</code> a Drupal nám do hlavičky bude automaticky generovať text podľa
+aktuálne zobrazenej stránky. Pod tento tag môžme vložiť ďalšie tri
+premenné:</p>
+
+<pre
+class="php"><code>&lt;?php print $head; ?&gt;
+&lt;?php print $styles; ?&gt;
+&lt;?php print $scripts; ?&gt;</code></pre>
+
+<p>Prvá z nich obsahuje meta tagy, kľúčové slová a podobne, ostatné dve
+sú celkom zrejmé – jedná sa o odkazy k CSS štýlom a skriptom.</p>
+
+<p>Keď miesto textu <em>Menu</em> pridáme do <code>div#menu</code> podobným
+spôsobom premennú <code>$menu</code>, tak všetko, čo v administrácii
+blokov pridáte do regiónu s rovnakým názvom, sa v ňom automaticky
+objaví. V našom prípade tam pôjdu pravdepodobne primárne alebo sekundárne
+odkazy – nezabudnite vhodne upraviť CSS, ako som už naznačil vyššie.</p>
+
+<p>Do <code>div#content</code> pôjde teda celkom analogicky premenná
+<code>$content</code>, ale neukvapujte sa ešte. Nezabudnite na veľmi
+dôležité premenné <code>$tabs, $help, $messages</code>. Zatiaľčo absencia
+posledných dvoch by na vás uvalila len isté informačné embargo (obsahujú
+nápovedu a hlášky o výsledku jednotlivých akcií na webe), chýbajúca
+premenná <code>$tabs</code> by vás odstrihla od charakteristických
+Drupalovských záložiek, veľmi užitočných napríklad pre úpravy
+článkov, či konfiguráciu webu všeobecne. Keďže tieto premenné nie vždy
+niečo obsahujú, zobrazme ich len ak áno.</p>
+
+<pre
+class="php"><code>&lt;?php if ($tabs): print '&lt;div class="tabs"&gt;'.$tabs.'&lt;/div&gt;'; endif; ?&gt;
+&lt;?php if ($help) { ?&gt;&lt;div class="help"&gt;&lt;?php print $help ?&gt;&lt;/div&gt;&lt;?php } ?&gt;
+&lt;?php if ($messages) { ?&gt;&lt;div class="messages"&gt;&lt;?php print $messages ?&gt;&lt;/div&gt;&lt;?php } ?&gt;
+&lt;?php print $content; ?&gt;</code></pre>
+
+<p>Do <code>div#left, div#right</code> pôjdu teda celkom pochopiteľne
+premenné <code>$left, $right</code>. Výsledný <code>page.tpl.php</code> bude
+teda vyzerať takto:</p>
+
+<pre
+class="html"><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" lang="sk"&gt;
+&lt;head&gt;
+        &lt;title&gt;&lt;?php print $head_title; ?&gt;&lt;/title&gt;
+        &lt;?php print $head; ?&gt;
+        &lt;?php print $styles; ?&gt;
+        &lt;?php print $scripts; ?&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        &lt;div id="wrapper"&gt;
+                &lt;div id="header"&gt;&lt;/div&gt;
+                &lt;div id="menu"&gt;&lt;?php print $menu; ?&gt;&lt;/div&gt;
+                &lt;div id="left"&gt;&lt;?php print $left; ?&gt;&lt;/div&gt;
+                &lt;div id="content"&gt;
+                        &lt;?php if ($tabs): print '&lt;div class="tabs"&gt;'.$tabs.'&lt;/div&gt;'; endif; ?&gt;
+                &lt;?php if ($help) { ?&gt;&lt;div class="help"&gt;&lt;?php print $help ?&gt;&lt;/div&gt;&lt;?php } ?&gt;
+                &lt;?php if ($messages) { ?&gt;&lt;div class="messages"&gt;&lt;?php print $messages ?&gt;&lt;/div&gt;&lt;?php } ?&gt;
+                        &lt;?php print $content; ?&gt;
+                &lt;/div&gt;
+                &lt;div id="right"&gt;&lt;?php print $right; ?&gt;&lt;/div&gt;
+        &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<p><strong>Čas tejto akcie: 5 minút.</strong></p>
+
+<p>A tým je vaša téma hotová. Je to, pochopiteľne, veľmi jednoduchá
+grafická téma, ale vytvorili ste ju úplne sami a za menej ako polhodinku,
+pričom ste sa nemuseli hrabať v niekoho iného HTML a CSS súboroch ale máte
+solídny základ pre ďalšie jej úpravy. Pravdepodobne budete pridávať
+ďalšie regióny – chýba nám napríklad pätička stránky. Neskôr budete
+chcieť pomocou súborov <code>block.tpl.php</code>, <code>node.tpl.php</code>,
+<code>comment.tpl.php</code> upraviť vzhľad blokov, článkov či komentárov.
+To už je na vás a na vašom štúdiu možností Drupalu, ktorú sú, ako som
+už bol býval naznačil v úvode, veľmi široké.</p>
+
+<p><strong>Na tomto návode som chcel hlavne ukázať že sa dá ísť aj
+opačným smerom ako upravovať vzhľad pre Drupal. Dá sa totiž, ako ste
+videli, vkladať Drupal do hotového vzhľadu. Pri jednoduchých stránkach je
+to podľa mňa tá najrýchlejšia a najčistejšia ces­ta.</strong></p>
+<strong>Doporučená literatúra:</strong>
+<ol>
+	<li><a href="http://drupal.org/node/171205">Štruktúra theme.info
+	súboru</a></li>
+
+	<li><a
+	href="http://api.drupal.org/api/drupal/modules--system--page.tpl.php/6">Premenné
+	dostupné pre súbor page.tpl.php</a></li>
+</ol>
+
+<!-- by Texy2! -->  </div>
+    </div></div>
+  </body>
+
+<!-- Mirrored from www.drupal.sk/book/export/html/679 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:41:23 GMT -->
+</html>

@@ -1,0 +1,794 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" dir="ltr">
+  
+<!-- Mirrored from www.drupal.sk/node/1046 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 18:32:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ako vytvoriť slideshow v Drupale pomocou CCK, Views a jQuery | Drupal.SK</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/arthemia_favicon/index.png" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/ckeditor/ckeditor/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/logintoboggan/logintoboggan/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/mail/simplenews/simplenews/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/texy/lib/fshl/styles/COHEN_style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/ribbon/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/aggregator/index.css?9" />
+    <script type="text/javascript" src="../../files/js/js_b60786b42cf28c172793b3f9255432b6/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip" } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://www.google-analytics.com/analytics.js","ga");ga("create", "UA-11573462-1", { "cookieDomain": "auto" });ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+  </head>
+  <body>
+    <div id="head" class="clearfloat">
+
+      <div class="clearfloat">
+        <div id="logo">
+          <a href="../../index/index.html" title="Drupal.SK"><img src="../../files/logo/index.jpg" alt="Drupal.SK" /></a>                </div>
+
+              </div>
+
+      <div id="navbar" class="clearfloat">
+          <div id="page-bar"><ul class="menu"><li class="leaf first"><a href="../../blog/index.html">Blogy</a></li>
+<li class="leaf"><a href="../../forum/index.html">Fórum</a></li>
+<li class="collapsed"><a href="../../prirucky/index.html" title="Naučte sa s nami Drupal">Príručky</a></li>
+<li class="leaf"><a href="../../stahuj/index.html">Sťahuj</a></li>
+<li class="leaf"><a href="../../komunita/index.html">Komunita</a></li>
+<li class="leaf last"><a href="../../aggregator/index.html" title="">Zo sveta</a></li>
+</ul></div>              </div>
+    </div>
+
+    <div id="page" class="clearfloat">
+
+            
+      
+      <div id="content" class="main-content with-sidebar">
+        
+        <div class="breadcrumb"><a href="../../index/index.html">Domov</a> &rsaquo; <a href="../../blog/index.html">Blogy</a> &rsaquo; <a href="../../blog/534/index.html">Blog používateľa petiar </a></div>                        <h1>Ako vytvoriť slideshow v Drupale pomocou CCK, Views a jQuery</h1>                                        <div id="node-1046" class="node clear-block">
+
+
+
+      <span class="submitted">9 september, 2011 - 22:05 poslal <a href="../../user/534/index.html" title="Zobraziť profil používateľa">petiar</a></span>
+  
+  <div class="content">
+    
+<p>V tomto návode chcem (okrem toho čo sa píše v názve) ukázať hlavne
+dve veci:</p>
+
+<ol>
+	<li>netreba na každú „hlúposť“ sťahovať modul</li>
+
+	<li>ak sa budeme správať podľa bodu 1), naučíme sa veci, ktorých použitie
+	je mnohokrát univerzálnejšie a použiteľnejšie a nestaneme sa nám, že pri
+	použití nejakého modulu narazíme na jeho limity a ostaneme v koncoch.</li>
+</ol>
+
+<p>Ukážeme si ako pridať jQuery do témy, ukážeme si ako sa dá jednoducho
+upravovať template súbor pre Views a pomocou tohto si prispôsobiť zobrazenie
+Views prakticky akokoľvek.</p>
+
+<p>Budem používať štandardnú inštaláciu Drupalu 6 – pokojne si ju
+niekde vytvorte a môžte ísť „so mnou“ krok o kroku. Tento návod som
+písal počas toho ako som to robil, takže by nemalo chýbať nič
+podstatné.</p>
+
+<ol>
+	<li>Nainštalujeme moduly <em>CCK</em>, <em>FileField</em>, <em>Imageapi</em>,
+	<em>ImageField</em>, <em>ImageCache</em> a <em>Views</em>. Predpokladám, že
+	viete ako sa to robí a ktoré submoduly presne treba pozapínať aby ste boli
+	schopní vytvoriť typ obsahu s poľom pre obrázok, prípadne pridať takéto
+	pole k existujúcemu typu obsahu.</li>
+
+	<li>Pridáme obrázok k typu obsahu Story. Nebudem v článku rozoberať
+	dopodrobna ako sa to robí, predpokladám, že vytvoriť pole pomocou modulu
+	<em>CCK</em> vie každý, kto sa o Drupal čo len obtrel, ale upozorním na
+	dôležité veci. Ak z nejakého dôvodu povolíte uploadovať obrázky
+	návštevníkom stránky, venujte pozornosť obmedzeniam veľkosti aby vám
+	nezaplnili diskový priestor zbytočne veľkými obrázkami. Keďže chcem
+	ukázať ešte jednu užitočnú fintu vo Views, nechajme toto pole
+	nepovinné.</li>
+</ol>
+
+<div class="figure"><img src="http://drupal.sk/files/cck_obrazok.png" alt="" />
+	<p>Naše nové CCK pole</p>
+</div>
+
+<p>3. Pre účely tohto článku som nechcel vytvárať novú tému, ale budeme
+potrebovať mierne upravovať css a budeme tiež do adresára témy pridávať
+súbory a keďže nie je dobrý nápad robiť to v adresári tém dodávaných
+s Drupalom, skopírujme si Garland do nášho adresára
+(sites/default/the­mes/), takže adresár našej témy bude
+sites/default/the­mes/garland.</p>
+
+<p>4. Teraz si vytvoríme nejaký testovací obsah, to znamená niekoľko
+článkov na ktorých budeme testovať ako sa naša slideshow zobrazuje.
+Vytvorte jeden článok aj bez obrázku. Na to, ako sa obrázky zobrazujú
+v článkoch ako takých teraz ohľad brať nebudeme. Pravdepodobne ich máte
+v originálnej veľkosti pod textom článku, ale o to teraz nejde. Nám ide
+o to ako sa budú zobrazovať v rámci View(s).</p>
+
+<p>5. Poďme si teraz vytvoriť <em>ImageCache preset</em>, ktorý budeme
+používať. Slideshow budeme umiestňovať do ľavého stĺpca, ktorého
+vnútorná šírka v téme Garland je 195px, takže túto zvolíme aj pri
+vytváraní <em>ImageCache presetu</em>.</p>
+
+<div><img src="http://drupal.sk/files/left_195px.png" alt="" /></div>
+
+<p>Ten nazveme napríklad <em>slideshow</em> a pridáme mu akciu <em>Add
+Scale</em>. Zaškrtnutím <em>Allow Upscaling</em> zaručíme aby boli aj
+obrázky užšie ako 195px zväčšené na 195px. Nevýhodou je, že v tomto
+prípade budú obrázky nekvalitné, takže ak sa tomuto chcete vyhnúť,
+špecifikujte minimálne rozlíšenie už pri vytváraní poľa pre obrázok
+(bod 2).</p>
+
+<div><img src="http://drupal.sk/files/imagecache_preset.png" alt="" /></div>
+
+<p>Samozrejme, že takto vytvorený <em>preset</em> môže mať za následok,
+že jednotlivé obrázky budú mať rôznu výšku, ak nemajú rovnaký pomer
+strán. Ak chcete aby mali obrázky v slideshow aj rovnakú výšku, použite
+akciu <em>Add Scale and Crop</em>.</p>
+
+<p>6. Teraz vytvoríme View. Bude celkom jednoduché – zobrazíme obrázok,
+názov a celé to bude aktívny odkaz na článok. Lenže nebudeme využívať
+možnosti Views ako napríklad <em>Link this field to its node</em>
+(prelinkovať pole na článok), pretože my budeme robiť kúzla vo Views
+template. Takže obrázok, názov i cestu vytvoríme len ako jednoduché polia
+bez popisov. Na zobrazenie obrázku použijeme vytvorený <em>ImageCache
+preset</em> a cestu k článku generujeme absolútnu, takže výsledné View
+bude vyzerať nejako takto:</p>
+
+<div><img src="http://drupal.sk/files/view_prve.png" alt="" /></div>
+
+<p>Všimnite si, že môj prvý článok <em>No image at all</em> nemá žiadny
+obrázok a preto ho v slideshow nechceme. Ako takýto článok vyfiltrovať? Tu
+je tá finta – vytvorte <em>Relationship</em> pre pole Obrázok a nastavte ho
+ako požadovaný (<em>Require this relationship</em>). To je celé.</p>
+
+<p>Čo teraz potrebujeme spraviť? Chceme, aby sa nadpis článku nachádzal
+niekde vovnútri obrázku a aby sa odkaz nezobrazoval, ale bol použitý na to,
+aby celý obrázok odkazoval na svoj článok. Preto ideme upraviť template pre
+toto view a tuto začína celé krásne kúzlo témovania Views.</p>
+
+<p>Ak ste to ešte nespravili, vytvorte display typu Block. V základných
+nastaveniach kliknite na <em>Theme: Information</em>. Ukáže sa vám kompletný
+zoznam súborov, ktoré sa dajú použiť pre prispôsobenie zobrazovania Views.
+Zhora dole ide o skupiny súborov pre jednotlivé úrovne View – od template
+súboru pre celkové View až po súbory pre jednotlivé polia. <em>Style
+output</em> a <em>Row style output</em> sa samozrejme prispôsobujú podľa
+rovnako pomenovaných vlastností v základných nastaveniach. V rámci jednej
+úrovne sú potom jednotlivé templaty zobrazené podľa ich platnosti – od
+najvšeobecnejších po najkonkrétnejšie, pričom aktívny súbor je
+zvýraznený tučným písmom. Napríklad súbor
+<strong>views-view-fields.tpl.php</strong> (pri <em>Row style output</em>) bude
+platiť pre všetky Views, ktoré majú nastavený <em>Row style</em> na
+<em>Fields</em> (polia), ale súbor
+<strong>views-view-fields–slideshow–block-1.tpl.php</strong> bude platiť
+len pre View s názvom <em>slideshow</em> a len pre prvý <em>Block
+display</em>. Takto si môžte určiť na ktoré Views majú mať vaše úpravy
+dopad – či sú všeobecné pre všetky alebo špecifické, pre jedno
+konkrétne View, prípadne display. My si vyberme napríklad súbor s názvom
+<strong>views-view-fields–slideshow–block.tpl.php</strong> – tento platí
+pre všetky display typu <em>Block</em> v rámci View <em>slideshow</em>.
+Vytvoríme súbor s týmto názvom v adresári témy.</p>
+
+<p>Keď kliknete na názov typu súboru (<em>Row style output</em>), zobrazí sa
+vám jeho východzí obsah. Skopírujte ho do nami vytvoreného súboru a
+uložte. Keď to máme, vráťme sa do <em>Theme: Information</em> a kliknime na
+<em>Rescan Template Files</em>. Systém prehľadá template súbory a zistí či
+niekde nejaký nepribudol. Keďže nám pribudol, mal by sa miesto
+<strong>views-view-fields.tpl.php</strong> zvýrazniť tučným súbor
+<strong>views-view-fields–slideshow–block.tpl.php</strong>. Tak vieme, že
+Drupal bude pri generovaní View brať do úvahy nami vytvorený template
+súbor. A teraz sa na ňom poďme vyblázniť!</p>
+
+<div><img src="http://drupal.sk/files/theming_info.png" alt="" /></div>
+
+<p>Ten súbor ako taký je veľmi konvenčný – vezme každé pole a zobrazí
+ho podľa jeho nastavení, pričom mu pridá blokový alebo <em>inline</em>
+oddeľovač. To nechceme, my si vytvoríme úplne iný HTML markup, takže celý
+ten súbor (okrem komentárov, tie sa môžu zísť) zmažeme.</p>
+
+<p>Obsah každého poľa sa nachádza v premennej
+<strong>$fields['nazov_po­la]-&gt;content</strong>, pričom <em>nazov_pola</em>
+je identifikator konkrétneho poľa. Ten najlepšie zistíme tak, že pôjdeme
+do nášho View, v zozname polí klikneme na úplne posledné a tam na
+<em>Rewrite the output of this field</em>. Vzory pre nahradenie nám ukážu
+identifikátory jednotlivých polí:</p>
+
+<div><img src="http://drupal.sk/files/field_names.png" alt="" /></div>
+
+<p>Teraz už vieme, že naše polia sa nachádzajú v týchto premenných:</p>
+
+<pre
+class="php"><code>$fields['field_story_obrazok_fid']-&gt;content</code></pre>
+
+<p>(obrázok),</p>
+
+<pre class="php"><code>$fields['title']-&gt;content</code></pre>
+
+<p>(názov) a</p>
+
+<pre class="php"><code>$fields['path']-&gt;content</code></pre>
+
+<p>(odkaz).</p>
+
+<p>A poďme na náš templatovací súbor! Z celkom pochopiteľných dôvodov,
+ktoré pramenia zo znalostí CSS a ktoré tu preto nemusíme dopodrobna
+rozoberať, napíšeme niečo takéto:</p>
+
+<pre
+class="html"><code>&lt;div class="slide"&gt; &lt;!-- oznacime si cely slide --&gt;
+        &lt;a href="&lt;?=$fields['path']-&gt;content?&gt;"&gt;
+                &lt;div class="obrazok"&gt;
+                        &lt;?=$fields['field_story_obrazok_fid']-&gt;content?&gt;
+                        &lt;div class="nazov"&gt;
+                                &lt;?=$fields['title']-&gt;content?&gt;
+                        &lt;/div&gt;
+                &lt;/div&gt;
+        &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+<p>Všimnite si, že náhľad sa nám už trochu zmenil – síce to stále
+ešte nie je slideshow a názov článku je stále pod obrázkom, ale celý ten
+slide je odkazom na článok, aha:</p>
+
+<div><img src="http://drupal.sk/files/view_druhe.png" alt="" /></div>
+
+<p>V tomto momente sme s View skončili, pretože všetko ostatné už
+spravíme pomocou CSS a jQuery, takže View môžme uložiť a pridať ho do
+ľavého bloku, úplne hore nech nemusíme skrolovať.</p>
+
+<p>Tak poďme na to CSS najprv, nech sa pohneme trošku ďalej. Vytvorme si
+v adresári témy súbor <strong>slideshow.css</strong> a do súboru
+<strong>garland.info</strong> pridáme tento riadok (prečo, o tom píšem
+v <a href="../679/index.html">inom návode</a>):</p>
+
+<pre><code>stylesheets[screen][] = slideshow.css</code></pre>
+
+<p>Do súboru slideshow.css napíšeme zhruba toto</p>
+
+<pre
+class="css"><code>.obrazok                {position:relative;}
+.nazov                  {position:absolute;top:10px;left:10px;background:#fff;}</code></pre>
+
+<p>a nemusíme to vysvetľovať, keďže CSS by ste mali vedieť. Vy
+pravdepodobne budete chcieť, iné, možno s priehľadným pozadím, atď, toto
+je len taký základ pre účely tohto návodu. Nie moc pekný, ale funkčný.
+Naše View v ľavom bloku teraz vyzerá takto nejako:</p>
+
+<div><img src="http://drupal.sk/files/view_tretie.png" alt="" /></div>
+
+<p>Nakoniec nám chýba túto slideshow ešte rozhýbať. K tomu je úplne
+ideálny jQuery plugin Cycle, o ktorom sa viac dozviete na stránke <a
+href="http://jquery.malsup.com/cycle/">http://jquery.malsup.com/cycle/</a>. My
+potrebujeme len tento plugin stiahnuť a súbor
+<strong>jquery.cycle.min­.js</strong> nakopírovať do adresára témy a
+podadresára js, nech je v tom poriadok. Ale ešte musíme drupalu o tomto
+súbore povedať. Dá sa to dvojako, buď v súbore
+<strong>template.php</strong> takýmto riadkom:</p>
+
+<pre
+class="php"><code>drupal_add_js(drupal_get_path('theme', 'garland') .'/js/jquery.cycle.min.js');</code></pre>
+
+<p>alebo doplníme odkaz na tento súbor do <strong>garland.info</strong>,
+asi takto:</p>
+
+<pre class="js"><code>scripts[] = js/jquery.cycle.min.js</code></pre>
+
+<p>Vy si môžte samozrejme vybrať nejaký iný plugin, pre jQuery je ich
+strašne veľa. Posledný krok, ktorý nám ostáva, je aplikovať tento plugin
+na nami vytvorené View. Vytvoríme si preto súbor pre nami definované jQuery
+funkcie, nazvime ho napríklad <strong>functions.js</strong>, nakopírujem do
+podadresára js adresára témy a pridajme do Drupalu jedným
+z vyššieuvedených spôsobov. Do súboru <strong>functions.js</strong>
+napíšeme (v zmysle dokumentácie k <em>Cycle</em> pluginu) toto:</p>
+
+<pre
+class="js"><code>$('document').ready(function() {
+        $('.view-slideshow .view-content').cycle();
+})</code></pre>
+
+<p>Prečo práve tento selector? Plugin <em>Cycle</em> funguje tak, že vezme
+všetky podradené elementy daného selectoru a z tých potom vytvorí
+slideshow. No a keďže vo Views sú riadky obalené práve triedou
+<strong>.view-content</strong>, použili sme tú. Ale aby sa tento plugin
+neaplikoval na všetky Views na našej stránke, obmedzili sme tento selector
+použitím <strong>.view-slideshow</strong>.</p>
+
+<p>To je všetko, po tomto kroku by ste mali mať slideshow obrázkov, ktoré sa
+menia takým fade efektom. Praktický príklad si pozriet napríklad na titulke
+<a href="http://mpba.sk/">mpba.sk</a> (je to neziskový projekt). Ak chcete
+použiť iný efekt, musíte si preštudovať možnosti <em>Cycle</em> pluginu,
+prípadne použiť iný plugin – to už je na vás, základy
+javascriptu/jQuery by ste mali vedieť.</p>
+
+<p>V tomto návode sme upravovali len jeden template súbor pre Views, ale
+pozrite si aj iné. Práca s týmito súbormi je základ úprav grafického
+vzhľadu akéhokoľvek webu v Drupale. Nabudúce mám pre vás nachystané už
+takmer hardcore úpravy týchto súborov, tak sa pripravte.</p>
+
+<!-- by Texy2! -->  </div>
+  
+  <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../blog/534/index.html" title="Read petiar&#039;s latest blog entries.">Blog používateľa petiar</a></li>
+<li class="comment_forbidden last"></li>
+</ul></div><div id="comments"><h2 class="comments">Komentáre</h2><a id="comment-2195"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">13 september, 2011 - 08:34 poslal <a href="../../user/239/index.html" title="Zobraziť profil používateľa">frankye</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-2195" class="active">#1</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 26 február 2007</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 1 deň 9 hod</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        
+<p>Čau, super práca ..palec hore.</p>
+
+<p>Ale ako to už v Drupale chodí, vic hláv, viac ciest a tak dovoľ mi, aby
+som poznamenal, že niečo by som urobil inak:</p>
+
+<p>Bod 3 (vytrvorenie témy) i keď to s touto témou súvisí len okrajovo,
+zopár vecí by som urobil inak:</p>
+
+<ul>
+	<li>sites/default/the­mes/garland – adresár themes by som dal skôr do
+	adresára all takto „sites/all/the­mes/.......“, ak teda nehovoríme
+	o multisite a pod…</li>
+
+	<li>sites/default/the­mes/garland – nie je vhodné vytvárať novú tému
+	(ak tému presunieš do iného adresára, stáva sa z nej nová téma)
+	s rovnakým názvom „garland“.</li>
+
+	<li>je oveľa praktickejšie vytvoriť <a
+	href="http://drupal.org/node/225125">subtému</a> a nepresúvať do adresára
+	sites celý garland.</li>
+</ul>
+
+<p>Bod 6 (vloženie knižnice javascriptu)</p>
+
+<ul>
+	<li>Knižnicu javascriptu by som pomocou <a
+	href="http://api.drupal.org/api/drupal/includes--common.inc/function/drupal_add_js/6">drupal_add_js</a>
+	vložil priamo do views-theme súboru
+	<strong>views-view-fields–slideshow–block.tpl.php</strong>, pretože vtedy
+	mi Drupal zaradí knižnicu, len ak bude zobrazený aj ten blok views.</li>
+</ul>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-2196"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">13 september, 2011 - 08:46 poslal <a href="../../user/534/index.html" title="Zobraziť profil používateľa">petiar</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-2196" class="active">#2</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 22 február 2008</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 13 týždňov 23 hod</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        
+<p>Ahoj,</p>
+
+<p>vďaka za komentár, v oboch bodoch s tebou súhlasím, ale ja som tieto
+veci nechcel príliš rozoberať pretože už beztak je ten návod hrozne dlhý.
+Predpokladal som, že čo sa týka témy, tak má užívateľ tak či onak
+svoju, to presúvanie Garlandu je len taká barlička, taký „hack“. Snáď
+si kvôli mne nikto nevybuduje zlé návyky. :-) A s tým javascriptom áno,
+to je dobrá pripomienka.</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div></div>
+        
+      </div>
+
+              <div id="sidebar">
+          <div id="block-block-9" class="block block-block odd">
+  <h3>Drupal SK na Facebooku</h3>
+
+  <div class="content">
+    <p><iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FDrupalSlovensko&amp;width=300&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=false&amp;appId=172291972850481" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:558px;" allowTransparency="true"></iframe></p>
+  </div>
+</div>
+<div id="block-views-latest_topics-block_1" class="block block-views even">
+  <h3>Nové témy vo fóre</h3>
+
+  <div class="content">
+    <div class="view view-latest-topics view-id-latest_topics view-display-id-block_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">3 týždne 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">4 týždne 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2366/index.html">Hľadáme drupal programátora</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">6 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2361/index.html">Validácia prekladov</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">7 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">7 týždňov 3 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2351/index.html">Obstarávanie webovej verzie Encyklopédie Beliana</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">10 týždňov 5 dní</span>
+  </div>
+</li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2346/index.html">Views</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">11 týždňov 8 hod</span>
+  </div>
+</li>
+          <li class="views-row views-row-8 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2341/index.html">Stránka v novom okne</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">24 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-9 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2336/index.html">b2b a drupal/ubercart</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">27 týždňov 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-10 views-row-even views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2331/index.html">Bezpecnost sprav - Drupal 8</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">29 týždňov 2 dni</span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+<div id="block-views-latest_comments-block_1" class="block block-views odd">
+  <h3>Posledné komentáre</h3>
+
+  <div class="content">
+    <div class="view view-latest-comments view-id-latest_comments view-display-id-block_1 view-dom-id-2">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/239/index.html" title="Zobraziť profil používateľa">frankye</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 deň 9 hod</span>
+  </span>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content">Anonymous</span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../72/index.html">Preklad Drupal 4.7.0</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 4 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../219/index.html">Realitna kancelaria</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 4 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">3 týždne 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">4 týždne 2 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">6 týždňov 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-8 views-row-even views-row-last">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">6 týždňov 1 deň</span>
+  </span>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+<div id="block-views-Najnovsie-block_4" class="block block-views even">
+  <h3>Najnovšie v blogoch</h3>
+
+  <div class="content">
+    <div class="view view-Najnovsie view-id-Najnovsie view-display-id-block_4 view-dom-id-3">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">3 dni 17 hod</span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2296/index.html">RESTful Drupal 8 - meetup - 14.4.2016</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">38 týždňov 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2256/index.html">Prvý kontakt s Drupalom (Workshop: Základy Drupal 8)</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">47 týždňov 3 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2196/index.html">PF 2016</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">1 rok 6 dní</span>
+  </div>
+</li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2181/index.html">Pripravované akcie v novembri</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">1 rok 8 týždňov</span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+        </div>
+      
+          </div>
+
+    <div id="footer-region" class="clearfloat">
+      <div id="footer-left" class="clearfloat">
+              </div> 		
+
+      <div id="footer-middle" class="clearfloat">
+              </div>
+
+      <div id="footer-right" class="clearfloat">
+              </div>
+    </div>
+
+    <div id="footer-message">
+      2005 - 2011 Drupal.sk | Drupal is a <a href="http://drupal.com/copyright">registered trademark</a> of <a href="http://buytaert.net/">Dries Buytaert</a>. | <a href="http://drupal.org/project/arthemia">Arthemia</a> is based on the original design by <a href="http://michaelhutagalung.com/">Michael Hutagalung</a>.    </div>
+      </body>
+
+<!-- Mirrored from www.drupal.sk/node/1046 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 18:32:11 GMT -->
+</html>

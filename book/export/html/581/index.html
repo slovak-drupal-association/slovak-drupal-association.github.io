@@ -1,0 +1,588 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sk" xml:lang="sk">
+  
+<!-- Mirrored from www.drupal.sk/book/export/html/581 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 18:44:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Začíname</title>
+    <base  />
+    <link type="text/css" rel="stylesheet" href="http://drupal.sk/misc/print.css" />
+      </head>
+  <body>
+              <div class="section-1">
+          
+    <div id="node-581" class="section-2">
+  <h1 class="book-heading">Začíname</h1>
+    <div id="node-381" class="section-3">
+  <h1 class="book-heading">Skôr než začnete</h1>
+  
+<blockquote>
+	<p>Začiatok je najdôležitejšia časť práce. – [ <em>Platón</em> ]</p>
+</blockquote>
+
+<p>Táto časť vám spostredkuje nevyhnutné základy, ktoré potrebujete na
+prípravu vašich prvých stránok v Drupale.</p>
+
+<p>Na príručkách sa pracuje, prosíme vás o trpezlivosť. Ďakujeme</p>
+
+<!-- by Texy2! -->  </div>
+<div id="node-397" class="section-3">
+  <h1 class="book-heading">Prehľad</h1>
+  
+<p>Ľudia často opisujú Drupal ako „systém na správu obsahu“ (CMS). Na
+rozdiel od typického CMS je však viac zameraný na konfigurovateľnosť a
+prispôsobenie.</p>
+
+<p>Jeho architektúra poskytuje ohromnú flexibilitu a pritom umožňuje aj
+neprogramátorovi postaviť pomerne rozsiahle a komplexné weby.</p>
+
+<p>V prípade že chcete vediet viac, prečítajte si prehľad na <a
+href="http://drupal.org/getting-started/before/overview">http://drupal.org/…ore/overview</a></p>
+  </div>
+<div id="node-390" class="section-3">
+  <h1 class="book-heading">Drupalovské koncepty</h1>
+  
+<p>Skôr než Drupal nainštalujete, pohrajte sa s ním a spoznajte, čo vám
+môže ponúknuť a ako dosiahnete, čo potrebujete.</p>
+
+<p>Táto sekcia vám pomôže v rozhodovaní, či je Drupal vhodný pre váš
+projekt.</p>
+
+<p>Čas, ktorý na začiatku investujete do spoznania systému, sa vám
+v dlhodobom horizonte vráti „aj s úrokmi“.</p>
+
+<!-- by Texy2! -->  <div id="node-391" class="section-4">
+  <h1 class="book-heading">Technologický zásobník</h1>
+  
+<p>Drupal je súčasťou technologického zásobníka, ktorý obsahuje množstvo
+dôležitých vecí:</p>
+
+<p><strong>Server</strong> je počítač, ktorý poskytuje informácie a služby
+pre ostatné počítače v sieti.</p>
+
+<p><strong>Operačný systém</strong> je softvér, ktorý beží na serveri.
+Unix, Linux, BSD, OS X a Windows je len niekoľko príkladov.</p>
+
+<p><strong>Databáza</strong> je štruktúrovaný zber záznamov. Drupal
+používa databázu na ukladanie väčšiny obsahu a nastavenie pre vaše
+stránky, niektorých obsahov, ako sú mediálne súbory zvyčajne uložené
+v súborovom systéme servera.</p>
+
+<p><strong>Webový server</strong> je softvérový komponent, zodpovedný za
+doručovanie webových stránok. Príkladom sú Apache a Microsoft IIS.</p>
+
+<p><strong>PHP</strong> je programovací jazyk, ktorý umožňuje webovým
+vývojárom vytvárať dynamický obsah, ktorý pracuje s databázou.</p>
+
+<p><strong>Drupal</strong> slúži na budovanie dynamických webových stránok,
+ktoré ponúkajú širokú škálu funkcií a služieb, vrátane správy
+užívateľov, publikačnej workflow, diskusie, agregovanie metaúdajov a XML
+publikovanie obsahu pre zdieľané účely. Drupal inštalácia sa obvykle
+skladá z kombinácie základného a pridaných modulov.</p>
+
+<p><strong>Tip</strong> Drupal 5 a 6 pobežia aj na php verzii nižšej ako
+5. Drupal 7 pracuje na PHP 5.2.</p>
+  </div>
+<div id="node-399" class="section-4">
+  <h1 class="book-heading">Je Drupal tým správnym nástrojom pre váš projekt?</h1>
+  
+<p>Hoci Drupal ponúka veľmi silný a pružný rámec, ktorý je použitý na
+vybudovanie prakticky akejkoľvek webovej stránky, možno nie je najlepšie
+riešenie pre vaše konkrétne požiadavky.</p>
+
+<p>Existuje niekoľko situácií, kedy Drupal môže alebo nemusí byť vašou
+najlepšou voľbou:</p>
+
+<ul>
+	<li>Ak je váša požiadavka len napísať osobný blog, môžete využiť jednu
+	z viacerých špecializovaných blogovacích platforiem, ako WordPress. Hoci
+	Drupal poskytuje vynikajúcu platformu blogov „krabicového systému“,
+	pravdepodobne zistíte, že softvér, ktorý je určený len pre blogovanie bude
+	mať spravidla jednoduchšie administratívne rozhranie.</li>
+
+	<li>Podobne, ak vašou jedinou požiadavkou je vytvorenie wiki, mali by ste
+	zvážiť použitie špecializovaného wiki softvéru Wikimedia alebo hostované
+	wiki riešenie. Môžete samozrejme nastaviť Drupal ako wiki (za pomoci
+	niekoľkých modulov), ale je jednoduchšie použiť viac špecializovaných
+	riešení.</li>
+
+	<li>S každou ďalšou verziou sa stáva Drupal jednoduchší na použitie, ale
+	ako väčšina výkonných nástrojov, sa bude mať vždy co učiť. Ak vy alebo
+	vaša organizácia nie sú ochotní stráviť nejaký čas učenia základov
+	Drupal-u (alebo ak nie ste schopný najať si Drupal odborníka), nemusí to
+	byť váša najlepšia voľba. Drupal je vynikajúcou voľbou pre niektoré
+	z týchto požiadaviek:</li>
+
+	<li>Potrebujete web, ktorý je dostatočne pružný, aby ste ho mohli vyvíjať
+	v ľubovoľnom smere. Napríklad môžete začať s blogom, ale chcete
+	postupne pridávať ďalšie funkcie, ako wiki, elektronický obchod,
+	fóra, atď</li>
+
+	<li>Chceš stránky, ktoré možno ľahko nakonfigurovať tak, aby boli
+	v interakcii s ostatnými webmi, alebo s inými technológiami.</li>
+
+	<li>Chcete stránky, ktoré ľahko zvládnu zložité formuláre a
+	workflow.</li>
+
+	<li>Potrebujete schopnosť vytvoriť si vlastné typy obsahu. Napríklad
+	pridaním vlastné pole na stránke.</li>
+
+	<li>Potrebujete schopnosť rýchlo usporiadať a zobraziť zoznamy
+	informácií.</li>
+
+	<li>Musíte rýchlo rozvíjať vlastné funkčnosti.</li>
+</ul>
+  </div>
+<div id="node-393" class="section-4">
+  <h1 class="book-heading">Terminológia</h1>
+  
+<p>Pripravujeme kompletny drupal slovnik. Ak neviete čo znamenajú niektoré
+výrazy kliknite: <a
+href="http://drupal.org/getting-started/before/terminology">http://drupal.org/…/terminology</a>
+Ďakujeme za pochopenie.</p>
+  </div>
+<div id="node-398" class="section-4">
+  <h1 class="book-heading">Všeobecné koncepty</h1>
+  
+<p>Chcete vybudovať internetovú stránku, ale neviete, kde začať. Na tom to
+mieste sa dozviete o niektorých ústredných konceptoch.</p>
+
+<h1>Čo je to uzol?</h1>
+
+<p>Hlavným stavebným kameňom Drupal je uzol. Slovo ‚node‘ (uzol) nie je
+súčasťou nejakej siete. Naopak, predstavte si ho ako kus puzzle, z ktorých
+sa skladajú stránky. Uzol môže byť súčasťou fóra, blogu alebo knihy.
+Pomocou modulu <em>Content Construction Kit</em> si môžete vytvoriť
+ľubovoľné množstvo užívateľských uzlov. Pamätajte, že každý uzol má
+typ – typ obsahu. Má tiež Uzol-Node ID, Nadpis, a Telo, a dátum
+vytvorenia, autora a niektoré ďalšie vlastnosti. Je uložený spolu so
+všetkými ostatnými uzlami v jednej z tabuliek v databáze.</p>
+
+<p>Nech vás neprekvapí, že už základný Drupal obsahuje mnoho tabuliek.
+Jadro ich má asi 50. Aby ste získali predstavu tom, čo ktorá tabuľka
+obsahuje, je treba venovať im bližší pohľad,</p>
+
+<p>Užívatelia majú vlastné tabuľky a niektorí z nich sú autormi uzla.
+Takže medzi tabuľkou používateľov a tabuľkou uzlov existuje vzťah.
+Jediným spôsobom ako nájsť tento vzťah, je prehľadávať všetky prvky
+oboch tabuliek, kým nenájdeme príslušné položky. Našťastie pre nás,
+databázový server je veľmi rýchly.</p>
+
+<p>Každý uzol môže mať neobmedzený počet komentárov. Komentáre sú
+uložené v samostatnej tabuľke. Ak chcete nájsť všetky komentáre
+v jednom uzle, bude potrebné hľadať v celej tabuľke komentárov.</p>
+
+<h1>Uzly – Ako to funguje?</h1>
+
+<p>Pozrime sa na adresný riadok prehliadača. Pravdepodobne obsahuje <a
+href="../../../../node/398/index.html">http://drupal.sk/node/398</a>. Táto adresa
+predstavuje spôsob, ako povedať Drupalu „Načítaj všetky relevantné
+informácie pre uzol 398, vrátane akýchkoľvek vzťahov (komentáre,
+užívatelia, atď) a zobraz ich“. Tomu sa hovorí <em>databázová
+požiadavka</em>.</p>
+
+<p>Väčšina databázových požiadaviek Drupalu je napevno zadaná
+v moduloch. Napríklad modul <em>Tracker</em> vyhľadá všetky uzly a zoradí
+výsledky podľa dátumu. Tak to funguje aj na vašom webe, pokiaľ ste tento
+modul aktivovali.</p>
+
+<p>Prejdite myšou po menu a sledujte v stavovom riadku linky jednotlivých
+položiek. Ihneď budete mať predstavu o tom, aké databázové požiadavky
+Drupal vykonáva.</p>
+
+<p>V Drupal moduloch môžete vykonávať veľa dátových operácií.
+Napríklad už pri načítaní stránky, ktorú ste sami vložili do systému,
+vidíte v hornej časti stránky záložky zobraziť/upraviť. Na iných
+stránkach sa tieto záložky objaviť nemusia. To je automatizované správanie
+definované užívateľskými privilégiami.</p>
+
+<h1>Menu a bloky</h1>
+
+<p>Menu sa zobrazuje v blokoch. <em>Bloky</em> sú stĺpce po ľavej alebo
+pravej strane vašej webovej stránky. Od D6.1 je modul menu v predvolenom
+nastavení aktivovaný.</p>
+
+<p>Všetky moduly sa dodávajú s predvolenými položkami v menu. Často ich
+je potrebné iba aktivovať, alebo stačí len zapnúť blok. Môžete zmeniť
+jeho umiestnenie v stromovej štruktúre menu, ak si budete priať, môžete
+zmeniť jeho názov. Vo viacerých prípadoch sa položka menu zobrazuje len ak
+máte potrebné provilégiá. Napríklad položka Administrácia sa zobrazuje
+len návštevníkom, ktorí majú práva administrátora.</p>
+
+<p>Môžete vytvoriť aj vlastné položky menu, musíte však napísať platnú
+cestu k obsahu.</p>
+  </div>
+<div id="node-400" class="section-4">
+  <h1 class="book-heading">Typy obsahu</h1>
+  
+<p>Drupal má niekoľko rôznych typov obsahu. Základná sada je pomerne malá,
+ale veľmi flexibilná. V predvolenom nastavení sú len dva druhy obsahu,
+Stránka (page) a Story. Z historického pohľadu je medzi nimi rozdiel,
+v súčasnosti sú to iba rozdielne typy uzlov. Ako ich používať, je len na
+vás. Ak chcete povoliť ďalšie typy obsahu, ktoré sú tu uvedené, je
+potrebné ísť do <em>Administrácia &gt; Moduly</em> a vyberte typ, ktorý
+chcete povoliť.</p>
+
+<p>V predchádzajúcich verziách sDrupalu sa dnešné „typy obsahu“
+nazývali „typy uzla“. V databáze je obsah uzla uložený v tabuľkách
+<em>node</em> a <em>node_revisions</em>.</p>
+
+<p><strong>Blog</strong><br />
+Blogy alebo weblogy je iné pomenovanie pre on-line denník alebo diár. Je to
+miesto, kde si členovia komunity môžu písať a zdieľať svoje myšlienky
+s inými.</p>
+
+<p><strong>Kniha</strong> Stránky knihy sú navrhnuté tak, aby boli
+súčasťou spoločnej knihy. Príklad spoločnej knihy je napríklad táto sada
+príručiek.</p>
+
+<p><strong>Komentáre</strong><br />
+Komentáre v skutočnosti nie sú uzly, sú samostatné obsahový typ.
+Komentáre umožňujú pridať komentáre k inému uzlu, ktorý bol
+vytvorený.</p>
+
+<p><strong>Fórum</strong><br />
+<em>Diskusné fóra</em> sú kolekcie uzlov a ich komentáre.</p>
+
+<p><strong>Stránka</strong><br />
+Stránky sú jednoduché uzly, obvykle používané pre statický obsah, ktorý
+môže (ale nemusí) byť vložený do hlavnej navigačnej lišty.</p>
+
+<p><strong>Anketa</strong><br />
+Anketa je výber viacerých možností, otázka je položena a používatelia
+môžu odpovedať a vidieť odpovede.</p>
+
+<p><strong>Story</strong><br />
+Príbehy sú generické stránky typu, pre správu obsahu. Obvykle sa
+používajú na informácie, ktoré sú relevantné iba v určitom čase (napr.
+novinové články) a očakáva sa, že časom stratia aktuálnosť a budú
+zaradené do archívu.</p>
+
+<p>Okrem týchto základných typov, si môžete vyrobiť vlastný typ obsahu.
+Vytvoríte ich cez menu <em>Správa obsahu &gt; Typy obsahu &gt; Pridať typ
+obsahu</em>. Niektoré moduly obsahujú ďalšie druhy obsahu so
+špecializovanými funkciami. Ich zoznam je uvedený v sekcii Obsah.</p>
+
+<p>Ak by ste chceli vytvoriť svoj vlastný špeciálny typ obsahu, použite na
+to <em>Content Construction Kit</em> (CCK, od D7 v jadre), ktorý vám umožní
+pridať ďalšie políčka pre svoje obsahové typy. Ďalšie informácie
+nájdete (TODO: doplniť odkaz na Content Construction Kit Handbook)</p>
+  </div>
+<div id="node-402" class="section-4">
+  <h1 class="book-heading">Pochopenie Drupal ciest (path)</h1>
+  
+<p>Príklady Drupal trasy</p>
+
+<ul>
+	<li>node/3 – uzol/3</li>
+
+	<li>flexinode/7</li>
+
+	<li>taxonomy/term/6</li>
+
+	<li>flexinode/list/3</li>
+
+	<li>user/login (veľmi užitočné, keď vypnete blok Prihlásenie)</li>
+</ul>
+
+<p>Ako nájsť Drupal cesty? Ak chcete nájsť Drupal cestu určitej stránky,
+prejdite na admin&gt;&gt; obsah. Uvidíte zoznam všetkých stránok, ktoré ste
+vytvorili.</p>
+  </div>
+<div id="node-401" class="section-4">
+  <h1 class="book-heading">Prezeranie a editácia stránokv Drupale sú takmer rovnaké</h1>
+  
+<p>Ľudia, ktorí už predtým používali iné editory (FrontPage, Dreamweaver)
+alebo CMS (Joomla aťď) sa pýtajú, akým spôsobom pristupovať k admin
+oblasti alebo „back-end“ v Drupale. Niekedy sa pýtajú, ako si môžu
+prezrieť zmeny.</p>
+
+<ul>
+	<li>V Drupale, nie je veľký rozdiel, lebo poskytuje jednotné rozhranie.</li>
+
+	<li>Drupal obvykle vyzerá skoro rovnako ako pre neprihláseného navštevníka,
+	rozdiel je len v tom, že prihláseny návštevník, redaktor alebo admin vidia
+	rôzne administračné prvky.</li>
+</ul>
+
+<p>Zistili sme, že ľudia, ktorí nikdy nepoužili CMS, sú často oveľa menej
+zmätení z tohto prístupu, ako ľudia, ktorí predtým používali systémy,
+kde ‚vstup‘ vyzeral úplne odlišné od ‚výstupu‘. Je to len vec uhla
+pohľadu.</p>
+  </div>
+</div>
+<div id="node-515" class="section-3">
+  <h1 class="book-heading">Verzie drupalu</h1>
+  <p>Tietom stránky obsahujú odkazy na informácie o jednotlivých verziách Drupalu.</p>
+  <div id="node-392" class="section-4">
+  <h1 class="book-heading">Číslovanie verzií</h1>
+  
+<p>Aktuálna stabilná verzia je Drupal 6. Nasledujúca verzia bude Drupal
+7. Je vo fáze pred vydaním ostrej verzie (január 2010). Drupal 5 je stále
+podporovaný.</p>
+
+<p><strong>Ako zistím na ktorej verzii Drupalu beží môj web?</strong>
+Použite: <em>Administrácia &gt; logy &gt; Status report</em>. Ak používate
+Drupal 5 a vyšší, v tabuľke nájdete číslo verzie.</p>
+
+<p>Alternatívne, pozrite sa na začiatok súboru s názvom CHANGELOG.txt
+v koreňovom priečinku vašej inštalácie drupalu.</p>
+
+<p>Ak CHANGELOG.txt chýba, môžete skontrolovať v system.module, kde sa
+nachádza definícia podobná tejto:</p>
+
+<p>define(‚VERSION‘, ‚5.5‘);</p>
+
+<p>Táto definícia vám ukáže, ktorú verziu používate. Ak sa definícia
+v súbore nenachádza,pou­žívate verziu staršiu ako 4.7.2.</p>
+  </div>
+<div id="node-396" class="section-4">
+  <h1 class="book-heading">Drupal 4.7.x</h1>
+  
+<p>Tu nájdete odkaz na seriál venovaný Drupalu 4.7.x, ktorý bol uverejnený
+na serveri Interval.cz.</p>
+
+<p>Vzhľadom k tomu že Drupal 4.7.x je už zastaralý, ponechávame tu odkaz
+na tento seriál z toho dôvodu, že základné koncepty sa nezmenili a aj
+v tomto seriáli je možné nájsť zaujímavé informácie.</p>
+
+<h3>Drupal – vlastní web jednoduše</h3>
+
+<div class="item-list">
+	<ul>
+		<li><a href="http://interval.cz/clanky/drupal-seznamte-se/">Drupal – seznamte
+		se</a></li>
+
+		<li><a
+		href="http://interval.cz/clanky/drupal-instalace-a-zakladni-koncepty/">Drupal –
+		instalace a základní koncepty</a></li>
+
+		<li><a
+		href="http://interval.cz/clanky/drupal-tvorime-osobni-weblog/">Drupal –
+		tvoříme osobní weblog</a></li>
+
+		<li><a
+		href="http://interval.cz/clanky/drupal-komfortni-vkladani-obsahu/">Drupal –
+		komfortní vkládání obsahu</a></li>
+
+		<li><a
+		href="http://interval.cz/clanky/drupal-tvorba-vlastniho-vzhledu/">Drupal –
+		tvorba vlastního vzhledu </a></li>
+	</ul>
+</div>
+  </div>
+<div id="node-384" class="section-4">
+  <h1 class="book-heading">Drupal 5.x</h1>
+    </div>
+<div id="node-383" class="section-4">
+  <h1 class="book-heading">Drupal 6.x</h1>
+    </div>
+</div>
+<div id="node-514" class="section-3">
+  <h1 class="book-heading">Drupal distribúcie</h1>
+  
+<p>Keďže Drupal je vysoko modulárny a škálovateľný, dodáva sa zvlášť
+jadro a základné moduly a zvlášť moduly vyvíjané komunitou. Na vás je
+potom vyskladať si zo súčiastok kompletný systém.</p>
+
+<p>Keďže ale na sprevádzkovanie komplexnejšieho webu je často nevyhnutné
+nainštalovať a nastaviť viacero modulov, umožňuje Drupal zostaviť si
+vlastnú distribúciu, ktorá v sebe obsahuje moduly predinštalované a
+predkonfigurované.</p>
+
+<p>V komunite existuje viacero zabehaných a živo vyvíjaných distribúcií.
+Každá z nich je zameraná trochu iným smerom (video, noviny, project
+management, atď.) aktuálny zoznam nájdete napr. na <a
+href="http://drupaldistrowatch.com/drupal/distributions">drupaldistrowat­ch.com</a></p>
+
+<!-- by Texy2! -->  </div>
+<div id="node-395" class="section-3">
+  <h1 class="book-heading">Drupal po slovensky</h1>
+    <div id="node-1520" class="section-4">
+  <h1 class="book-heading">Drupal v slovenskom jazyku (inštalačný profil)</h1>
+  <p>Sťahujte z projektovej stránky <strong><a href="http://drupal.org/project/slovak_install">slovak_install</a></strong></p>
+<p><a href="http://drupal.org/project/slovak_install">Slovenský Drupal inštalačný profil</a> slúži na rýchlejšie a ľahšie nainštalovanie Drupalu v <a href="http://localize.drupal.org/translate/languages/sk" title="Slovenský preklad Drupalu">Slovenskom jazyku</a>. Inštaluje rovnaké moduly, ako štandardná inštalácia v <a href="http://drupal.org/project/drupal">základnej inštalácii Drupalu</a> s ďalšími dvoma modulmi, ktoré slúžia na import a používanie prekladu.</p>
+<p><strong>Nainštaluje modul:</strong><br />
+ - Locale (ktorý obsahuje jadro Drupalu)<br />
+<strong>Doplní a nainštaluje modul:</strong><br />
+ - <a href="http://drupal.org/project/l10n_update" title="Stiahne preklady z prekladového serveru Drupalu.">Localization Update</a></p>
+<h2>Funkčnosť</h2>
+<p><strong>Na rozdiel od štandardnej inštalácie Slovenský Drupal inštalačný profil::</strong></p>
+<ul>
+<li>Preskočí výber jazyka  - zvolí automaticky slovenčinu</li>
+<li>Naimportuje základný súbor so slovenským jazykom</li>
+<li>Pri ďalšom kroku bude predvolená krajina “Slovensko” a časové pásmo na “Europe/Bratislava”</li>
+<li>Zaktualizuje na najnovšiu verziu slovenský jazyk priamo z prekladového serveru localize.drupal.org</li>
+<li>Po inštalácii bude nainštalovaný aj modul “Localization Update”, ktorý po doplnení a nainštalovaní každého ďalšieho modulu, automaticky naimportuje aj jeho preklad z localize.drupal.org</li>
+</ul>
+<h2>Podpora</h2>
+<p>Projekt Slovenský Drupal inštalačný profil bol vytvorený na podporu <a href="../../../../node/1364/index.html" title="Slovenská Drupal Asociácia">Slovenskej Drupal Asociácie</a>, ktorej jedným z cieľov je “Vytvárať lepšie podmienky pre začínajúcich používateľov Drupalu na Slovensku.”</p>
+  <div id="node-1523" class="section-5">
+  <h1 class="book-heading">Slovenská Drupal inštalácia (video 2 min)</h1>
+  <p><iframe src="http://player.vimeo.com/video/53410279?badge=0" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</p><p><a href="http://vimeo.com/53410279">Slovanská Drupal inštalácia</a> from <a href="http://vimeo.com/user14653479">Viliam</a> on <a href="http://vimeo.com/">Vimeo</a>.</p>
+  </div>
+<div id="node-1524" class="section-5">
+  <h1 class="book-heading">Slovenský Drupal inštalačný profil - verzia 2</h1>
+  
+<p>Ahojte Drupalisti,<br />
+v poslednom čase som zrealizoval inštalačný profil <a
+href="http://drupal.org/project/slovak_install">Drupal v Slovenskom jazyku</a>
+(viac čítajte aj tu: <a
+href="../../../../node/1520/index.html">http://drupal.sk/node/1520</a>) , čo je
+inštalačný profil Drupalu. Verím, že veľa pomôže každému Drupalistovi,
+ktorý často inštaluje Drupal v Slovenskom jazyku.</p>
+
+<p>Chcem vás však poprosiť o pomoc pri hľadaní čo <strong>najlepšej
+cesty pre druhú verziu</strong>.</p>
+
+<p>Môj plán je totiž okrem prvej verzie (7.x-1.0) vytvoriť ďalšiu verziu,
+ktorá by mala zahŕňať aj moduly, ktoré sa na slovensku inštalujú do skoro
+každého Drupalu + môže to obsahovať aj konfiguráciu niektorého
+z nich.</p>
+
+<p>Moja predstava je:</p>
+
+<ol style="list-style-type:lower-alpha">
+	<li>Doplniť
+		<ol style="list-style-type:upper-roman">
+			<li>Views
+				<ul>
+					<li>ctools</li>
+				</ul>
+			</li>
+
+			<li>Pathauto
+				<ul>
+					<li>Token</li>
+
+					<li>Transliteration</li>
+				</ul>
+			</li>
+
+			<li>Wysiwyg (ja napr. používam priamo ckeditor, ale podľa dohody)
+				<ul>
+					<li>Imce</li>
+				</ul>
+			</li>
+		</ol>
+	</li>
+
+	<li>Nakonfigurovať
+		<ol style="list-style-type:upper-roman">
+			<li>Vytvoriť slovník taxonómie (Kde bude možné pridať kategórie do prvej
+			úrovne už pri inštalácii)</li>
+
+			<li>Vytvoriť typ obsahu, ktorý už bude prepojený s daným slovníkom (bude
+			možné pridávať nový obsah priamo do tých kategórií, ako aj stránky
+			budú obsahovať odkazy na pridané kategórie)</li>
+		</ol>
+	</li>
+</ol>
+
+<p>To je moja predstava, ale rád by som vedel, či je to všeobecná potreba,
+alebo či sa nezhodneme na niektorom wysiwyg editore, príp. admin téme,
+site-map, Google Analytics module a pod. <em>Jednoducho cieľom je, aby to
+používalo čo najväčšie množstvo ľudí a bolo to, čo najviac
+nápomocné.</em></p>
+
+<p><strong>Prípadne napíšte, ktoré moduly by ste do takej vašej
+inštalácie zahrnuli vy…</strong></p>
+
+<p>Za každý komentár budem veľmi vďačný.</p>
+  </div>
+<div id="node-1850" class="section-5">
+  <h1 class="book-heading">Ktorý modul by ste nepoužili v slovak_install - verzia 2</h1>
+  <div class="poll">
+  
+<div class="text">ckeditor</div>
+<div class="bar">
+  <div style="width: 22%;" class="foreground"></div>
+</div>
+<div class="percent">
+  22% (2 hlasy)
+</div>
+
+<div class="text">pathauto</div>
+<div class="bar">
+  <div style="width: 0%;" class="foreground"></div>
+</div>
+<div class="percent">
+  0% (0 hlasov)
+</div>
+
+<div class="text">admin_menu</div>
+<div class="bar">
+  <div style="width: 22%;" class="foreground"></div>
+</div>
+<div class="percent">
+  22% (2 hlasy)
+</div>
+
+<div class="text">colorbox</div>
+<div class="bar">
+  <div style="width: 11%;" class="foreground"></div>
+</div>
+<div class="percent">
+  11% (1 hlas)
+</div>
+
+<div class="text">google_analytics</div>
+<div class="bar">
+  <div style="width: 11%;" class="foreground"></div>
+</div>
+<div class="percent">
+  11% (1 hlas)
+</div>
+
+<div class="text">metatag</div>
+<div class="bar">
+  <div style="width: 22%;" class="foreground"></div>
+</div>
+<div class="percent">
+  22% (2 hlasy)
+</div>
+
+<div class="text">views</div>
+<div class="bar">
+  <div style="width: 0%;" class="foreground"></div>
+</div>
+<div class="percent">
+  0% (0 hlasov)
+</div>
+
+<div class="text">webform</div>
+<div class="bar">
+  <div style="width: 11%;" class="foreground"></div>
+</div>
+<div class="percent">
+  11% (1 hlas)
+</div>
+  <div class="total">
+    Celkový počet hlasov: 9  </div>
+  </div>
+  </div>
+</div>
+</div>
+<div id="node-388" class="section-3">
+  <h1 class="book-heading">Často kladené otázky (FAQ)</h1>
+    </div>
+<div id="node-394" class="section-3">
+  <h1 class="book-heading">Zdroje tretích strán</h1>
+  
+<p>Drupalovská komunita ponúka veľmi veľa informácií o drupale a
+budovaní webov na ňom.</p>
+
+<ul>
+	<li><a href="http://drupal.org/planet">Planet Drupal</a> – agregácia blogov
+	ľudí drupalovej komunity obsahuje mnoho cenných informácií.</li>
+</ul>
+  </div>
+</div>
+    </div>
+  </body>
+
+<!-- Mirrored from www.drupal.sk/book/export/html/581 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 18:44:49 GMT -->
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sk" xml:lang="sk">
+  
+<!-- Mirrored from www.drupal.sk/book/export/html/398 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 20:34:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Všeobecné koncepty</title>
+    <base  />
+    <link type="text/css" rel="stylesheet" href="http://drupal.sk/misc/print.css" />
+      </head>
+  <body>
+              <div class="section-1">
+                <div class="section-2">
+                <div class="section-3">
+          
+    <div id="node-398" class="section-4">
+  <h1 class="book-heading">Všeobecné koncepty</h1>
+  
+<p>Chcete vybudovať internetovú stránku, ale neviete, kde začať. Na tom to
+mieste sa dozviete o niektorých ústredných konceptoch.</p>
+
+<h1>Čo je to uzol?</h1>
+
+<p>Hlavným stavebným kameňom Drupal je uzol. Slovo ‚node‘ (uzol) nie je
+súčasťou nejakej siete. Naopak, predstavte si ho ako kus puzzle, z ktorých
+sa skladajú stránky. Uzol môže byť súčasťou fóra, blogu alebo knihy.
+Pomocou modulu <em>Content Construction Kit</em> si môžete vytvoriť
+ľubovoľné množstvo užívateľských uzlov. Pamätajte, že každý uzol má
+typ – typ obsahu. Má tiež Uzol-Node ID, Nadpis, a Telo, a dátum
+vytvorenia, autora a niektoré ďalšie vlastnosti. Je uložený spolu so
+všetkými ostatnými uzlami v jednej z tabuliek v databáze.</p>
+
+<p>Nech vás neprekvapí, že už základný Drupal obsahuje mnoho tabuliek.
+Jadro ich má asi 50. Aby ste získali predstavu tom, čo ktorá tabuľka
+obsahuje, je treba venovať im bližší pohľad,</p>
+
+<p>Užívatelia majú vlastné tabuľky a niektorí z nich sú autormi uzla.
+Takže medzi tabuľkou používateľov a tabuľkou uzlov existuje vzťah.
+Jediným spôsobom ako nájsť tento vzťah, je prehľadávať všetky prvky
+oboch tabuliek, kým nenájdeme príslušné položky. Našťastie pre nás,
+databázový server je veľmi rýchly.</p>
+
+<p>Každý uzol môže mať neobmedzený počet komentárov. Komentáre sú
+uložené v samostatnej tabuľke. Ak chcete nájsť všetky komentáre
+v jednom uzle, bude potrebné hľadať v celej tabuľke komentárov.</p>
+
+<h1>Uzly – Ako to funguje?</h1>
+
+<p>Pozrime sa na adresný riadok prehliadača. Pravdepodobne obsahuje <a
+href="../../../../node/398/index.html">http://drupal.sk/node/398</a>. Táto adresa
+predstavuje spôsob, ako povedať Drupalu „Načítaj všetky relevantné
+informácie pre uzol 398, vrátane akýchkoľvek vzťahov (komentáre,
+užívatelia, atď) a zobraz ich“. Tomu sa hovorí <em>databázová
+požiadavka</em>.</p>
+
+<p>Väčšina databázových požiadaviek Drupalu je napevno zadaná
+v moduloch. Napríklad modul <em>Tracker</em> vyhľadá všetky uzly a zoradí
+výsledky podľa dátumu. Tak to funguje aj na vašom webe, pokiaľ ste tento
+modul aktivovali.</p>
+
+<p>Prejdite myšou po menu a sledujte v stavovom riadku linky jednotlivých
+položiek. Ihneď budete mať predstavu o tom, aké databázové požiadavky
+Drupal vykonáva.</p>
+
+<p>V Drupal moduloch môžete vykonávať veľa dátových operácií.
+Napríklad už pri načítaní stránky, ktorú ste sami vložili do systému,
+vidíte v hornej časti stránky záložky zobraziť/upraviť. Na iných
+stránkach sa tieto záložky objaviť nemusia. To je automatizované správanie
+definované užívateľskými privilégiami.</p>
+
+<h1>Menu a bloky</h1>
+
+<p>Menu sa zobrazuje v blokoch. <em>Bloky</em> sú stĺpce po ľavej alebo
+pravej strane vašej webovej stránky. Od D6.1 je modul menu v predvolenom
+nastavení aktivovaný.</p>
+
+<p>Všetky moduly sa dodávajú s predvolenými položkami v menu. Často ich
+je potrebné iba aktivovať, alebo stačí len zapnúť blok. Môžete zmeniť
+jeho umiestnenie v stromovej štruktúre menu, ak si budete priať, môžete
+zmeniť jeho názov. Vo viacerých prípadoch sa položka menu zobrazuje len ak
+máte potrebné provilégiá. Napríklad položka Administrácia sa zobrazuje
+len návštevníkom, ktorí majú práva administrátora.</p>
+
+<p>Môžete vytvoriť aj vlastné položky menu, musíte však napísať platnú
+cestu k obsahu.</p>
+  </div>
+    </div></div></div>
+  </body>
+
+<!-- Mirrored from www.drupal.sk/book/export/html/398 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 20:34:57 GMT -->
+</html>

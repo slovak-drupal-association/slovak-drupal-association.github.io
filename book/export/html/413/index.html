@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sk" xml:lang="sk">
+  
+<!-- Mirrored from www.drupal.sk/book/export/html/413 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:50:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Zmena oprávnení konfiguračného súboru</title>
+    <base  />
+    <link type="text/css" rel="stylesheet" href="http://drupal.sk/misc/print.css" />
+      </head>
+  <body>
+              <div class="section-1">
+                <div class="section-2">
+          
+    <div id="node-413" class="section-3">
+  <h1 class="book-heading">Zmena oprávnení konfiguračného súboru</h1>
+  
+<p>Drupal obsahuje štandartný konfiguračný súbor default.settin­gs.php
+v adresári sites/default. Pred spustením inštalácie musíte
+<strong>vytvoriť kópiu</strong> tohto súboru v sites/default a pomenovať ju
+„settings.php.“ (Poznámka: nepremnujte iba štandartný súbor, ale
+skopírujte ho. Drupal vyžaduje, aby súbor default.settin­gs.php existoval.)
+Mali by ste mať oba súbory default.settin­gs.php a settings.php v adresári
+sites/default. Inštalátor Drupalu upraví súbor settings.php podľa údajov
+zadaných behom inštalácie.</p>
+
+<p>Pokiaľ chcete nainštalovať Drupal na stroj s operačným systémo
+založeným na UNIXe (drvivá väčšina webhostingov), bude zrejme potrebné
+zmeniť práva na zápis do konfiguračného súboru.</p>
+
+<p>Po vytvorení nového súboru sa uistite, či je možné do neho zapisovať.
+Práva na zápis môžete udeliť priíkazom (z inštalačného adresáru):
+chmod a+w sites/default/set­tings.php alebo chmod
+666 sites/defau­lt/settings.php</p>
+
+<p>Drupal by mal zmeniť práva súboru späť po inštalácii. Uistite sa však
+o tom a sami zmeňte práva ak sa tak nestalo. Môžete použiť podobný,
+jemne modifikovaný príkaz, ktorým práva na zápis odoberiete:</p>
+
+<p>chmod a-w sites/default/set­tings.php alebo chmod
+444 sites/defau­lt/settings.php</p>
+  </div>
+    </div></div>
+  </body>
+
+<!-- Mirrored from www.drupal.sk/book/export/html/413 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:50:38 GMT -->
+</html>

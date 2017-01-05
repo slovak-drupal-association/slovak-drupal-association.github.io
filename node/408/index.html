@@ -1,0 +1,992 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" dir="ltr">
+  
+<!-- Mirrored from www.drupal.sk/node/408 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:41:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CCK pole s výberom štátu vo vybranom jazyku | Drupal.SK</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="prev" href="../412/index.html" />
+<link rel="up" href="../411/index.html" />
+<link rel="next" href="../697/index.html" />
+<link rel="shortcut icon" href="../../files/arthemia_favicon/index.png" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/ckeditor/ckeditor/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/logintoboggan/logintoboggan/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/mail/simplenews/simplenews/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/texy/lib/fshl/styles/COHEN_style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/ribbon/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/aggregator/index.css?9" />
+    <script type="text/javascript" src="../../files/js/js_b60786b42cf28c172793b3f9255432b6/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip" } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://www.google-analytics.com/analytics.js","ga");ga("create", "UA-11573462-1", { "cookieDomain": "auto" });ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+  </head>
+  <body>
+    <div id="head" class="clearfloat">
+
+      <div class="clearfloat">
+        <div id="logo">
+          <a href="../../index/index.html" title="Drupal.SK"><img src="../../files/logo/index.jpg" alt="Drupal.SK" /></a>                </div>
+
+              </div>
+
+      <div id="navbar" class="clearfloat">
+          <div id="page-bar"><ul class="menu"><li class="leaf first"><a href="../../blog/index.html">Blogy</a></li>
+<li class="leaf"><a href="../../forum/index.html">Fórum</a></li>
+<li class="collapsed"><a href="../../prirucky/index.html" title="Naučte sa s nami Drupal">Príručky</a></li>
+<li class="leaf"><a href="../../stahuj/index.html">Sťahuj</a></li>
+<li class="leaf"><a href="../../komunita/index.html">Komunita</a></li>
+<li class="leaf last"><a href="../../aggregator/index.html" title="">Zo sveta</a></li>
+</ul></div>              </div>
+    </div>
+
+    <div id="page" class="clearfloat">
+
+            
+      
+      <div id="content" class="main-content with-sidebar">
+        
+        <div class="breadcrumb"><a href="../../index/index.html">Domov</a> &rsaquo; <a href="../../prirucky/index.html">Príručky</a> &rsaquo; <a href="../507/index.html">Vyvíjame moduly</a> &rsaquo; <a href="../411/index.html">Odporúčania pre vývojárov</a></div>                        <h1>CCK pole s výberom štátu vo vybranom jazyku</h1>                                        <div id="node-408" class="node clear-block">
+
+
+
+  
+  <div class="content">
+    
+<p>Pokiaľ potrebujte na dvojazyčnom webe CCK pole s výberom štátu ktoré
+sa zmení podľa vybraného jazyka môžete použiť nasledujúci
+kúsok kódu:</p>
+
+<pre
+class="php"><code>// jazyk
+global $language;
+
+// anglicke nazvy statov
+$countries['en']['AF'] = "Afghanistan";
+$countries['en']['AX'] = "Ĺland Islands";
+$countries['en']['AL'] = "Albania";
+$countries['en']['DZ'] = "Algeria";
+$countries['en']['AS'] = "American Samoa";
+$countries['en']['AD'] = "Andorra";
+$countries['en']['AO'] = "Angola";
+$countries['en']['AI'] = "Anguilla";
+$countries['en']['AQ'] = "Antarctica";
+$countries['en']['AG'] = "Antigua And Barbuda";
+$countries['en']['AR'] = "Argentina";
+$countries['en']['AM'] = "Armenia";
+$countries['en']['AW'] = "Aruba";
+$countries['en']['AU'] = "Australia";
+$countries['en']['AT'] = "Austria";
+$countries['en']['AZ'] = "Azerbaijan";
+$countries['en']['BS'] = "Bahamas";
+$countries['en']['BH'] = "Bahrain";
+$countries['en']['BD'] = "Bangladesh";
+$countries['en']['BB'] = "Barbados";
+$countries['en']['BY'] = "Belarus";
+$countries['en']['BE'] = "Belgium";
+$countries['en']['BZ'] = "Belize";
+$countries['en']['BJ'] = "Benin";
+$countries['en']['BM'] = "Bermuda";
+$countries['en']['BT'] = "Bhutan";
+$countries['en']['BO'] = "Bolivia";
+$countries['en']['BA'] = "Bosnia And Herzegovina";
+$countries['en']['BW'] = "Botswana";
+$countries['en']['BV'] = "Bouvet Island";
+$countries['en']['BR'] = "Brazil";
+$countries['en']['IO'] = "British Indian Ocean Territory";
+$countries['en']['BN'] = "Brunei Darussalam";
+$countries['en']['BG'] = "Bulgaria";
+$countries['en']['BF'] = "Burkina Faso";
+$countries['en']['BI'] = "Burundi";
+$countries['en']['KH'] = "Cambodia";
+$countries['en']['CM'] = "Cameroon";
+$countries['en']['CA'] = "Canada";
+$countries['en']['CV'] = "Cape Verde";
+$countries['en']['KY'] = "Cayman Islands";
+$countries['en']['CF'] = "Central African Republic";
+$countries['en']['TD'] = "Chad";
+$countries['en']['CL'] = "Chile";
+$countries['en']['CN'] = "China";
+$countries['en']['CX'] = "Christmas Island";
+$countries['en']['CC'] = "Cocos (Keeling) Islands";
+$countries['en']['CO'] = "Colombia";
+$countries['en']['KM'] = "Comoros";
+$countries['en']['CG'] = "Congo";
+$countries['en']['CD'] = "Congo, The Democratic Republic Of The";
+$countries['en']['CK'] = "Cook Islands";
+$countries['en']['CR'] = "Costa Rica";
+$countries['en']['CI'] = "Côte D'ivoire";
+$countries['en']['HR'] = "Croatia";
+$countries['en']['CU'] = "Cuba";
+$countries['en']['CY'] = "Cyprus";
+$countries['en']['CZ'] = "Czech Republic";
+$countries['en']['DK'] = "Denmark";
+$countries['en']['DJ'] = "Djibouti";
+$countries['en']['DM'] = "Dominica";
+$countries['en']['DO'] = "Dominican Republic";
+$countries['en']['EC'] = "Ecuador";
+$countries['en']['EG'] = "Egypt";
+$countries['en']['SV'] = "El Salvador";
+$countries['en']['GQ'] = "Equatorial Guinea";
+$countries['en']['ER'] = "Eritrea";
+$countries['en']['EE'] = "Estonia";
+$countries['en']['ET'] = "Ethiopia";
+$countries['en']['FK'] = "Falkland Islands (Malvinas)";
+$countries['en']['FO'] = "Faroe Islands";
+$countries['en']['FJ'] = "Fiji";
+$countries['en']['FI'] = "Finland";
+$countries['en']['FR'] = "France";
+$countries['en']['GF'] = "French Guiana";
+$countries['en']['PF'] = "French Polynesia";
+$countries['en']['TF'] = "French Southern Territories";
+$countries['en']['GA'] = "Gabon";
+$countries['en']['GM'] = "Gambia";
+$countries['en']['GE'] = "Georgia";
+$countries['en']['DE'] = "Germany";
+$countries['en']['GH'] = "Ghana";
+$countries['en']['GI'] = "Gibraltar";
+$countries['en']['GR'] = "Greece";
+$countries['en']['GL'] = "Greenland";
+$countries['en']['GD'] = "Grenada";
+$countries['en']['GP'] = "Guadeloupe";
+$countries['en']['GU'] = "Guam";
+$countries['en']['GT'] = "Guatemala";
+$countries['en']['GG'] = "Guernsey";
+$countries['en']['GN'] = "Guinea";
+$countries['en']['GW'] = "Guinea-Bissau";
+$countries['en']['GY'] = "Guyana";
+$countries['en']['HT'] = "Haiti";
+$countries['en']['HM'] = "Heard Island And Mcdonald Islands";
+$countries['en']['VA'] = "Holy See (Vatican City State)";
+$countries['en']['HN'] = "Honduras";
+$countries['en']['HK'] = "Hong Kong";
+$countries['en']['HU'] = "Hungary";
+$countries['en']['IS'] = "Iceland";
+$countries['en']['IN'] = "India";
+$countries['en']['ID'] = "Indonesia";
+$countries['en']['IR'] = "Iran, Islamic Republic Of";
+$countries['en']['IQ'] = "Iraq";
+$countries['en']['IE'] = "Ireland";
+$countries['en']['IM'] = "Isle Of Man";
+$countries['en']['IL'] = "Israel";
+$countries['en']['IT'] = "Italy";
+$countries['en']['JM'] = "Jamaica";
+$countries['en']['JP'] = "Japan";
+$countries['en']['JE'] = "Jersey";
+$countries['en']['JO'] = "Jordan";
+$countries['en']['KZ'] = "Kazakhstan";
+$countries['en']['KE'] = "Kenya";
+$countries['en']['KI'] = "Kiribati";
+$countries['en']['KP'] = "Korea, Democratic People's Republic Of";
+$countries['en']['KR'] = "Korea, Republic Of";
+$countries['en']['KW'] = "Kuwait";
+$countries['en']['KG'] = "Kyrgyzstan";
+$countries['en']['LA'] = "Lao People's Democratic Republic";
+$countries['en']['LV'] = "Latvia";
+$countries['en']['LB'] = "Lebanon";
+$countries['en']['LS'] = "Lesotho";
+$countries['en']['LR'] = "Liberia";
+$countries['en']['LY'] = "Libyan Arab Jamahiriya";
+$countries['en']['LI'] = "Liechtenstein";
+$countries['en']['LT'] = "Lithuania";
+$countries['en']['LU'] = "Luxembourg";
+$countries['en']['MO'] = "Macao";
+$countries['en']['MK'] = "Macedonia, The Former Yugoslav Republic Of";
+$countries['en']['MG'] = "Madagascar";
+$countries['en']['MW'] = "Malawi";
+$countries['en']['MY'] = "Malaysia";
+$countries['en']['MV'] = "Maldives";
+$countries['en']['ML'] = "Mali";
+$countries['en']['MT'] = "Malta";
+$countries['en']['MH'] = "Marshall Islands";
+$countries['en']['MQ'] = "Martinique";
+$countries['en']['MR'] = "Mauritania";
+$countries['en']['MU'] = "Mauritius";
+$countries['en']['YT'] = "Mayotte";
+$countries['en']['MX'] = "Mexico";
+$countries['en']['FM'] = "Micronesia, Federated States Of";
+$countries['en']['MD'] = "Moldova, Republic Of";
+$countries['en']['MC'] = "Monaco";
+$countries['en']['MN'] = "Mongolia";
+$countries['en']['ME'] = "Montenegro";
+$countries['en']['MS'] = "Montserrat";
+$countries['en']['MA'] = "Morocco";
+$countries['en']['MZ'] = "Mozambique";
+$countries['en']['MM'] = "Myanmar";
+$countries['en']['NA'] = "Namibia";
+$countries['en']['NR'] = "Nauru";
+$countries['en']['NP'] = "Nepal";
+$countries['en']['NL'] = "Netherlands";
+$countries['en']['AN'] = "Netherlands Antilles";
+$countries['en']['NC'] = "New Caledonia";
+$countries['en']['NZ'] = "New Zealand";
+$countries['en']['NI'] = "Nicaragua";
+$countries['en']['NE'] = "Niger";
+$countries['en']['NG'] = "Nigeria";
+$countries['en']['NU'] = "Niue";
+$countries['en']['NF'] = "Norfolk Island";
+$countries['en']['MP'] = "Northern Mariana Islands";
+$countries['en']['NO'] = "Norway";
+$countries['en']['OM'] = "Oman";
+$countries['en']['PK'] = "Pakistan";
+$countries['en']['PW'] = "Palau";
+$countries['en']['PS'] = "Palestinian Territory, Occupied";
+$countries['en']['PA'] = "Panama";
+$countries['en']['PG'] = "Papua New Guinea";
+$countries['en']['PY'] = "Paraguay";
+$countries['en']['PE'] = "Peru";
+$countries['en']['PH'] = "Philippines";
+$countries['en']['PN'] = "Pitcairn";
+$countries['en']['PL'] = "Poland";
+$countries['en']['PT'] = "Portugal";
+$countries['en']['PR'] = "Puerto Rico";
+$countries['en']['QA'] = "Qatar";
+$countries['en']['RE'] = "Réunion";
+$countries['en']['RO'] = "Romania";
+$countries['en']['RU'] = "Russian Federation";
+$countries['en']['RW'] = "Rwanda";
+$countries['en']['BL'] = "Saint Barthélemy";
+$countries['en']['SH'] = "Saint Helena";
+$countries['en']['KN'] = "Saint Kitts And Nevis";
+$countries['en']['LC'] = "Saint Lucia";
+$countries['en']['MF'] = "Saint Martin";
+$countries['en']['PM'] = "Saint Pierre And Miquelon";
+$countries['en']['VC'] = "Saint Vincent And The Grenadines";
+$countries['en']['WS'] = "Samoa";
+$countries['en']['SM'] = "San Marino";
+$countries['en']['ST'] = "Sao Tome And Principe";
+$countries['en']['SA'] = "Saudi Arabia";
+$countries['en']['SN'] = "Senegal";
+$countries['en']['RS'] = "Serbia";
+$countries['en']['SC'] = "Seychelles";
+$countries['en']['SL'] = "Sierra Leone";
+$countries['en']['SG'] = "Singapore";
+$countries['en']['SK'] = "Slovakia";
+$countries['en']['SI'] = "Slovenia";
+$countries['en']['SB'] = "Solomon Islands";
+$countries['en']['SO'] = "Somalia";
+$countries['en']['ZA'] = "South Africa";
+$countries['en']['GS'] = "South Georgia And The South Sandwich Islands";
+$countries['en']['ES'] = "Spain";
+$countries['en']['LK'] = "Sri Lanka";
+$countries['en']['SD'] = "Sudan";
+$countries['en']['SR'] = "Suriname";
+$countries['en']['SJ'] = "Svalbard And Jan Mayen";
+$countries['en']['SZ'] = "Swaziland";
+$countries['en']['SE'] = "Sweden";
+$countries['en']['CH'] = "Switzerland";
+$countries['en']['SY'] = "Syrian Arab Republic";
+$countries['en']['TW'] = "Taiwan, Province Of China";
+$countries['en']['TJ'] = "Tajikistan";
+$countries['en']['TZ'] = "Tanzania, United Republic Of";
+$countries['en']['TH'] = "Thailand";
+$countries['en']['TL'] = "Timor-Leste";
+$countries['en']['TG'] = "Togo";
+$countries['en']['TK'] = "Tokelau";
+$countries['en']['TO'] = "Tonga";
+$countries['en']['TT'] = "Trinidad And Tobago";
+$countries['en']['TN'] = "Tunisia";
+$countries['en']['TR'] = "Turkey";
+$countries['en']['TM'] = "Turkmenistan";
+$countries['en']['TC'] = "Turks And Caicos Islands";
+$countries['en']['TV'] = "Tuvalu";
+$countries['en']['UG'] = "Uganda";
+$countries['en']['UA'] = "Ukraine";
+$countries['en']['AE'] = "United Arab Emirates";
+$countries['en']['GB'] = "United Kingdom";
+$countries['en']['US'] = "United States";
+$countries['en']['UM'] = "United States Minor Outlying Islands";
+$countries['en']['UY'] = "Uruguay";
+$countries['en']['UZ'] = "Uzbekistan";
+$countries['en']['VU'] = "Vanuatu";
+$countries['en']['VE'] = "Venezuela";
+$countries['en']['VN'] = "Viet Nam";
+$countries['en']['VG'] = "Virgin Islands, British";
+$countries['en']['VI'] = "Virgin Islands, U.S.";
+$countries['en']['WF'] = "Wallis And Futuna";
+$countries['en']['EH'] = "Western Sahara";
+$countries['en']['YE'] = "Yemen";
+$countries['en']['ZM'] = "Zambia";
+$countries['en']['ZW'] = "Zimbabwe";
+
+// slovenske nazvy statov
+$countries['sk']['AF'] = "Afganistan";
+$countries['sk']['AX'] = "Alandy";
+$countries['sk']['AL'] = "Albánsko";
+$countries['sk']['DZ'] = "Alžírsko";
+$countries['sk']['AS'] = "Americká Samoa";
+$countries['sk']['AD'] = "Andorra";
+$countries['sk']['AO'] = "Angola";
+$countries['sk']['AI'] = "Anguilla";
+$countries['sk']['AQ'] = "Antarktída";
+$countries['sk']['AG'] = "Antigua a Barbuda";
+$countries['sk']['AR'] = "Argentína";
+$countries['sk']['AM'] = "Arménsko";
+$countries['sk']['AW'] = "Aruba";
+$countries['sk']['AU'] = "Austrália";
+$countries['sk']['AT'] = "Rakúsko";
+$countries['sk']['AZ'] = "Azerbajdžan";
+$countries['sk']['BS'] = "Bahamy";
+$countries['sk']['BH'] = "Bahrajn";
+$countries['sk']['BD'] = "Bangladéš";
+$countries['sk']['BB'] = "Barbados";
+$countries['sk']['BY'] = "Bielorusko";
+$countries['sk']['BE'] = "Belgicko";
+$countries['sk']['BZ'] = "Belize";
+$countries['sk']['BJ'] = "Benin";
+$countries['sk']['BM'] = "Bermudy";
+$countries['sk']['BT'] = "Bhután";
+$countries['sk']['BO'] = "Bolívia";
+$countries['sk']['BA'] = "Bosna a Hercegovina";
+$countries['sk']['BW'] = "Botswana";
+$countries['sk']['BV'] = "Bouvetov ostrov";
+$countries['sk']['BR'] = "Brazília";
+$countries['sk']['IO'] = "Britské indickooceánske územie";
+$countries['sk']['BN'] = "Brunej";
+$countries['sk']['BG'] = "Bulharsko";
+$countries['sk']['BF'] = "Burkina";
+$countries['sk']['BI'] = "Burundi";
+$countries['sk']['KH'] = "Kambodža";
+$countries['sk']['CM'] = "Kamerun";
+$countries['sk']['CA'] = "Kanada";
+$countries['sk']['CV'] = "Kapverdy";
+$countries['sk']['KY'] = "Kajmanie ostrovy";
+$countries['sk']['CF'] = "Stredoafrická republika";
+$countries['sk']['TD'] = "Čad";
+$countries['sk']['CL'] = "Čile";
+$countries['sk']['CN'] = "Čína";
+$countries['sk']['CX'] = "Vianočný ostrov";
+$countries['sk']['CC'] = "Kokosové ostrovy";
+$countries['sk']['CO'] = "Kolumbia";
+$countries['sk']['KM'] = "Komory";
+$countries['sk']['CG'] = "Kongo";
+$countries['sk']['CD'] = "Kongo (býv. Zair)";
+$countries['sk']['CK'] = "Cookove ostrovy";
+$countries['sk']['CR'] = "Kostarika";
+$countries['sk']['CI'] = "Pobrežie Slonoviny";
+$countries['sk']['HR'] = "Chorvátsko";
+$countries['sk']['CU'] = "Kuba";
+$countries['sk']['CY'] = "Cyprus";
+$countries['sk']['CZ'] = "Česko";
+$countries['sk']['ME'] = "Čierna Hora";
+$countries['sk']['DK'] = "Dánsko";
+$countries['sk']['DJ'] = "Džibutsko";
+$countries['sk']['DM'] = "Dominika";
+$countries['sk']['DO'] = "Dominikánska republika";
+$countries['sk']['EC'] = "Ekvádor";
+$countries['sk']['EG'] = "Egypt";
+$countries['sk']['SV'] = "Salvádor";
+$countries['sk']['GQ'] = "Rovníková Guinea";
+$countries['sk']['ER'] = "Eritrea";
+$countries['sk']['EE'] = "Estónsko";
+$countries['sk']['ET'] = "Etiópia";
+$countries['sk']['EU'] = "Európska únia";
+$countries['sk']['FK'] = "Falklandy";
+$countries['sk']['FO'] = "Faerské ostrovy";
+$countries['sk']['FJ'] = "Fidži";
+$countries['sk']['FI'] = "Fínsko";
+$countries['sk']['FR'] = "Francúzsko";
+$countries['sk']['GF'] = "Francúzska Guyana";
+$countries['sk']['PF'] = "Francúzska Polynézia";
+$countries['sk']['TF'] = "Francúzske južné územia";
+$countries['sk']['GA'] = "Gabon";
+$countries['sk']['GM'] = "Gambia";
+$countries['sk']['GE'] = "Gruzínsko";
+$countries['sk']['DE'] = "Nemecko";
+$countries['sk']['GH'] = "Ghana";
+$countries['sk']['GI'] = "Gibraltár";
+$countries['sk']['GR'] = "Grécko";
+$countries['sk']['GL'] = "Grónsko";
+$countries['sk']['GD'] = "Grenada";
+$countries['sk']['GP'] = "Guadeloupe";
+$countries['sk']['GU'] = "Guam";
+$countries['sk']['GT'] = "Guatemala";
+$countries['sk']['GG'] = "Guernsey";
+$countries['sk']['GN'] = "Guinea";
+$countries['sk']['GW'] = "Guinea-Bissau";
+$countries['sk']['GY'] = "Guyana";
+$countries['sk']['HT'] = "Haiti";
+$countries['sk']['HM'] = "Heardov ostrov";
+$countries['sk']['HN'] = "Honduras";
+$countries['sk']['HK'] = "Hongkong";
+$countries['sk']['HU'] = "Maďarsko";
+$countries['sk']['IS'] = "Island";
+$countries['sk']['IN'] = "India";
+$countries['sk']['ID'] = "Indonézia";
+$countries['sk']['IR'] = "Irán";
+$countries['sk']['IQ'] = "Irak";
+$countries['sk']['IE'] = "Írsko";
+$countries['sk']['IM'] = "Ostrov Man";
+$countries['sk']['IL'] = "Izrael";
+$countries['sk']['IT'] = "Taliansko";
+$countries['sk']['JM'] = "Jamajka";
+$countries['sk']['JP'] = "Japonsko";
+$countries['sk']['JE'] = "Jersey";
+$countries['sk']['JO'] = "Jordánsko";
+$countries['sk']['KZ'] = "Kazachstan";
+$countries['sk']['KE'] = "Keňa";
+$countries['sk']['KI'] = "Kiribati";
+$countries['sk']['KP'] = "Kórejská ľudovodemokratická republika";
+$countries['sk']['KR'] = "Kórejská republika";
+$countries['sk']['KW'] = "Kuvajt";
+$countries['sk']['KG'] = "Kirgizsko";
+$countries['sk']['LA'] = "Laos";
+$countries['sk']['LV'] = "Lotyšsko";
+$countries['sk']['LB'] = "Libanon";
+$countries['sk']['LS'] = "Lesotho";
+$countries['sk']['LR'] = "Libéria";
+$countries['sk']['LY'] = "Líbya";
+$countries['sk']['LI'] = "Lichtenštajnsko";
+$countries['sk']['LT'] = "Litva";
+$countries['sk']['LU'] = "Luxembursko";
+$countries['sk']['MO'] = "Macao";
+$countries['sk']['MK'] = "Macedónsko";
+$countries['sk']['MG'] = "Madagaskar";
+$countries['sk']['MW'] = "Malawi";
+$countries['sk']['MY'] = "Malajzia";
+$countries['sk']['MV'] = "Maldivy";
+$countries['sk']['ML'] = "Mali";
+$countries['sk']['MT'] = "Malta";
+$countries['sk']['MH'] = "Marshallove ostrovy";
+$countries['sk']['MQ'] = "Martinik";
+$countries['sk']['MR'] = "Mauritánia";
+$countries['sk']['MU'] = "Maurícius";
+$countries['sk']['YT'] = "Mayotte";
+$countries['sk']['MX'] = "Mexiko";
+$countries['sk']['FM'] = "Mikronézia";
+$countries['sk']['MD'] = "Moldavsko";
+$countries['sk']['MC'] = "Monako";
+$countries['sk']['MN'] = "Mongolsko";
+$countries['sk']['MS'] = "Montserrat";
+$countries['sk']['MA'] = "Maroko";
+$countries['sk']['MZ'] = "Mozambik";
+$countries['sk']['MM'] = "Mjanmarsko";
+$countries['sk']['NA'] = "Namíbia";
+$countries['sk']['NR'] = "Nauru";
+$countries['sk']['NP'] = "Nepál";
+$countries['sk']['NL'] = "Holandsko";
+$countries['sk']['AN'] = "Holandské Antily";
+$countries['sk']['NC'] = "Nová Kaledónia";
+$countries['sk']['NZ'] = "Nový Zéland";
+$countries['sk']['NI'] = "Nikaragua";
+$countries['sk']['NE'] = "Niger";
+$countries['sk']['NG'] = "Nigéria";
+$countries['sk']['NU'] = "Niue";
+$countries['sk']['NF'] = "Norfolk";
+$countries['sk']['MP'] = "Severné Mariány";
+$countries['sk']['NO'] = "Nórsko";
+$countries['sk']['OM'] = "Omán";
+$countries['sk']['PK'] = "Pakistan";
+$countries['sk']['PW'] = "Palau";
+$countries['sk']['PS'] = "Palestína";
+$countries['sk']['PA'] = "Panama";
+$countries['sk']['PG'] = "Papua-Nová Guinea";
+$countries['sk']['PY'] = "Paraguaj";
+$countries['sk']['PE'] = "Peru";
+$countries['sk']['PH'] = "Filipíny";
+$countries['sk']['PN'] = "Pitcairnove ostrovy";
+$countries['sk']['PL'] = "Poľsko";
+$countries['sk']['PT'] = "Portugalsko";
+$countries['sk']['PR'] = "Portoriko";
+$countries['sk']['QA'] = "Katar";
+$countries['sk']['RE'] = "Réunion";
+$countries['sk']['RO'] = "Rumunsko";
+$countries['sk']['RU'] = "Rusko";
+$countries['sk']['RW'] = "Rwanda";
+$countries['sk']['BL'] = "Svätý Bartolomej";
+$countries['sk']['SH'] = "Svätá Helena";
+$countries['sk']['KN'] = "Svätý Krištof a Nevis";
+$countries['sk']['LC'] = "Svätá Lucia";
+$countries['sk']['PM'] = "Svätý Peter a Michal";
+$countries['sk']['VC'] = "Svätý Vincent a Grenadíny";
+$countries['sk']['WS'] = "Samoa";
+$countries['sk']['SM'] = "San Maríno";
+$countries['sk']['ST'] = "Svätý Tomáš a Princov ostrov";
+$countries['sk']['SA'] = "Saudská Arábia";
+$countries['sk']['SN'] = "Senegal";
+$countries['sk']['RS'] = "Srbsko";
+$countries['sk']['SC'] = "Seychely";
+$countries['sk']['SL'] = "Sierra Leone";
+$countries['sk']['SG'] = "Singapur";
+$countries['sk']['SK'] = "Slovensko";
+$countries['sk']['SI'] = "Slovinsko";
+$countries['sk']['SB'] = "Šalamúnove ostrovy";
+$countries['sk']['SO'] = "Somálsko";
+$countries['sk']['ZA'] = "Južná Afrika";
+$countries['sk']['GS'] = "Južná Georgia a Južné Sandwichove ostrovy";
+$countries['sk']['ES'] = "Španielsko";
+$countries['sk']['LK'] = "Srí Lanka";
+$countries['sk']['SD'] = "Sudán";
+$countries['sk']['SR'] = "Surinam";
+$countries['sk']['SJ'] = "Špicbergy a Jan Mayen";
+$countries['sk']['SZ'] = "Svazijsko";
+$countries['sk']['SE'] = "Švédsko";
+$countries['sk']['CH'] = "Švajčiarsko";
+$countries['sk']['SY'] = "Sýria";
+$countries['sk']['TW'] = "Taiwan";
+$countries['sk']['TJ'] = "Tadžikistan";
+$countries['sk']['TZ'] = "Tanzánia";
+$countries['sk']['TH'] = "Thajsko";
+$countries['sk']['TL'] = "Východný Timor";
+$countries['sk']['TG'] = "Togo";
+$countries['sk']['TK'] = "Tokelau";
+$countries['sk']['TO'] = "Tonga";
+$countries['sk']['TT'] = "Trinidad a Tobago";
+$countries['sk']['TN'] = "Tunisko";
+$countries['sk']['TR'] = "Turecko";
+$countries['sk']['TM'] = "Turkménsko";
+$countries['sk']['TC'] = "Turks a Caicos";
+$countries['sk']['TV'] = "Tuvalu";
+$countries['sk']['UG'] = "Uganda";
+$countries['sk']['UA'] = "Ukrajina";
+$countries['sk']['AE'] = "Spojené arabské emiráty";
+$countries['sk']['GB'] = "Spojené kráľovstvo";
+$countries['sk']['US'] = "Spojené štáty";
+$countries['sk']['UM'] = "Menšie odľahlé ostrovy USA";
+$countries['sk']['UY'] = "Uruguaj";
+$countries['sk']['UZ'] = "Uzbekistan";
+$countries['sk']['VU'] = "Vanuatu";
+$countries['sk']['VA'] = "Vatikán";
+$countries['sk']['VE'] = "Venezuela";
+$countries['sk']['VN'] = "Vietnam";
+$countries['sk']['VG'] = "Britské Panenské ostrovy";
+$countries['sk']['VI'] = "Americké Panenské ostrovy";
+$countries['sk']['WF'] = "Wallis a Futuna";
+$countries['sk']['EH'] = "Západná Sahara";
+$countries['sk']['YE'] = "Jemen";
+$countries['sk']['ZM'] = "Zambia";
+$countries['sk']['ZW'] = "Zimbabwe";
+
+// vratime iba nazvy statov ktore mame v poli
+if (in_array($language-&gt;language, array('sk', 'en'))) {
+  return $countries[$language-&gt;language];
+}
+
+// inak vratime default anglicke nazvy
+return $countries['en'];</code></pre>
+
+<p>Použitie:</p>
+
+<ul>
+	<li>vytvoríte si nové CCK pole typu Text a vyberiete že sa má zobrazovať
+	ako Select list</li>
+
+	<li>v Allowed values (Povolených hodnotách) v sekcii PHP code vložíte
+	horeuvedený kód</li>
+</ul>
+  <div id="book-navigation-379" class="book-navigation">
+    
+        <div class="page-links clear-block">
+              <a href="../412/index.html" class="page-previous" title="Prejsť na predchádzajúcu stranu">‹ Ako správne písať databázové dotazy v drupale</a>
+                    <a href="../411/index.html" class="page-up" title="Prejsť na nadradenú stranu">^</a>
+                    <a href="../697/index.html" class="page-next" title="Prejsť na ďalšiu stranu">Vývoj modulov pre Drupal ›</a>
+          </div>
+    
+  </div>
+  </div>
+  
+  <ul class="links inline"><li class="book_printer first"><a href="../../book/export/html/408/index.html" title="Zobraziť túto stranu a jej podstrany vo verzii pre tlač.">Verzia pre tlač</a></li>
+<li class="comment_forbidden last"></li>
+</ul></div>
+        
+      </div>
+
+              <div id="sidebar">
+          <div id="block-block-9" class="block block-block odd">
+  <h3>Drupal SK na Facebooku</h3>
+
+  <div class="content">
+    <p><iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FDrupalSlovensko&amp;width=300&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=false&amp;appId=172291972850481" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:558px;" allowTransparency="true"></iframe></p>
+  </div>
+</div>
+<div id="block-views-latest_topics-block_1" class="block block-views even">
+  <h3>Nové témy vo fóre</h3>
+
+  <div class="content">
+    <div class="view view-latest-topics view-id-latest_topics view-display-id-block_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">3 týždne 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">4 týždne 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2366/index.html">Hľadáme drupal programátora</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">6 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2361/index.html">Validácia prekladov</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">7 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">7 týždňov 3 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2351/index.html">Obstarávanie webovej verzie Encyklopédie Beliana</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">10 týždňov 5 dní</span>
+  </div>
+</li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2346/index.html">Views</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">11 týždňov 9 hod</span>
+  </div>
+</li>
+          <li class="views-row views-row-8 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2341/index.html">Stránka v novom okne</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">24 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-9 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2336/index.html">b2b a drupal/ubercart</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">27 týždňov 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-10 views-row-even views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2331/index.html">Bezpecnost sprav - Drupal 8</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">29 týždňov 2 dni</span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+<div id="block-views-latest_comments-block_1" class="block block-views odd">
+  <h3>Posledné komentáre</h3>
+
+  <div class="content">
+    <div class="view view-latest-comments view-id-latest_comments view-display-id-block_1 view-dom-id-2">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/239/index.html" title="Zobraziť profil používateľa">frankye</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 deň 9 hod</span>
+  </span>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content">Anonymous</span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../72/index.html">Preklad Drupal 4.7.0</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 4 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../219/index.html">Realitna kancelaria</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 4 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">3 týždne 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">4 týždne 2 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">6 týždňov 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-8 views-row-even views-row-last">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">6 týždňov 1 deň</span>
+  </span>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+<div id="block-views-Najnovsie-block_4" class="block block-views even">
+  <h3>Najnovšie v blogoch</h3>
+
+  <div class="content">
+    <div class="view view-Najnovsie view-id-Najnovsie view-display-id-block_4 view-dom-id-3">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">3 dni 18 hod</span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2296/index.html">RESTful Drupal 8 - meetup - 14.4.2016</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">38 týždňov 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2256/index.html">Prvý kontakt s Drupalom (Workshop: Základy Drupal 8)</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">47 týždňov 3 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2196/index.html">PF 2016</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">1 rok 6 dní</span>
+  </div>
+</li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2181/index.html">Pripravované akcie v novembri</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">1 rok 8 týždňov</span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+        </div>
+      
+          </div>
+
+    <div id="footer-region" class="clearfloat">
+      <div id="footer-left" class="clearfloat">
+              </div> 		
+
+      <div id="footer-middle" class="clearfloat">
+              </div>
+
+      <div id="footer-right" class="clearfloat">
+              </div>
+    </div>
+
+    <div id="footer-message">
+      2005 - 2011 Drupal.sk | Drupal is a <a href="http://drupal.com/copyright">registered trademark</a> of <a href="http://buytaert.net/">Dries Buytaert</a>. | <a href="http://drupal.org/project/arthemia">Arthemia</a> is based on the original design by <a href="http://michaelhutagalung.com/">Michael Hutagalung</a>.    </div>
+      </body>
+
+<!-- Mirrored from www.drupal.sk/node/408 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 19:41:18 GMT -->
+</html>

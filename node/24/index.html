@@ -1,0 +1,978 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" dir="ltr">
+  
+<!-- Mirrored from www.drupal.sk/node/24 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 18:32:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Instalacia Drupalu na localhost pod OS Windows | Drupal.SK</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/arthemia_favicon/index.png" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/cck/theme/content-module/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/ckeditor/ckeditor/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/logintoboggan/logintoboggan/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/mail/simplenews/simplenews/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/texy/lib/fshl/styles/COHEN_style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/views/css/views/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/style/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/ribbon/index.css?9" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/arthemia/aggregator/index.css?9" />
+    <script type="text/javascript" src="../../files/js/js_b60786b42cf28c172793b3f9255432b6/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip" } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://www.google-analytics.com/analytics.js","ga");ga("create", "UA-11573462-1", { "cookieDomain": "auto" });ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+  </head>
+  <body>
+    <div id="head" class="clearfloat">
+
+      <div class="clearfloat">
+        <div id="logo">
+          <a href="../../index/index.html" title="Drupal.SK"><img src="../../files/logo/index.jpg" alt="Drupal.SK" /></a>                </div>
+
+              </div>
+
+      <div id="navbar" class="clearfloat">
+          <div id="page-bar"><ul class="menu"><li class="leaf first"><a href="../../blog/index.html">Blogy</a></li>
+<li class="leaf"><a href="../../forum/index.html">Fórum</a></li>
+<li class="collapsed"><a href="../../prirucky/index.html" title="Naučte sa s nami Drupal">Príručky</a></li>
+<li class="leaf"><a href="../../stahuj/index.html">Sťahuj</a></li>
+<li class="leaf"><a href="../../komunita/index.html">Komunita</a></li>
+<li class="leaf last"><a href="../../aggregator/index.html" title="">Zo sveta</a></li>
+</ul></div>              </div>
+    </div>
+
+    <div id="page" class="clearfloat">
+
+            
+      
+      <div id="content" class="main-content with-sidebar">
+        
+        <div class="breadcrumb"><a href="../../index/index.html">Domov</a> &rsaquo; <a href="../../blog/index.html">Blogy</a> &rsaquo; <a href="../../blog/0/index.html">Blog používateľa  </a></div>                        <h1>Instalacia Drupalu na localhost pod OS Windows</h1>                                        <div id="node-24" class="node clear-block">
+
+
+
+      <span class="submitted">27 november, 2005 - 20:26 poslal Anonymous</span>
+  
+  <div class="content">
+    <p>Tak som sa konecne odhodlal zhrnut moje skusenosti s instalaciou Drupalu na localhost v OS Windows. Kedze vsade sa spomina len instalacia na linuxovych masinach, tak to mozno niekomu pride vhod.</p>
+<p>V prvom rade potrebujeme mat na nasom pocitaci nainstalovane a spustene Apache, PHP a MySQL s phpMyAdminom. Tento problem som vyriesil instalaciou EasyPHP, ktory sa da bezplatne stiahnut z <a href="http://www.easyphp.org/">www.easyphp.org</a>. Po instalacii EasyPHP mame plne funkcne a na prevadzku pripravene vsetky programy a sluzby, ktore su nam potrebne na skusanie php skriptov na localhoste. Stranky a skripty, ktore chceme odskusat a doladovat musime nahrat do adresara C:\Program Files\EasyPHP1-8\www\  (podla toho, kam sme EasyPHP nainstalovali).</p>
+<p>Teraz sa mozme pustit do samotneho Drupalu. Predpokladam, ze uz ho mame <a href="http://drupal.org/project">stiahnuty</a> na lokalnom disku a sme plny elanu :). Adresarovu strukturu obsiahnutu v subore drupal-4.6.3.tar (zalezi od verzie) rozbalime do adresara EasyPHP1-8\www\drupal. Samozrejme ze cielovy adresar si mozme nazvat podla potreby.</p>
+<p>Pomocou phpMyAdmina a suboru www\drupal\database\database.mysql vytvorime databazu s nazvom drupal (nazov moze byt lubovolny).<br />
+Nasleduje uprava suboru www\drupal\sites\default\settings.php.<br />
+Riadok<br />
+<dl>
+<dt>$db_url = 'mysql://username:password@localhost/database';</dt>
+</dl>
+</p><p>kde <em>database</em> je nazov nasej databazy nahradime riadkom<br />
+<dl>
+<dt>$db_url = 'mysql://root:@localhost/drupal';</dt>
+</dl>
+</p><p>  a riadok<br />
+<dl>
+<dt>$base_url = 'http://localhost';</dt>
+</dl>
+</p><p>  nahradime riadkom<br />
+<dl>
+<dt>$base_url = 'http://localhost/drupal';</dt>
+</dl>
+</p><p>Teraz nadisiel cas na zistenie, ci sme vsetko spravili bezchybne. Vo svojom oblubenom web browseri napiseme do adresbaru http://127.0.0.1/. Objavi sa nam uvitacia stranka EasyPHP s obsahom adresara www.<br />
+Klikneme na adresar drupal (nazov nasho projektu). Mala by sa nam objavit uvodna stranka Drupalu.Vytvorime si ucet (prvy, ktory sa vytvori je ucet admina) a tymto sme ziskali plnu moc nad "nasim" vytvorom. Postupne sa mozme pustit do uprav vzhladu, jednotlivych blokov, modulov a celkovej administracii nasho noveho redakcneho systemu Drupal.</p>
+<p>Dufam, ze som to napisal dost polopatisticky. Od prirody nemam talent na vysvetlovanie a pisanie, ale raz som to musel skusit :). Mal som pripravene aj screenshoty, ale nejak sa mi ich sem nepodarilo dostat :(.</p>
+<p>Na zaver by som sa chcel podakovat mirkovi a otOvi za ich pomoc pri rieseni problemov.</p>
+  </div>
+  
+  <ul class="links inline"><li class="blog_usernames_blog first"><a href="../../blog/0/index.html" title="Read &#039;s latest blog entries.">Blog používateľa </a></li>
+<li class="comment_forbidden last"></li>
+</ul></div><div id="comments"><h2 class="comments">Komentáre</h2><a id="comment-1986"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">21 jún, 2011 - 16:07 poslal ZVARKO (bez overenia).</div>
+    <div class="comment-link"><a href="index.html#comment-1986" class="active">#1</a></div>
+  </div>
+  
+  <div class="author-data">
+    	    </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        
+<p>tu máte videonávod: <a
+href="http://www.youtube.com/watch?v=HVU3FAeLcUw">http://www.youtube.com/watch?…</a></p>
+
+<!-- by Texy2! -->            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-850"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">3 júl, 2009 - 13:49 poslal <a href="../../user/862/index.html" title="Zobraziť profil používateľa">smajlej</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-850" class="active">#2</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 3 júl 2009</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 6 rokov 40 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        
+<p>Pomocou phpMyAdmina a suboru www\drupal\da­tabase\databa­se.mysql vytvorime
+databazu s nazvom drupal (nazov moze byt lubovolny).</p>
+
+<p>Zaujímalo by ma ako presne vytvorím tú databázu</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-1219"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">23 apríl, 2010 - 09:32 poslal <a href="../../user/1192/index.html" title="Zobraziť profil používateľa">Kelo</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-1219" class="active">#3</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 23 apríl 2010</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 6 rokov 35 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Tak toto aj mna . Tu som sa stratil, aj ked som uplna lama ale mam snahu sa nieco nove naucit :)</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-1220"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">23 apríl, 2010 - 11:20 poslal <a href="../../user/3/index.html" title="Zobraziť profil používateľa">Havran</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-1220" class="active">#4</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 4 november 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 5 týždňov 4 dni</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>No, zvycajne sa na to pouziva nehjake databazove rozhranie. Ak mas nejaky XAMPP balik s Apache, PHP, MySQL je velmi pravdepodobne ze tam nieco bude predinstalovane - obycajne phpMyAdmin. Zalezi teda od toho co mas na pocitaci.</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div></div><a id="comment-39"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">28 november, 2005 - 18:05 poslal <a href="../../user/2/index.html" title="Zobraziť profil používateľa">Fikusko</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-39" class="active">#5</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 28 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 3 roky 17 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Ahoj Laky, som rad ze si sa odhodlal napisat clanok. Podla mna je dobre napisany a vystihuje vsetko co potrebuje niekto ak instaluje drupal pod os windows. To ze si nevedel nahodit screenshoty na web je mi luto. Skus ich dat ako prilohu ja som skusal a ide to. Podla mna ak by sem nainstaloval mirek wysiwig tak by si tam mohol dat aj obrazok.</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-40"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">28 november, 2005 - 19:44 poslal <a href="../../user/5/index.html" title="Zobraziť profil používateľa">mirek</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-40" class="active">#6</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 31 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 2 roky 32 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>ahoj</p>
+<p>ja nemozem pridavat nove moduly. na to je potrebne mat pristup priamo k instalacii drupalu, a ten ja nemam.</p>
+<p>a ked sme pri tych moduloch - treba nahodit modul image (na obrazky a fotogalerie) a tinymce alebo htmlareu ako wysiwyg.</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-41"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">28 november, 2005 - 20:01 poslal <a href="../../user/2/index.html" title="Zobraziť profil používateľa">Fikusko</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-41" class="active">#7</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 28 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 3 roky 17 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Ahoj,<br />
+dal som adminovy nech to nahodi. Prepac ze som to hodil na teba .. nechtiac.</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-42"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">29 november, 2005 - 08:30 poslal <a href="../../user/5/index.html" title="Zobraziť profil používateľa">mirek</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-42" class="active">#8</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 31 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 2 roky 32 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>v pohode. nic sa nestalo ;)</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-43"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">29 november, 2005 - 11:03 poslal <a href="../../user/2/index.html" title="Zobraziť profil používateľa">Fikusko</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-43" class="active">#9</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 28 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 3 roky 17 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Nebolo by lepsie keby si mal pristup FTP a pristup k DB?</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-144"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">2 máj, 2006 - 00:51 poslal roman (bez overenia).</div>
+    <div class="comment-link"><a href="index.html#comment-144" class="active">#10</a></div>
+  </div>
+  
+  <div class="author-data">
+    	    </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Drahí Drupalisti,<br />
+dovoľte aby som najprv v skratke načrtol svoj životný príbeh. V snahe odlíšiť sa od davov hľadajúcich prácu (tuto v UK je všetko niako zložitejšie) som sa rozhodol vyhotoviť osobnú web stránku. Síce nič neviem o tvorbe web stránok ale viem že ako to má vyzerať a zdá sa že na to potrebujem viac ako pár príkazov HTML.</p>
+<p>Našiel som DotNetNuke. Veľmi príjemná web stránka sľubujúca ľahký život len som to nedokázal nainštalovať na svoj počítač (najprv to chcem vytvoriť lokálne až potom zaplatiť web hosting a publikovať). Tak som teda hľadal ďalej. MS Visual Web Developer sa nainštaloval úplne krásne (I agree + next + finish), len to malo moc tlačítiek a prepínatiek a tak v panike a strachu som to odinštaloval. Nakoniec som sa rozhodol vyskúšať Drupal. Nainštaloval XAMP, spravil čo na drupal.org a iných stránkach radili a nič.</p>
+<p>Ja si vždy myslel že s počítačmi si vcelku rozumiem ale táto ilúzia ma postupne opúšťa. Ako posledná nádej mi prišiel tento návod. Spravil som čo povedal a ono to fakt funguje. Keď idem na localhost a kliknem na drupal-4.6.6 tak to fakt nabehne, len sa mi zdá že toto je tam akosi navyše:</p>
+<p>Notice: Undefined index: pass in c:\easyphp1-8\www\drupal-4.6.6\includes\database.mysql.inc on line 31</p>
+<p>Warning: session_start(): Cannot send session cookie - headers already sent by (output started at c:\easyphp1-8\www\drupal-4.6.6\includes\database.mysql.inc:31) in c:\easyphp1-8\www\drupal-4.6.6\includes\session.inc on line 10</p>
+<p>Warning: session_start(): Cannot send session cache limiter - headers already sent (output started at c:\easyphp1-8\www\drupal-4.6.6\includes\database.mysql.inc:31) in c:\easyphp1-8\www\drupal-4.6.6\includes\session.inc on line 10<br />
+warning: Cannot modify header information - headers already sent by (output started at c:\easyphp1-8\www\drupal-4.6.6\includes\</p>
+<p>Keď kliknem na create the first account tak mi to povie že The requested URL /drupal/ was not found on this server. Myslíte že sa mám rovno zastreliť alebo pre mňa ešte existuje niake riešenie?</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-146"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">2 máj, 2006 - 14:54 poslal <a href="../../user/5/index.html" title="Zobraziť profil používateľa">mirek</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-146" class="active">#11</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 31 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 2 roky 32 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>tiez by som povedal to, co napisal havran - asi mas chybu v konfigu svojej instalacie. enivej...</p>
+<p>...si pisal na zaciatku, ze chces spravit svoju osobnu stranku. no neviem veru, ci je drupal na toto riesenie to najlepsie. co chces publikovat? informacie o sebe? svoj zivotopis? zaluby? lebo drupal je kus o niecom inom - to je redakcny system. samozrejme sa da vyuzit aj na tento ucel, ale predsa len... mi to akosi neda... ;)</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-147"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">3 máj, 2006 - 01:47 poslal roman (bez overenia).</div>
+    <div class="comment-link"><a href="index.html#comment-147" class="active">#12</a></div>
+  </div>
+  
+  <div class="author-data">
+    	    </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Ďakujem za reakcie. Bohužiaľ problém je trošku horší ako zle napísaná adresa. Teraz som to skúšal znovu so 4.7.0 a dokonca som už aj prvý účet vytvoril a tam som aj skončil (tentoraz iné chyby, ale ten istý výsledok). Ale som o krok ďalej, takže to zatiaľ postupuje dobre.</p>
+<p> Mirek nemôžem s tebou súhlasiť že drupal je príliš dobrý na to čo ja chcem, lebo jednou s ideí je vytvoriť nástroj na jednoduché a kvalitné publikovanie informácií. Editory v ktorých si napíšem kód sám niesu jednoduché a a jednoduché editory niesu kvalitné. Takže mi redakčné systémy prídu ako rozumné riešenie (teda to si myslím podľa videí a web stránok a snáď si to raz overím aj v praxi).</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-151"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">4 máj, 2006 - 17:52 poslal <a href="../../user/5/index.html" title="Zobraziť profil používateľa">mirek</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-151" class="active">#13</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 31 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 2 roky 32 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>hmm... a co tak skusit wordpress? alebo nejake wiki? nie, zeby som bol odporcom drupalu :-))) len mi pride na osobnu stranku vhodnejsie nieco ine ako drupal. ale to je asi vec vkusu... alebo skor nazoru...</p>
+<p>kazdopadne - ak ryza pretrvava, tak daj vediet a skusime s niecim pomoct.</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-155"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">5 máj, 2006 - 02:09 poslal roman (bez overenia).</div>
+    <div class="comment-link"><a href="index.html#comment-155" class="active">#14</a></div>
+  </div>
+  
+  <div class="author-data">
+    	    </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Našiel som zaujímavé video o inštalácii na http://ftp.osuosl.org/pub/drupal/files/videocasts/4.7-installing.mov. Už len treba skombinovať toto video s vyššie uvedeným návodom a je to úplne super.<br />
+Zdá sa že idea s $db_url = 'mysql://root:@localhost/drupal';  mi spôsobovala chybové hlásenia. Keď som zaregistroval nového použivatela a použil ok $db_url = 'mysql://username:password@localhost/database';  tak to zrazu začalo fungovať. Už len vymyslieť ako sa dostať k heslu (drupal mi chce heslo poslať mailom a to na môj localhosť očividne nepodporuje)<br />
+Diki za nápad s wordpressom, ale teraz keď už je víťazstvo na dosah tak sa ešte trochu pohrám.</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-156"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">5 máj, 2006 - 07:28 poslal <a href="../../user/8/index.html" title="Zobraziť profil používateľa">phacka</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-156" class="active">#15</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 28 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 9 rokov 42 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Pri vytvarani prvotneho adminovskeho konta si hned prihlaseny - len ho treba zmenit v uprave udajov. A pre ineho pouzivatela? Zaregistrujes sa, mail neprijde, ale ty sa prihlasis ako admin a nastavis novemu pouzivatelovi heslo :).</p>
+<p><em>ICQ: 1872888<br />
+WEB: http://www.fem.uniag.sk/havran/blog/</em></p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-171"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">7 jún, 2006 - 20:01 poslal majdo (bez overenia).</div>
+    <div class="comment-link"><a href="index.html#comment-171" class="active">#16</a></div>
+  </div>
+  
+  <div class="author-data">
+    	    </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Ahojte, vsetko som nainstaloval ( Easy PHP1.8, Drupal 4.7.2 ), ale v settings.php som nenasiel riadok $base_url = 'http://localhost'; Ze by bol problem v novsej verzii Drupalu ? Tu je popisovana verzia myslim 4.6.3. A este som sa chcel spytat, v com upravim settings.php ?<br />
+Dakujem za radu.</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-174"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">11 jún, 2006 - 18:15 poslal Cifro (bez overenia).</div>
+    <div class="comment-link"><a href="index.html#comment-174" class="active">#17</a></div>
+  </div>
+  
+  <div class="author-data">
+    	    </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Neviem či ste si všimli, že ak na prácu s MySQL na localhoste nepoužívate heslo na prihlasenie k DB, tak má s týmto Drupal problem.</p>
+<p>LAKYmu to asi funguje ale mne tento zápis nefunguje:<br />
+$db_url = 'mysql://root:@localhost/drupal';<br />
+Za "root:" by malo ísť heslo, ale keďže ja nepoužívam hesla, tak s takýmto zápisom sa Drupal nemôže spojiť s DB.</p>
+<p>Musel som upraviť súbor s MySQL funkciami kde som pridal podmienku, že ak heslo !isset (nie je dané) tak default hodnota je prázdny reťazec.</p>
+<p>A crash-boom-bang! a jede to i bez hesla :-)</p>
+<p><strong><a href="http://www.uniquebyte.com/">UniqueByte - Webdesign Studio</a></strong></p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-172"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">7 jún, 2006 - 21:02 poslal <a href="../../user/8/index.html" title="Zobraziť profil používateľa">phacka</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-172" class="active">#18</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 28 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 9 rokov 42 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>A skusal si to bez base_url? V 4.7.2 je napisane:</p>
+<p> * Base URL (optional).</p>
+<p>Cize to nemusis nastavovat.</p>
+<p><em>ICQ: 1872888<br />
+WEB: http://www.fem.uniag.sk/havran/blog/</em></p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-157"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">5 máj, 2006 - 14:05 poslal roman (bez overenia).</div>
+    <div class="comment-link"><a href="index.html#comment-157" class="active">#19</a></div>
+  </div>
+  
+  <div class="author-data">
+    	    </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Ja si tiež myslel. Tak som to preinštaloval a ono to funguje. Krásne je že keď už viem čo robím tak to trvalo asi 3 min. Ďakujem všetkým zúčastneným :-)</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div></div></div></div></div><a id="comment-145"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">2 máj, 2006 - 06:46 poslal <a href="../../user/8/index.html" title="Zobraziť profil používateľa">phacka</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-145" class="active">#20</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 28 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 9 rokov 42 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>Nieco robis zle. Napriklad tvoja instalacia DRUPAL je zrejme v adresari (na webe) http://localhost/drupal-4.6.6 a nie ako si pravdepodobne opisal (bez uvazovania) http://localhost/drupal...</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-47"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">29 november, 2005 - 14:52 poslal <a href="../../user/5/index.html" title="Zobraziť profil používateľa">mirek</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-47" class="active">#21</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 31 október 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 2 roky 32 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        <p>no ako chces. nehrniem sa velmi do toho, ale nemam s tym problem ;)</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div></div></div></div></div><a id="comment-541"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">13 marec, 2008 - 15:00 poslal <a href="../../user/558/index.html" title="Zobraziť profil používateľa">4ngelo</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-541" class="active">#22</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 13 marec 2008</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 8 rokov 42 týždňov</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        
+<p>Zdravím, som čerstý začiatočník, urobil som všetky kroky podla
+návodu, na niaky 3× úpešne a však zaseknem sa vždy pri poslednom bode, a
+tým je vytvorte si account. I ked ma to potom pusti to do mojho účtu,
+nepustí ma do žiadnej sekcie, tým mám na mysli administracia a podobne,
+napíše mi na každú sekciu, že prístup bol odmietnutý, že nemám práva
+na nu, čo mám robit?pochybil som niekde snad?</p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+<div class="indented"><a id="comment-542"></a>
+<div class="comment comment-published clear-block">
+  <div class="comment-header clearfloat">
+    <div class="submitted">13 marec, 2008 - 17:11 poslal <a href="../../user/3/index.html" title="Zobraziť profil používateľa">Havran</a>.</div>
+    <div class="comment-link"><a href="index.html#comment-542" class="active">#23</a></div>
+  </div>
+  
+  <div class="author-data">
+    	        <div class="user-member"><strong>Member since:</strong><br /> 4 november 2005</div>  
+      <div class="user-access"><strong>Last activity:</strong><br /> 5 týždňov 4 dni</div>  
+      </div>
+
+  <div class="comment-main">
+    
+    <div class="content">  
+        
+<p>Je mozne ze je to nejaky problem z cookies. Nepises aku verziu Drupalu si
+nainstaloval ani PHP a podobne. Idealne by to bolo vidiet online.</p>
+
+<p><em>ICQ: 1872888<br />
+WEB: <a
+href="http://www.fem.uniag.sk/havran/blog/">http://www.fem.uniag.sk/havran/blog/</a></em></p>
+            </div>
+  </div>
+  <ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div></div>
+        
+      </div>
+
+              <div id="sidebar">
+          <div id="block-block-9" class="block block-block odd">
+  <h3>Drupal SK na Facebooku</h3>
+
+  <div class="content">
+    <p><iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FDrupalSlovensko&amp;width=300&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=false&amp;appId=172291972850481" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:558px;" allowTransparency="true"></iframe></p>
+  </div>
+</div>
+<div id="block-views-latest_topics-block_1" class="block block-views even">
+  <h3>Nové témy vo fóre</h3>
+
+  <div class="content">
+    <div class="view view-latest-topics view-id-latest_topics view-display-id-block_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">3 týždne 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">4 týždne 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2366/index.html">Hľadáme drupal programátora</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">6 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2361/index.html">Validácia prekladov</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">7 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">7 týždňov 3 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2351/index.html">Obstarávanie webovej verzie Encyklopédie Beliana</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">10 týždňov 5 dní</span>
+  </div>
+</li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2346/index.html">Views</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">11 týždňov 8 hod</span>
+  </div>
+</li>
+          <li class="views-row views-row-8 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2341/index.html">Stránka v novom okne</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">24 týždňov 1 deň</span>
+  </div>
+</li>
+          <li class="views-row views-row-9 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2336/index.html">b2b a drupal/ubercart</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">27 týždňov 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-10 views-row-even views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2331/index.html">Bezpecnost sprav - Drupal 8</a></span>
+  </div>
+  
+  <div class="views-field-changed">
+                <span class="field-content">29 týždňov 2 dni</span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+<div id="block-views-latest_comments-block_1" class="block block-views odd">
+  <h3>Posledné komentáre</h3>
+
+  <div class="content">
+    <div class="view view-latest-comments view-id-latest_comments view-display-id-block_1 view-dom-id-2">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/239/index.html" title="Zobraziť profil používateľa">frankye</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 deň 9 hod</span>
+  </span>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content">Anonymous</span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../72/index.html">Preklad Drupal 4.7.0</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 4 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../219/index.html">Realitna kancelaria</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/137/index.html" title="Zobraziť profil používateľa">kubrob</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">1 týždeň 4 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2386/index.html">Problem s funkcnostou stranky</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">3 týždne 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2376/index.html">Aplikácia podobný k moodlu</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2542/index.html" title="Zobraziť profil používateľa">mirom</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">4 týždne 2 dni</span>
+  </span>
+</li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">6 týždňov 1 deň</span>
+  </span>
+</li>
+          <li class="views-row views-row-8 views-row-even views-row-last">  
+  <div class="views-field-title">
+          <label class="views-label-title">
+        Ad:
+      </label>
+                <span class="field-content"><a href="../2356/index.html">drupal.sk</a></span>
+  </div>
+  
+  <span class="views-field-name">
+                <span class="field-content"><a href="../../user/2756/index.html" title="Zobraziť profil používateľa">EdizonTN</a></span>
+  </span>
+  
+  <span class="views-field-timestamp">
+          <label class="views-label-timestamp">
+        pred:
+      </label>
+                <span class="field-content">6 týždňov 1 deň</span>
+  </span>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+<div id="block-views-Najnovsie-block_4" class="block block-views even">
+  <h3>Najnovšie v blogoch</h3>
+
+  <div class="content">
+    <div class="view view-Najnovsie view-id-Najnovsie view-display-id-block_4 view-dom-id-3">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2411/index.html">Zhodnotenie roku 2016 a plány na rok 2017</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">3 dni 17 hod</span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2296/index.html">RESTful Drupal 8 - meetup - 14.4.2016</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">38 týždňov 2 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2256/index.html">Prvý kontakt s Drupalom (Workshop: Základy Drupal 8)</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">47 týždňov 3 dni</span>
+  </div>
+</li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2196/index.html">PF 2016</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">1 rok 6 dní</span>
+  </div>
+</li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="../2181/index.html">Pripravované akcie v novembri</a></span>
+  </div>
+  
+  <div class="views-field-created">
+                <span class="field-content">1 rok 8 týždňov</span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+        </div>
+      
+          </div>
+
+    <div id="footer-region" class="clearfloat">
+      <div id="footer-left" class="clearfloat">
+              </div> 		
+
+      <div id="footer-middle" class="clearfloat">
+              </div>
+
+      <div id="footer-right" class="clearfloat">
+              </div>
+    </div>
+
+    <div id="footer-message">
+      2005 - 2011 Drupal.sk | Drupal is a <a href="http://drupal.com/copyright">registered trademark</a> of <a href="http://buytaert.net/">Dries Buytaert</a>. | <a href="http://drupal.org/project/arthemia">Arthemia</a> is based on the original design by <a href="http://michaelhutagalung.com/">Michael Hutagalung</a>.    </div>
+      </body>
+
+<!-- Mirrored from www.drupal.sk/node/24 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 18:32:31 GMT -->
+</html>

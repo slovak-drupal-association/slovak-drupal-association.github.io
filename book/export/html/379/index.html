@@ -1,0 +1,1968 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sk" xml:lang="sk">
+  
+<!-- Mirrored from www.drupal.sk/book/export/html/379 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 18:13:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Príručky</title>
+    <base  />
+    <link type="text/css" rel="stylesheet" href="http://drupal.sk/misc/print.css" />
+      </head>
+  <body>
+        
+    <div id="node-379" class="section-1">
+  <h1 class="book-heading">Príručky</h1>
+  
+<p>Či už ste začiatočník-profesionál, vývojár alebo dizajnér, tieto
+príručky Vám ponúknu sprievod pre každý aspekt inštalácie a použitia
+Drupalu. <strong>Tento text píšu a upravujú dobrovoľníci. Ak si myslíte,
+že viete prispieť svojou troškou, neváhajte a vylepšite to tu!</strong> Na
+upravovanie príručiek je potrebné len sa <a
+href="../../../../user/register/index.html">zaregistrovať</a> na drupal.sk. Po registrácii je možné
+stránku editovať pomocou záložky <em>Upraviť</em>. Pridať novú stranu
+môžete cez odkaz <em>Pridať zviazanú stranu</em>.</p>
+
+<!-- by Texy2! -->  <div id="node-581" class="section-2">
+  <h1 class="book-heading">Začíname</h1>
+    <div id="node-381" class="section-3">
+  <h1 class="book-heading">Skôr než začnete</h1>
+  
+<blockquote>
+	<p>Začiatok je najdôležitejšia časť práce. – [ <em>Platón</em> ]</p>
+</blockquote>
+
+<p>Táto časť vám spostredkuje nevyhnutné základy, ktoré potrebujete na
+prípravu vašich prvých stránok v Drupale.</p>
+
+<p>Na príručkách sa pracuje, prosíme vás o trpezlivosť. Ďakujeme</p>
+
+<!-- by Texy2! -->  </div>
+<div id="node-397" class="section-3">
+  <h1 class="book-heading">Prehľad</h1>
+  
+<p>Ľudia často opisujú Drupal ako „systém na správu obsahu“ (CMS). Na
+rozdiel od typického CMS je však viac zameraný na konfigurovateľnosť a
+prispôsobenie.</p>
+
+<p>Jeho architektúra poskytuje ohromnú flexibilitu a pritom umožňuje aj
+neprogramátorovi postaviť pomerne rozsiahle a komplexné weby.</p>
+
+<p>V prípade že chcete vediet viac, prečítajte si prehľad na <a
+href="http://drupal.org/getting-started/before/overview">http://drupal.org/…ore/overview</a></p>
+  </div>
+<div id="node-390" class="section-3">
+  <h1 class="book-heading">Drupalovské koncepty</h1>
+  
+<p>Skôr než Drupal nainštalujete, pohrajte sa s ním a spoznajte, čo vám
+môže ponúknuť a ako dosiahnete, čo potrebujete.</p>
+
+<p>Táto sekcia vám pomôže v rozhodovaní, či je Drupal vhodný pre váš
+projekt.</p>
+
+<p>Čas, ktorý na začiatku investujete do spoznania systému, sa vám
+v dlhodobom horizonte vráti „aj s úrokmi“.</p>
+
+<!-- by Texy2! -->  <div id="node-391" class="section-4">
+  <h1 class="book-heading">Technologický zásobník</h1>
+  
+<p>Drupal je súčasťou technologického zásobníka, ktorý obsahuje množstvo
+dôležitých vecí:</p>
+
+<p><strong>Server</strong> je počítač, ktorý poskytuje informácie a služby
+pre ostatné počítače v sieti.</p>
+
+<p><strong>Operačný systém</strong> je softvér, ktorý beží na serveri.
+Unix, Linux, BSD, OS X a Windows je len niekoľko príkladov.</p>
+
+<p><strong>Databáza</strong> je štruktúrovaný zber záznamov. Drupal
+používa databázu na ukladanie väčšiny obsahu a nastavenie pre vaše
+stránky, niektorých obsahov, ako sú mediálne súbory zvyčajne uložené
+v súborovom systéme servera.</p>
+
+<p><strong>Webový server</strong> je softvérový komponent, zodpovedný za
+doručovanie webových stránok. Príkladom sú Apache a Microsoft IIS.</p>
+
+<p><strong>PHP</strong> je programovací jazyk, ktorý umožňuje webovým
+vývojárom vytvárať dynamický obsah, ktorý pracuje s databázou.</p>
+
+<p><strong>Drupal</strong> slúži na budovanie dynamických webových stránok,
+ktoré ponúkajú širokú škálu funkcií a služieb, vrátane správy
+užívateľov, publikačnej workflow, diskusie, agregovanie metaúdajov a XML
+publikovanie obsahu pre zdieľané účely. Drupal inštalácia sa obvykle
+skladá z kombinácie základného a pridaných modulov.</p>
+
+<p><strong>Tip</strong> Drupal 5 a 6 pobežia aj na php verzii nižšej ako
+5. Drupal 7 pracuje na PHP 5.2.</p>
+  </div>
+<div id="node-399" class="section-4">
+  <h1 class="book-heading">Je Drupal tým správnym nástrojom pre váš projekt?</h1>
+  
+<p>Hoci Drupal ponúka veľmi silný a pružný rámec, ktorý je použitý na
+vybudovanie prakticky akejkoľvek webovej stránky, možno nie je najlepšie
+riešenie pre vaše konkrétne požiadavky.</p>
+
+<p>Existuje niekoľko situácií, kedy Drupal môže alebo nemusí byť vašou
+najlepšou voľbou:</p>
+
+<ul>
+	<li>Ak je váša požiadavka len napísať osobný blog, môžete využiť jednu
+	z viacerých špecializovaných blogovacích platforiem, ako WordPress. Hoci
+	Drupal poskytuje vynikajúcu platformu blogov „krabicového systému“,
+	pravdepodobne zistíte, že softvér, ktorý je určený len pre blogovanie bude
+	mať spravidla jednoduchšie administratívne rozhranie.</li>
+
+	<li>Podobne, ak vašou jedinou požiadavkou je vytvorenie wiki, mali by ste
+	zvážiť použitie špecializovaného wiki softvéru Wikimedia alebo hostované
+	wiki riešenie. Môžete samozrejme nastaviť Drupal ako wiki (za pomoci
+	niekoľkých modulov), ale je jednoduchšie použiť viac špecializovaných
+	riešení.</li>
+
+	<li>S každou ďalšou verziou sa stáva Drupal jednoduchší na použitie, ale
+	ako väčšina výkonných nástrojov, sa bude mať vždy co učiť. Ak vy alebo
+	vaša organizácia nie sú ochotní stráviť nejaký čas učenia základov
+	Drupal-u (alebo ak nie ste schopný najať si Drupal odborníka), nemusí to
+	byť váša najlepšia voľba. Drupal je vynikajúcou voľbou pre niektoré
+	z týchto požiadaviek:</li>
+
+	<li>Potrebujete web, ktorý je dostatočne pružný, aby ste ho mohli vyvíjať
+	v ľubovoľnom smere. Napríklad môžete začať s blogom, ale chcete
+	postupne pridávať ďalšie funkcie, ako wiki, elektronický obchod,
+	fóra, atď</li>
+
+	<li>Chceš stránky, ktoré možno ľahko nakonfigurovať tak, aby boli
+	v interakcii s ostatnými webmi, alebo s inými technológiami.</li>
+
+	<li>Chcete stránky, ktoré ľahko zvládnu zložité formuláre a
+	workflow.</li>
+
+	<li>Potrebujete schopnosť vytvoriť si vlastné typy obsahu. Napríklad
+	pridaním vlastné pole na stránke.</li>
+
+	<li>Potrebujete schopnosť rýchlo usporiadať a zobraziť zoznamy
+	informácií.</li>
+
+	<li>Musíte rýchlo rozvíjať vlastné funkčnosti.</li>
+</ul>
+  </div>
+<div id="node-393" class="section-4">
+  <h1 class="book-heading">Terminológia</h1>
+  
+<p>Pripravujeme kompletny drupal slovnik. Ak neviete čo znamenajú niektoré
+výrazy kliknite: <a
+href="http://drupal.org/getting-started/before/terminology">http://drupal.org/…/terminology</a>
+Ďakujeme za pochopenie.</p>
+  </div>
+<div id="node-398" class="section-4">
+  <h1 class="book-heading">Všeobecné koncepty</h1>
+  
+<p>Chcete vybudovať internetovú stránku, ale neviete, kde začať. Na tom to
+mieste sa dozviete o niektorých ústredných konceptoch.</p>
+
+<h1>Čo je to uzol?</h1>
+
+<p>Hlavným stavebným kameňom Drupal je uzol. Slovo ‚node‘ (uzol) nie je
+súčasťou nejakej siete. Naopak, predstavte si ho ako kus puzzle, z ktorých
+sa skladajú stránky. Uzol môže byť súčasťou fóra, blogu alebo knihy.
+Pomocou modulu <em>Content Construction Kit</em> si môžete vytvoriť
+ľubovoľné množstvo užívateľských uzlov. Pamätajte, že každý uzol má
+typ – typ obsahu. Má tiež Uzol-Node ID, Nadpis, a Telo, a dátum
+vytvorenia, autora a niektoré ďalšie vlastnosti. Je uložený spolu so
+všetkými ostatnými uzlami v jednej z tabuliek v databáze.</p>
+
+<p>Nech vás neprekvapí, že už základný Drupal obsahuje mnoho tabuliek.
+Jadro ich má asi 50. Aby ste získali predstavu tom, čo ktorá tabuľka
+obsahuje, je treba venovať im bližší pohľad,</p>
+
+<p>Užívatelia majú vlastné tabuľky a niektorí z nich sú autormi uzla.
+Takže medzi tabuľkou používateľov a tabuľkou uzlov existuje vzťah.
+Jediným spôsobom ako nájsť tento vzťah, je prehľadávať všetky prvky
+oboch tabuliek, kým nenájdeme príslušné položky. Našťastie pre nás,
+databázový server je veľmi rýchly.</p>
+
+<p>Každý uzol môže mať neobmedzený počet komentárov. Komentáre sú
+uložené v samostatnej tabuľke. Ak chcete nájsť všetky komentáre
+v jednom uzle, bude potrebné hľadať v celej tabuľke komentárov.</p>
+
+<h1>Uzly – Ako to funguje?</h1>
+
+<p>Pozrime sa na adresný riadok prehliadača. Pravdepodobne obsahuje <a
+href="http://drupal.sk/node/398">http://drupal.sk/node/398</a>. Táto adresa
+predstavuje spôsob, ako povedať Drupalu „Načítaj všetky relevantné
+informácie pre uzol 398, vrátane akýchkoľvek vzťahov (komentáre,
+užívatelia, atď) a zobraz ich“. Tomu sa hovorí <em>databázová
+požiadavka</em>.</p>
+
+<p>Väčšina databázových požiadaviek Drupalu je napevno zadaná
+v moduloch. Napríklad modul <em>Tracker</em> vyhľadá všetky uzly a zoradí
+výsledky podľa dátumu. Tak to funguje aj na vašom webe, pokiaľ ste tento
+modul aktivovali.</p>
+
+<p>Prejdite myšou po menu a sledujte v stavovom riadku linky jednotlivých
+položiek. Ihneď budete mať predstavu o tom, aké databázové požiadavky
+Drupal vykonáva.</p>
+
+<p>V Drupal moduloch môžete vykonávať veľa dátových operácií.
+Napríklad už pri načítaní stránky, ktorú ste sami vložili do systému,
+vidíte v hornej časti stránky záložky zobraziť/upraviť. Na iných
+stránkach sa tieto záložky objaviť nemusia. To je automatizované správanie
+definované užívateľskými privilégiami.</p>
+
+<h1>Menu a bloky</h1>
+
+<p>Menu sa zobrazuje v blokoch. <em>Bloky</em> sú stĺpce po ľavej alebo
+pravej strane vašej webovej stránky. Od D6.1 je modul menu v predvolenom
+nastavení aktivovaný.</p>
+
+<p>Všetky moduly sa dodávajú s predvolenými položkami v menu. Často ich
+je potrebné iba aktivovať, alebo stačí len zapnúť blok. Môžete zmeniť
+jeho umiestnenie v stromovej štruktúre menu, ak si budete priať, môžete
+zmeniť jeho názov. Vo viacerých prípadoch sa položka menu zobrazuje len ak
+máte potrebné provilégiá. Napríklad položka Administrácia sa zobrazuje
+len návštevníkom, ktorí majú práva administrátora.</p>
+
+<p>Môžete vytvoriť aj vlastné položky menu, musíte však napísať platnú
+cestu k obsahu.</p>
+  </div>
+<div id="node-400" class="section-4">
+  <h1 class="book-heading">Typy obsahu</h1>
+  
+<p>Drupal má niekoľko rôznych typov obsahu. Základná sada je pomerne malá,
+ale veľmi flexibilná. V predvolenom nastavení sú len dva druhy obsahu,
+Stránka (page) a Story. Z historického pohľadu je medzi nimi rozdiel,
+v súčasnosti sú to iba rozdielne typy uzlov. Ako ich používať, je len na
+vás. Ak chcete povoliť ďalšie typy obsahu, ktoré sú tu uvedené, je
+potrebné ísť do <em>Administrácia &gt; Moduly</em> a vyberte typ, ktorý
+chcete povoliť.</p>
+
+<p>V predchádzajúcich verziách sDrupalu sa dnešné „typy obsahu“
+nazývali „typy uzla“. V databáze je obsah uzla uložený v tabuľkách
+<em>node</em> a <em>node_revisions</em>.</p>
+
+<p><strong>Blog</strong><br />
+Blogy alebo weblogy je iné pomenovanie pre on-line denník alebo diár. Je to
+miesto, kde si členovia komunity môžu písať a zdieľať svoje myšlienky
+s inými.</p>
+
+<p><strong>Kniha</strong> Stránky knihy sú navrhnuté tak, aby boli
+súčasťou spoločnej knihy. Príklad spoločnej knihy je napríklad táto sada
+príručiek.</p>
+
+<p><strong>Komentáre</strong><br />
+Komentáre v skutočnosti nie sú uzly, sú samostatné obsahový typ.
+Komentáre umožňujú pridať komentáre k inému uzlu, ktorý bol
+vytvorený.</p>
+
+<p><strong>Fórum</strong><br />
+<em>Diskusné fóra</em> sú kolekcie uzlov a ich komentáre.</p>
+
+<p><strong>Stránka</strong><br />
+Stránky sú jednoduché uzly, obvykle používané pre statický obsah, ktorý
+môže (ale nemusí) byť vložený do hlavnej navigačnej lišty.</p>
+
+<p><strong>Anketa</strong><br />
+Anketa je výber viacerých možností, otázka je položena a používatelia
+môžu odpovedať a vidieť odpovede.</p>
+
+<p><strong>Story</strong><br />
+Príbehy sú generické stránky typu, pre správu obsahu. Obvykle sa
+používajú na informácie, ktoré sú relevantné iba v určitom čase (napr.
+novinové články) a očakáva sa, že časom stratia aktuálnosť a budú
+zaradené do archívu.</p>
+
+<p>Okrem týchto základných typov, si môžete vyrobiť vlastný typ obsahu.
+Vytvoríte ich cez menu <em>Správa obsahu &gt; Typy obsahu &gt; Pridať typ
+obsahu</em>. Niektoré moduly obsahujú ďalšie druhy obsahu so
+špecializovanými funkciami. Ich zoznam je uvedený v sekcii Obsah.</p>
+
+<p>Ak by ste chceli vytvoriť svoj vlastný špeciálny typ obsahu, použite na
+to <em>Content Construction Kit</em> (CCK, od D7 v jadre), ktorý vám umožní
+pridať ďalšie políčka pre svoje obsahové typy. Ďalšie informácie
+nájdete (TODO: doplniť odkaz na Content Construction Kit Handbook)</p>
+  </div>
+<div id="node-402" class="section-4">
+  <h1 class="book-heading">Pochopenie Drupal ciest (path)</h1>
+  
+<p>Príklady Drupal trasy</p>
+
+<ul>
+	<li>node/3 – uzol/3</li>
+
+	<li>flexinode/7</li>
+
+	<li>taxonomy/term/6</li>
+
+	<li>flexinode/list/3</li>
+
+	<li>user/login (veľmi užitočné, keď vypnete blok Prihlásenie)</li>
+</ul>
+
+<p>Ako nájsť Drupal cesty? Ak chcete nájsť Drupal cestu určitej stránky,
+prejdite na admin&gt;&gt; obsah. Uvidíte zoznam všetkých stránok, ktoré ste
+vytvorili.</p>
+  </div>
+<div id="node-401" class="section-4">
+  <h1 class="book-heading">Prezeranie a editácia stránokv Drupale sú takmer rovnaké</h1>
+  
+<p>Ľudia, ktorí už predtým používali iné editory (FrontPage, Dreamweaver)
+alebo CMS (Joomla aťď) sa pýtajú, akým spôsobom pristupovať k admin
+oblasti alebo „back-end“ v Drupale. Niekedy sa pýtajú, ako si môžu
+prezrieť zmeny.</p>
+
+<ul>
+	<li>V Drupale, nie je veľký rozdiel, lebo poskytuje jednotné rozhranie.</li>
+
+	<li>Drupal obvykle vyzerá skoro rovnako ako pre neprihláseného navštevníka,
+	rozdiel je len v tom, že prihláseny návštevník, redaktor alebo admin vidia
+	rôzne administračné prvky.</li>
+</ul>
+
+<p>Zistili sme, že ľudia, ktorí nikdy nepoužili CMS, sú často oveľa menej
+zmätení z tohto prístupu, ako ľudia, ktorí predtým používali systémy,
+kde ‚vstup‘ vyzeral úplne odlišné od ‚výstupu‘. Je to len vec uhla
+pohľadu.</p>
+  </div>
+</div>
+<div id="node-515" class="section-3">
+  <h1 class="book-heading">Verzie drupalu</h1>
+  <p>Tietom stránky obsahujú odkazy na informácie o jednotlivých verziách Drupalu.</p>
+  <div id="node-392" class="section-4">
+  <h1 class="book-heading">Číslovanie verzií</h1>
+  
+<p>Aktuálna stabilná verzia je Drupal 6. Nasledujúca verzia bude Drupal
+7. Je vo fáze pred vydaním ostrej verzie (január 2010). Drupal 5 je stále
+podporovaný.</p>
+
+<p><strong>Ako zistím na ktorej verzii Drupalu beží môj web?</strong>
+Použite: <em>Administrácia &gt; logy &gt; Status report</em>. Ak používate
+Drupal 5 a vyšší, v tabuľke nájdete číslo verzie.</p>
+
+<p>Alternatívne, pozrite sa na začiatok súboru s názvom CHANGELOG.txt
+v koreňovom priečinku vašej inštalácie drupalu.</p>
+
+<p>Ak CHANGELOG.txt chýba, môžete skontrolovať v system.module, kde sa
+nachádza definícia podobná tejto:</p>
+
+<p>define(‚VERSION‘, ‚5.5‘);</p>
+
+<p>Táto definícia vám ukáže, ktorú verziu používate. Ak sa definícia
+v súbore nenachádza,pou­žívate verziu staršiu ako 4.7.2.</p>
+  </div>
+<div id="node-396" class="section-4">
+  <h1 class="book-heading">Drupal 4.7.x</h1>
+  
+<p>Tu nájdete odkaz na seriál venovaný Drupalu 4.7.x, ktorý bol uverejnený
+na serveri Interval.cz.</p>
+
+<p>Vzhľadom k tomu že Drupal 4.7.x je už zastaralý, ponechávame tu odkaz
+na tento seriál z toho dôvodu, že základné koncepty sa nezmenili a aj
+v tomto seriáli je možné nájsť zaujímavé informácie.</p>
+
+<h3>Drupal – vlastní web jednoduše</h3>
+
+<div class="item-list">
+	<ul>
+		<li><a href="http://interval.cz/clanky/drupal-seznamte-se/">Drupal – seznamte
+		se</a></li>
+
+		<li><a
+		href="http://interval.cz/clanky/drupal-instalace-a-zakladni-koncepty/">Drupal –
+		instalace a základní koncepty</a></li>
+
+		<li><a
+		href="http://interval.cz/clanky/drupal-tvorime-osobni-weblog/">Drupal –
+		tvoříme osobní weblog</a></li>
+
+		<li><a
+		href="http://interval.cz/clanky/drupal-komfortni-vkladani-obsahu/">Drupal –
+		komfortní vkládání obsahu</a></li>
+
+		<li><a
+		href="http://interval.cz/clanky/drupal-tvorba-vlastniho-vzhledu/">Drupal –
+		tvorba vlastního vzhledu </a></li>
+	</ul>
+</div>
+  </div>
+<div id="node-384" class="section-4">
+  <h1 class="book-heading">Drupal 5.x</h1>
+    </div>
+<div id="node-383" class="section-4">
+  <h1 class="book-heading">Drupal 6.x</h1>
+    </div>
+</div>
+<div id="node-514" class="section-3">
+  <h1 class="book-heading">Drupal distribúcie</h1>
+  
+<p>Keďže Drupal je vysoko modulárny a škálovateľný, dodáva sa zvlášť
+jadro a základné moduly a zvlášť moduly vyvíjané komunitou. Na vás je
+potom vyskladať si zo súčiastok kompletný systém.</p>
+
+<p>Keďže ale na sprevádzkovanie komplexnejšieho webu je často nevyhnutné
+nainštalovať a nastaviť viacero modulov, umožňuje Drupal zostaviť si
+vlastnú distribúciu, ktorá v sebe obsahuje moduly predinštalované a
+predkonfigurované.</p>
+
+<p>V komunite existuje viacero zabehaných a živo vyvíjaných distribúcií.
+Každá z nich je zameraná trochu iným smerom (video, noviny, project
+management, atď.) aktuálny zoznam nájdete napr. na <a
+href="http://drupaldistrowatch.com/drupal/distributions">drupaldistrowat­ch.com</a></p>
+
+<!-- by Texy2! -->  </div>
+<div id="node-395" class="section-3">
+  <h1 class="book-heading">Drupal po slovensky</h1>
+    <div id="node-1520" class="section-4">
+  <h1 class="book-heading">Drupal v slovenskom jazyku (inštalačný profil)</h1>
+  <p>Sťahujte z projektovej stránky <strong><a href="http://drupal.org/project/slovak_install">slovak_install</a></strong></p>
+<p><a href="http://drupal.org/project/slovak_install">Slovenský Drupal inštalačný profil</a> slúži na rýchlejšie a ľahšie nainštalovanie Drupalu v <a href="http://localize.drupal.org/translate/languages/sk" title="Slovenský preklad Drupalu">Slovenskom jazyku</a>. Inštaluje rovnaké moduly, ako štandardná inštalácia v <a href="http://drupal.org/project/drupal">základnej inštalácii Drupalu</a> s ďalšími dvoma modulmi, ktoré slúžia na import a používanie prekladu.</p>
+<p><strong>Nainštaluje modul:</strong><br />
+ - Locale (ktorý obsahuje jadro Drupalu)<br />
+<strong>Doplní a nainštaluje modul:</strong><br />
+ - <a href="http://drupal.org/project/l10n_update" title="Stiahne preklady z prekladového serveru Drupalu.">Localization Update</a></p>
+<h2>Funkčnosť</h2>
+<p><strong>Na rozdiel od štandardnej inštalácie Slovenský Drupal inštalačný profil::</strong></p>
+<ul>
+<li>Preskočí výber jazyka  - zvolí automaticky slovenčinu</li>
+<li>Naimportuje základný súbor so slovenským jazykom</li>
+<li>Pri ďalšom kroku bude predvolená krajina “Slovensko” a časové pásmo na “Europe/Bratislava”</li>
+<li>Zaktualizuje na najnovšiu verziu slovenský jazyk priamo z prekladového serveru localize.drupal.org</li>
+<li>Po inštalácii bude nainštalovaný aj modul “Localization Update”, ktorý po doplnení a nainštalovaní každého ďalšieho modulu, automaticky naimportuje aj jeho preklad z localize.drupal.org</li>
+</ul>
+<h2>Podpora</h2>
+<p>Projekt Slovenský Drupal inštalačný profil bol vytvorený na podporu <a href="../../../../node/1364/index.html" title="Slovenská Drupal Asociácia">Slovenskej Drupal Asociácie</a>, ktorej jedným z cieľov je “Vytvárať lepšie podmienky pre začínajúcich používateľov Drupalu na Slovensku.”</p>
+  <div id="node-1523" class="section-5">
+  <h1 class="book-heading">Slovenská Drupal inštalácia (video 2 min)</h1>
+  <p><iframe src="http://player.vimeo.com/video/53410279?badge=0" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</p><p><a href="http://vimeo.com/53410279">Slovanská Drupal inštalácia</a> from <a href="http://vimeo.com/user14653479">Viliam</a> on <a href="http://vimeo.com/">Vimeo</a>.</p>
+  </div>
+<div id="node-1524" class="section-5">
+  <h1 class="book-heading">Slovenský Drupal inštalačný profil - verzia 2</h1>
+  
+<p>Ahojte Drupalisti,<br />
+v poslednom čase som zrealizoval inštalačný profil <a
+href="http://drupal.org/project/slovak_install">Drupal v Slovenskom jazyku</a>
+(viac čítajte aj tu: <a
+href="http://drupal.sk/node/1520">http://drupal.sk/node/1520</a>) , čo je
+inštalačný profil Drupalu. Verím, že veľa pomôže každému Drupalistovi,
+ktorý často inštaluje Drupal v Slovenskom jazyku.</p>
+
+<p>Chcem vás však poprosiť o pomoc pri hľadaní čo <strong>najlepšej
+cesty pre druhú verziu</strong>.</p>
+
+<p>Môj plán je totiž okrem prvej verzie (7.x-1.0) vytvoriť ďalšiu verziu,
+ktorá by mala zahŕňať aj moduly, ktoré sa na slovensku inštalujú do skoro
+každého Drupalu + môže to obsahovať aj konfiguráciu niektorého
+z nich.</p>
+
+<p>Moja predstava je:</p>
+
+<ol style="list-style-type:lower-alpha">
+	<li>Doplniť
+		<ol style="list-style-type:upper-roman">
+			<li>Views
+				<ul>
+					<li>ctools</li>
+				</ul>
+			</li>
+
+			<li>Pathauto
+				<ul>
+					<li>Token</li>
+
+					<li>Transliteration</li>
+				</ul>
+			</li>
+
+			<li>Wysiwyg (ja napr. používam priamo ckeditor, ale podľa dohody)
+				<ul>
+					<li>Imce</li>
+				</ul>
+			</li>
+		</ol>
+	</li>
+
+	<li>Nakonfigurovať
+		<ol style="list-style-type:upper-roman">
+			<li>Vytvoriť slovník taxonómie (Kde bude možné pridať kategórie do prvej
+			úrovne už pri inštalácii)</li>
+
+			<li>Vytvoriť typ obsahu, ktorý už bude prepojený s daným slovníkom (bude
+			možné pridávať nový obsah priamo do tých kategórií, ako aj stránky
+			budú obsahovať odkazy na pridané kategórie)</li>
+		</ol>
+	</li>
+</ol>
+
+<p>To je moja predstava, ale rád by som vedel, či je to všeobecná potreba,
+alebo či sa nezhodneme na niektorom wysiwyg editore, príp. admin téme,
+site-map, Google Analytics module a pod. <em>Jednoducho cieľom je, aby to
+používalo čo najväčšie množstvo ľudí a bolo to, čo najviac
+nápomocné.</em></p>
+
+<p><strong>Prípadne napíšte, ktoré moduly by ste do takej vašej
+inštalácie zahrnuli vy…</strong></p>
+
+<p>Za každý komentár budem veľmi vďačný.</p>
+  </div>
+<div id="node-1850" class="section-5">
+  <h1 class="book-heading">Ktorý modul by ste nepoužili v slovak_install - verzia 2</h1>
+  <div class="poll">
+  
+<div class="text">ckeditor</div>
+<div class="bar">
+  <div style="width: 22%;" class="foreground"></div>
+</div>
+<div class="percent">
+  22% (2 hlasy)
+</div>
+
+<div class="text">pathauto</div>
+<div class="bar">
+  <div style="width: 0%;" class="foreground"></div>
+</div>
+<div class="percent">
+  0% (0 hlasov)
+</div>
+
+<div class="text">admin_menu</div>
+<div class="bar">
+  <div style="width: 22%;" class="foreground"></div>
+</div>
+<div class="percent">
+  22% (2 hlasy)
+</div>
+
+<div class="text">colorbox</div>
+<div class="bar">
+  <div style="width: 11%;" class="foreground"></div>
+</div>
+<div class="percent">
+  11% (1 hlas)
+</div>
+
+<div class="text">google_analytics</div>
+<div class="bar">
+  <div style="width: 11%;" class="foreground"></div>
+</div>
+<div class="percent">
+  11% (1 hlas)
+</div>
+
+<div class="text">metatag</div>
+<div class="bar">
+  <div style="width: 22%;" class="foreground"></div>
+</div>
+<div class="percent">
+  22% (2 hlasy)
+</div>
+
+<div class="text">views</div>
+<div class="bar">
+  <div style="width: 0%;" class="foreground"></div>
+</div>
+<div class="percent">
+  0% (0 hlasov)
+</div>
+
+<div class="text">webform</div>
+<div class="bar">
+  <div style="width: 11%;" class="foreground"></div>
+</div>
+<div class="percent">
+  11% (1 hlas)
+</div>
+  <div class="total">
+    Celkový počet hlasov: 9  </div>
+  </div>
+  </div>
+</div>
+</div>
+<div id="node-388" class="section-3">
+  <h1 class="book-heading">Často kladené otázky (FAQ)</h1>
+    </div>
+<div id="node-394" class="section-3">
+  <h1 class="book-heading">Zdroje tretích strán</h1>
+  
+<p>Drupalovská komunita ponúka veľmi veľa informácií o drupale a
+budovaní webov na ňom.</p>
+
+<ul>
+	<li><a href="http://drupal.org/planet">Planet Drupal</a> – agregácia blogov
+	ľudí drupalovej komunity obsahuje mnoho cenných informácií.</li>
+</ul>
+  </div>
+</div>
+<div id="node-1032" class="section-2">
+  <h1 class="book-heading">Záznam z prednášok DrupalCamp 2010</h1>
+  Pre tých, ktorý sa k týmto materiálom ešte nedostali, prinášame  záznam z DrupalCampu 2010, ktorý sa uskutočnil v Bratislave.
+
+<h3>Prednaska 1 - Čo je Drupal - Jojo Tóth, Dávid Lukáč</h3>
+
+<object id="playerID" style="z-index: 1;" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="540" height="405" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="file" value="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp1.flv" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><param name="WindowlessVideo" value="-1" /><param name="wmode" value="opaque" /><param name="FlashVars" value="width=560&amp;height=340&amp;autostart=false&amp;usefullscreen=true&amp;javascriptid=playerID" /><param name="name" value="playerID" /><param name="flashvars" value="width=560&amp;height=340&amp;autostart=false&amp;usefullscreen=true&amp;javascriptid=playerID" /><param name="src" value="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp1.flv" /><param name="allowfullscreen" value="true" /><embed id="playerID" style="z-index: 1;" type="application/x-shockwave-flash" width="540" height="405" src="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp1.flv" name="playerID" flashvars="width=560&amp;height=340&amp;autostart=false&amp;usefullscreen=true&amp;javascriptid=playerID" wmode="opaque" windowlessvideo="-1" allowscriptaccess="always" swliveconnect="true" allowfullscreen="true" bgcolor="#FFFFFF" quality="high" file="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp1.flv"></embed></object>
+
+<h3>
+Prednaska 2 - Vytváranie štruktúry webu v Drupale - Martin Valášek, Jojo Tóth</h3>
+
+<object id="playerID" style="z-index: 1;" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="540" height="405" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="file" value="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp2.flv" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><param name="WindowlessVideo" value="-1" /><param name="wmode" value="opaque" /><param name="FlashVars" value="width=560&amp;height=340&amp;autostart=false&amp;usefullscreen=true&amp;javascriptid=playerID" /><param name="name" value="playerID" /><param name="flashvars" value="width=560&amp;height=340&amp;autostart=false&amp;usefullscreen=true&amp;javascriptid=playerID" /><param name="src" value="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp2.flv" /><param name="allowfullscreen" value="true" /><embed id="playerID" style="z-index: 1;" type="application/x-shockwave-flash" width="540" height="405" src="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp2.flv" name="playerID" flashvars="width=560&amp;height=340&amp;autostart=false&amp;usefullscreen=true&amp;javascriptid=playerID" wmode="opaque" windowlessvideo="-1" allowscriptaccess="always" swliveconnect="true" allowfullscreen="true" bgcolor="#FFFFFF" quality="high" file="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp2.flv"></embed></object>
+
+<h3>
+Prednaska 6 - SEO optimalizace v Drupalu - David Monoszon
+</h3>
+
+<object id="playerID" style="z-index: 1;" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="540" height="405" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="file" value="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp6.flv" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><param name="WindowlessVideo" value="-1" /><param name="wmode" value="opaque" /><param name="FlashVars" value="width=560&amp;height=340&amp;autostart=false&amp;usefullscreen=true&amp;javascriptid=playerID" /><param name="name" value="playerID" /><param name="flashvars" value="width=560&amp;height=340&amp;autostart=false&amp;usefullscreen=true&amp;javascriptid=playerID" /><param name="src" value="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp6.flv" /><param name="allowfullscreen" value="true" /><embed id="playerID" style="z-index: 1;" type="application/x-shockwave-flash" width="540" height="405" src="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp6.flv" name="playerID" flashvars="width=560&amp;height=340&amp;autostart=false&amp;usefullscreen=true&amp;javascriptid=playerID" wmode="opaque" windowlessvideo="-1" allowscriptaccess="always" swliveconnect="true" allowfullscreen="true" bgcolor="#FFFFFF" quality="high" file="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp6.flv"></embed></object>
+
+<h3>
+Prednaska 8 - Drupal v praxi - Case Studies - Boris Gombarčík, Martin Cagalinec
+</h3>
+
+<object id="playerID" style="z-index: 1;" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="540" height="405" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="file" value="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp8.flv" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><param name="WindowlessVideo" value="-1" /><param name="wmode" value="opaque" /><param name="FlashVars" value="width=560&amp;height=340&amp;autostart=false&amp;usefullscreen=true&amp;javascriptid=playerID" /><param name="name" value="playerID" /><param name="flashvars" value="width=560&amp;height=340&amp;autostart=false&amp;usefullscreen=true&amp;javascriptid=playerID" /><param name="src" value="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp8.flv" /><param name="allowfullscreen" value="true" /><embed id="playerID" style="z-index: 1;" type="application/x-shockwave-flash" width="540" height="405" src="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp8.flv" name="playerID" flashvars="width=560&amp;height=340&amp;autostart=false&amp;usefullscreen=true&amp;javascriptid=playerID" wmode="opaque" windowlessvideo="-1" allowscriptaccess="always" swliveconnect="true" allowfullscreen="true" bgcolor="#FFFFFF" quality="high" file="http://www.metoo.sk/include/libs/flashplayer/mediaplayer.swf?file=http://www.metoo.sk/storage/drupalcamp8.flv"></embed></object>  </div>
+<div id="node-382" class="section-2">
+  <h1 class="book-heading">Sprievodca inštaláciou</h1>
+  
+<p>Drupal obsahuje inštalačný skript, ktorý automaitcky vytvorí
+databázové tabuľky a nastaví správne hodnoty do súboru settings.php. Táto
+sekcia sa zaoberá prípravou na inštaláciu, samotnou inštaláciou a krokmi,
+ktoré by mali byť vykonané po úspešnej inštalácii Drupalu.</p>
+
+<p><strong>Iné nástroje</strong> Niektoré kroky inštalácie môžu byť
+vykonané pomocou grafických aplikácií alebo nástrojmi, ktoré poskytuje
+webhosting v administračnom rozhraní, napr. vytváranie databázy,
+nahrávanie a zmena práv súborov. Táto dokumentácia sa zaoberá hlavne ako
+to urobiť pomocou príkazového riadku. Pre informácie ako použiť iné
+nástroje bude potrebné pozrieť si dokumentáciu danej aplikácie alebo
+daného nástroja poskytovaného webhostingom.</p>
+
+<p><strong>Vytvorenie testovacej stránky na lokálnom počítači</strong> Je
+veľmi dobrým zvykom vyvýjať a testovať na oddelenej stránke, napr. na
+vlastnom počítači, predtým ako urobíte zmeny na skutočnej stránke.
+Testovacia stránka Vám umožní zistiť dopad nových upgradov, otestovať
+nové moduly, zmeny v témach bez negatívneho efektu na živej stránke.</p>
+
+<!-- by Texy2! -->  <div id="node-406" class="section-3">
+  <h1 class="book-heading">Systémové požiadavky</h1>
+  
+<p><strong>Web server</strong></p>
+
+<p>Drupal je možné prevádzkovať na webserveroch Apache aj IIS.</p>
+
+<p><a href="http://httpd.apache.org/">Apache</a> (odporúčaný)</p>
+
+<ul>
+	<li>Drupal pobeží na webserveroch Apache 1.3 a Apache 2.x pod operačnými
+	systémami UNIX/Linux, OS X alebo Windows. Vo veľkej vačšine prípadov sa
+	Drupal vyvíja a nasadzuje na Apache, s čím je spojené aj väčšie
+	množstvo skúseností v komunite pod týmto webserverom.</li>
+
+	<li>Ak chcete používať „čisté URL“ je potrebné mať zapnutý
+	‚mod_rewrite‘</li>
+</ul>
+
+<p><a href="http://www.microsoft.com/iis">Microsoft IIS</a></p>
+
+<ul>
+	<li>Jadro Drupalu pobeží na IIS 5 alebo IIS 6 s PHP pri správnej
+	konfigurácii. Z dôvodu životného cyklu podpory Microsoft sa odporučuje
+	používať IIS 6 alebo IIS 7.</li>
+
+	<li>Na dosiahnutie „čistých URL“ budete potrebovať produkt tretej strany.
+	Ak používate IIS 7 môžete skúsiť „Microsoft URL Rewrite Module for IIS
+	7.0 CTP1“http­://learn.iis.net/pa­ge.aspx/460/u­sing-url-rewrite-module.</li>
+
+	<li>Ak používate IIS 7 s fastcgi musíte nainštalovať <a
+	href="http://support.microsoft.com/kb/954946">Hotfix kb954946</a> alebo počkať
+	kým sa hotfix neobjaví v updatovacom balíčku (odporučené).</li>
+</ul>
+
+<p>Drupal je vyvíjaný nezávisle od typu webserveru, ale nemáme žiadne
+ďalšie informácie o možnosti použitia na iných typoch webserverov.</p>
+
+<p>Celková veľkosť nainštalovaného Drupalu záleží od toho, čo si na
+svoju stránku pridáte, ale samotné <em>jadro</em> Drupalu zaberá asi 3MB
+(nekomprimované). Presná veľkosť záleží od verzie Drupalu, ktorú ste
+nainštalovali.</p>
+
+<p><strong>PHP</strong></p>
+
+<p>Odporúčané: PHP 5.2 alebo vyššie</p>
+
+<p>Minimálne: PHP 4.3.5 alebo vyššie</p>
+
+<ul>
+	<li>PHP 5.2 alebo vyššie bude povinné pre Drupal 7.</li>
+
+	<li>veľkosť pamäti v PHP 16 MB alebo vyššia pre štandartnú inštaláciu
+	Drupalu 6 (8 MB alebo vyššia môže byť dostačujúca pre skoršie verzie).
+	V závislosti od použitia iných pridaných modulov môže byť potrebné
+	zvýšiť PHP memory limit nad 16 MB.</li>
+
+	<li>rozširenie PHP pre pripojenie do Vami vybranej databázy musí byť
+	nainštalované a zapnuté. Drupal súčasnepodporuje nasledovné databázové
+	konektory: <a href="http://www.php.net/manual/en/ref.mysql.php">mysql</a>
+	(pôvodné MySQL rozšírenie), <a
+	href="http://www.php.net/manual/en/mysqli.summary.php">mysqli</a> (vylepšený
+	konektor pre novšie verzie MySQL), a <a
+	href="http://www.php.net/manual/en/ref.pgsql.php">pgsql</a> (pre PostgreSQL).
+	Poznámka: PHP 5.x štandartne mysql rozšírenie nezapína. Naviac, Drupal 6.x
+	neponúkne možnosť zvoliť si mysql konektor ak je mysqli rozšírenie
+	zapnuté v konfigurácii PHP.</li>
+
+	<li>PHP XML rozšírenie (pre blogapi, drupal, a ping moduly). Toto rozšírenie
+	je štandartne zapnuté v typickej inštalácii PHP; verzia PHP pre Windows má
+	vstavanú podporu pre toto rozšírenie.</li>
+
+	<li>knižnica pre obrázky do PHP ako je <a href="http://www.php.net/gd">GD
+	knižnica</a> je potrebná pre manipuláciu s obrázkami (zmena veľkosti
+	obrázkov, image a imagecache moduly). GD je súčasťou PHP 4.3 a vyšších a
+	štandartne je zapnutá. <a
+	href="http://www.imagemagick.org/script/index.php">ImageMagick</a> takisto
+	postačuje pre základnú manipuláciu s obrázkami v jadre Drupalu, ale je
+	oveľa menej podporovaná v rozširujúcich moduloch.</li>
+
+	<li>pre správny chod Drupalu je potrebné mať v PHP nastavené konfiguračné
+	direktívy nasledovne (len direktívy, ktoré sa líšia od štandartného
+	nastavnia):
+		<ul>
+			<li>register_globals: off; toto je štandartná hodnota, ale niektoré hostingy
+			ju majú zapnutú</li>
+
+			<li>session.save_han­dler: user</li>
+
+			<li>error_reporting nastavené na E_ALL &amp; ~E_NOTICE alebo E_ALL pre
+			Drupal 6.</li>
+
+			<li>safe_mode: off. Safe mode môže prekážať pri uploade súborov a
+			obrázkov.</li>
+
+			<li>Naviac odporúčame nasledovné nastavenie: session.cache_li­miter:
+			nocache</li>
+		</ul>
+	</li>
+
+	<li>Niektoré z týchto nastavení sú obsiahnuté v štandartnom .htaccess
+	súbore, ktorý je pribalený k Drupalu, takže nie je nutné ich nastavovať
+	osobitne. Majte však na vedomí, že nastavovanie PHP direktív pomocou
+	.htaccess je možné len za nasledovných podmienok:
+		<ul>
+			<li>pri webserveri Apache (alebo kompatibilnom)</li>
+
+			<li>ak je súbor .htaccess čítaný, t.j. AllowOverride nie je None</li>
+
+			<li>ak PHP je nainštalované ako modul Apache-u</li>
+		</ul>
+	</li>
+
+	<li>Pozrite si <a
+	href="http://www.php.net/manual/en/configuration.changes.php#configuration.changes.other">PHP
+	manuál</a>, aby ste sa dozvedeli viac o zmenách v nastavovaní v PHP.</li>
+
+	<li>Pri niektorých zdieľaných porstrediach na hostingoch, prístup k týmto
+	nastaveniam je obmedzený. Ak neviete urobiť tieto zmeny sami, prosím
+	kontaktujte svojho prevázdkovateľa webhostingu, aby Vám ich nastavil.</li>
+</ul>
+
+<p><strong>Databázový server</strong></p>
+
+<p>Odporúčaný: <a href="http://www.mysql.com/">MySQL</a> 4.1 alebo <a
+href="http://www.mysql.com/">MySQL</a> 5.0</p>
+
+<ul>
+	<li>Drupal 5.x a skoršie podporujú MySQL 3.23.17 alebo vyššie. MySQL
+	4.1 alebo vyššie je silno odporúčané.</li>
+
+	<li>Drupal 6 podporuje MySQL 4.1 alebo vyššie.</li>
+
+	<li>Drupal 7 bude podporovať iba MySQL 5.0 alebo vyššie.</li>
+
+	<li>Poznámka: Drupal používa určité vlastnosti, ktoré nemusia byť
+	povolené na lacných webhosingoch. Prosím skontrolujte, či váš databázový
+	účet má práva na: SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX,
+	ALTER. Tieto práva sú dostatočné pre beh Drupalu 6.x.Niektoré prídavné
+	moduly a takisto Drupal 5.x okrem spomínaných potrebujú práva na: CREATE
+	TEMPORARY TABLES, LOCK TABLES.</li>
+
+	<li>Poznámka: Ak požívate Drupal 6.x alebo novší, prípadne s prídavnímy
+	modulmi, môže byť potrebné nastaviť systémovú premennú
+	max_allowed_packet na aspoň 16M. Niektoré lacné webhostingymajú túto
+	hodnotu nastavenú príliš nízko (štandartne je v MySQL nastavená na len
+	1M). V takom prípade možno budete potrebovať lepší webhosting. Hodnota 1M
+	by mala byť postačujúca pre Drupal 5.x.</li>
+</ul>
+
+<p><a href="http://www.postgresql.org/">PostgreSQL 7.4</a> alebo vyššie</p>
+
+<ul>
+	<li>Poznámka: Niektoré prídavné moduly nie sú na toľko nezávislé od
+	MySQL ako by ste si možno predstavovali. Ak sa vyznáte v PostgreSQL prosím
+	napravte problémy v týchto moduloch keď ich nájdete.</li>
+
+	<li>Drupal 7 bude podporovať len PostgreSQL 8.3 alebo vyšší</li>
+
+	<li>PHP 5.2.6 pre Windows má chybu v pgsql rozšírení. Bude potrebné ho
+	zmeniť za php_pgsql.dll z verzie 5.2.5.</li>
+</ul>
+  </div>
+<div id="node-387" class="section-3">
+  <h1 class="book-heading">Upgrade z predchádzajúcich verzií</h1>
+  
+<p>Každá verzia drupalu obsahuje v koreňovom priečinku aktualizačný
+skript <em>update.php</em>.</p>
+
+<p>Presný postup tej-ktorej verzie nájdete popísaný v súbore UPGRADE.txt
+v koreňovom priečinku inštalácie.</p>
+  </div>
+<div id="node-414" class="section-3">
+  <h1 class="book-heading">Vytvorenie databázy</h1>
+  
+<p>Drupal potrebuje pri inštalácii prístup k databáze. Váš databázový
+užívateľ potrebuje dostatočné práva pre beh Drupalu. ďalšie informácie
+o právach a krokoch ako vytvoriť databázu pomocou príkazového riadku
+nájdete v súboroch INSTALL.mysql.txt (pre MySQL) alebo INSTALL.pgsql.txt (pre
+PostgreSQL).</p>
+
+<p>Ak chcete vytvoriť databázu pomocou PHPMyAdmin(PHPPgAd­min) alebo cez
+webové adminstračné rozhranie, pozrite si dokumentáciu alebo sa spýtajte
+poskytovateľa Vášho webhostingu.</p>
+
+<p>Ak databázu vytvorenú už máte, poznačte si meno databázového
+užívateľa, heslo, názov databázy a hostname (pravdepodobne localhost, ak
+nie je uvedené inak). Tieto údaje neskôr zadáte behom inštalácie
+Drupalu.</p>
+  </div>
+<div id="node-413" class="section-3">
+  <h1 class="book-heading">Zmena oprávnení konfiguračného súboru</h1>
+  
+<p>Drupal obsahuje štandartný konfiguračný súbor default.settin­gs.php
+v adresári sites/default. Pred spustením inštalácie musíte
+<strong>vytvoriť kópiu</strong> tohto súboru v sites/default a pomenovať ju
+„settings.php.“ (Poznámka: nepremnujte iba štandartný súbor, ale
+skopírujte ho. Drupal vyžaduje, aby súbor default.settin­gs.php existoval.)
+Mali by ste mať oba súbory default.settin­gs.php a settings.php v adresári
+sites/default. Inštalátor Drupalu upraví súbor settings.php podľa údajov
+zadaných behom inštalácie.</p>
+
+<p>Pokiaľ chcete nainštalovať Drupal na stroj s operačným systémo
+založeným na UNIXe (drvivá väčšina webhostingov), bude zrejme potrebné
+zmeniť práva na zápis do konfiguračného súboru.</p>
+
+<p>Po vytvorení nového súboru sa uistite, či je možné do neho zapisovať.
+Práva na zápis môžete udeliť priíkazom (z inštalačného adresáru):
+chmod a+w sites/default/set­tings.php alebo chmod
+666 sites/defau­lt/settings.php</p>
+
+<p>Drupal by mal zmeniť práva súboru späť po inštalácii. Uistite sa však
+o tom a sami zmeňte práva ak sa tak nestalo. Môžete použiť podobný,
+jemne modifikovaný príkaz, ktorým práva na zápis odoberiete:</p>
+
+<p>chmod a-w sites/default/set­tings.php alebo chmod
+444 sites/defau­lt/settings.php</p>
+  </div>
+</div>
+<div id="node-580" class="section-2">
+  <h1 class="book-heading">Budujeme web</h1>
+    <div id="node-385" class="section-3">
+  <h1 class="book-heading">Hlavné moduly</h1>
+  
+<p>Drupal v súčasnosti (december 2009) ponúka viac ako 5000 modulov, ktoré
+rozširujú možnosti základného systému prakticky donekonečna :)</p>
+
+<p>v skutočnosti však na realizáciu vášho webu pravdepodobne budete
+potrebovať len niekoľko z nich.</p>
+
+<p>Bez niektorých modulov, ktoré nie sú súčasťou jadra Drupalu, sa
+jednoducho nezaobídete. Táto stránka slúži ako predstavenie najčastejšie
+používaných modulov a ich stručné charakteristiky, prípadne odkaz na
+alternatívy.</p>
+
+<p>Odorúčame vám prezrieť si zoznam aktuálne najpoužívanejších modulov,
+ktorý nájdete na <a
+href="http://drupal.org/project/usage/">http://drupal.org/project/usage/</a></p>
+
+<h1>Views</h1>
+
+<p>Generuje zoznamy objektov – uzly, užívatelia, termíny taxonómie podľa
+vami zadaných kritérií a parametrov. Ideálne na vytváranie blokov,
+stránok, súhrnov, tabuliek.</p>
+
+<h1>Token</h1>
+
+<p>Umožňuje vkladať do textu na predznačené miesta údaje z databázy.
+<em>(Od verzie 7 súčasť jadra)</em></p>
+
+<h1>Content Construction Kit (CCK)</h1>
+
+<p>Postavte si vlastný obsahový typ s vlastnou zostavou editovateľných
+polí. Obsahové typy môžu byť medzi sebou prepojené a vytvárať sieť
+vzťahov. Pre pole určíte spôsob zadávania(widget), spôsob prezentácie
+(formatter). <em>(Od verzie 7 súčasť jadra)</em></p>
+
+<h1>Pathauto</h1>
+
+<p>Vysoko konfigurovateľné vytváranie ľahko zapamätateľných ciest
+k obsahu. Namiesto <a
+href="../../../../node/385/index.html">http://drupal.sk/node/385</a> tak uvidíte
+napr. <a
+href="http://drupal.sk/drupal-hlavne-moduly.html">http://drupal.sk/…-moduly.html</a></p>
+
+<h1>FileField</h1>
+
+<p>Náhrada za štandardne dodávaný modul Upload. Je to CCK pole umožňujúce
+pripájať súbory k uzlom.</p>
+
+<h1>ImageField</h1>
+
+<p>Rozšírenie pre FileField, umožnujúce pripájať k uzlom obrázky.</p>
+
+<h1>ImageCache</h1>
+
+<p>Nastavte si profily pre spracovanie nahratých obázkov. Umožňuje
+generovať a zobrazovať jeden obrázok do viacerých veľkostí, tvarov,
+prípadne aj zložitejšie efekty. Dôležitá prerekvizita je modul
+ImageAPI.</p>
+
+<h1>Date a Calendar</h1>
+
+<p>Kompletná sada na vkladanie a zobrazovanie dátumov, časových zón,
+vlastných formátov, udalostí.</p>
+
+<h1>Google Analytics</h1>
+
+<p>Integrácia analytických nástrojov o návštevnosti stránok.</p>
+
+<h1>Poormanscron</h1>
+
+<p>V prípade že nemáte možnosť využívať cron na vašom webhostingu,
+tento modul vám poskytne dobré služby namiesto neho. <em>(Od verzie
+7 súčasť jadra)</em></p>
+
+<h1>Webform</h1>
+
+<p>Vytváranie, správa, štatistiky webových formulárov na vypĺňanie
+návštevníkmi vašich stránok.</p>
+
+<h1>CAPTCHA a ReCAPTCHA</h1>
+
+<p>Ochráňte svoje formuláre pred nežiadúcimi príspevkami zo spambotov.</p>
+
+<h1>Wysiwyg</h1>
+
+<p>API pre používanie wysiwyg editorov na vašich stránkach. Obsahuje podporu
+pre veľké množstvo editorov – (F)CKEditor, TinyMCE, BUEditor a
+ďalšie.</p>
+
+<h1>CKEditor</h1>
+
+<p>Jeden z najpopulárnejšich wysiwyg editorčekov.</p>
+
+<h1>IMCE</h1>
+
+<p>Manažér obrízkov a súborov pre redaktorov obsahu. Umožňuje vkladanie
+obrázkov do textu atď.</p>
+
+<h1>Lightbox2</h1>
+
+<p>Obľúbené js riešenie na prezentáciu obrázkov.</p>
+
+<h1>Nodewords</h1>
+
+<p>Definovanie kľúčových slov pre každú stránku zvlášť.</p>
+
+<h1>XML Sitemap</h1>
+
+<p>Generovanie mapy stránok pre zlepšenie indexovania vo vyhľadávačoch.</p>
+
+<h1>Backup And Migrate</h1>
+
+<p>Ručné, prípadne automatické vytváranie záloh databázy do priečinka na
+serveri.</p>
+  </div>
+<div id="node-516" class="section-3">
+  <h1 class="book-heading">Moduly pre vývojárov a správcov</h1>
+  
+<p>Okrem modulov na budovanie stránky sú tu aj moduly, ktoré uľahčujú
+prácu vývojárom a správcom stránky.</p>
+
+<h1>Administration Menu</h1>
+
+<p>Pohodlné roletkové menu, používané administrátorom namiesto klasického
+bloku Navigácia. Šetrí mnoho času, pretože obsahuje mnoho vychytávok
+spríjemňujúcich prá­cu.</p>
+
+<h1>Devel</h1>
+
+<p>Sada vývojárskych modulov. Testovanie výkonu, štatistiky, generovanie
+obsahu, pomôcky pri témovaní, výpise premenných a mnoho ďalšieho.</p>
+
+<h1>drush</h1>
+
+<p>nie tak celkom modul, skôr sada shell skriptov pre prácu s drupal
+z príkazového riadku. Ohromne uľahčuje najmä inštaláciu, aktiváciu a
+deaktiváciu modulov. Na úspešné použitie však potrebujete shell prístup
+na server.</p>
+
+<h1>Drupal for Firebug</h1>
+
+<p>Skladá sa z modulu pre drupal a Firefox pluginu. Zobrazuje premenné
+drupalu v konzole rozšírenia Firebug.</p>
+
+<h1>SimpleTest</h1>
+
+<p>Balík pre automatizované testovanie</p>
+  </div>
+<div id="node-587" class="section-3">
+  <h1 class="book-heading">Návody</h1>
+  <p>Na tomto mieste budeme zhromažďovať návody na realizáciu rôznej funkcionality, ktorú zvládnete bez programovania.</p>
+  <div id="node-546" class="section-4">
+  <h1 class="book-heading">Ako vytvoriť abecedný index pre view v Drupale?</h1>
+  <p>Predvčerom mi z&aacute;kazn&iacute;k poslal e-mailom požiadavku, že chce ist&yacute; zoznam na jeho webe zoradiť podľa abecedy a pridať k nemu aj abecedn&yacute; index. Tak&yacute;, kde je každ&eacute; p&iacute;smeno abecedy odkazom za str&aacute;nku, na ktorej bud&uacute; zobrazen&eacute; len tie položky zoznamu, ktor&eacute; zač&iacute;naj&uacute; na konkr&eacute;tne p&iacute;smeno. Vďaka tomu, že jeho web je postaven&yacute; na Drupale som to mal hotov&eacute; veľmi r&yacute;chlo a odozva to potvrdila. <em>&quot;Nuž, niet nad spokojn&eacute;ho z&aacute;kazn&iacute;ka&quot;</em>, vrav&iacute;m si v tak&yacute;ch chv&iacute;ľach. St&aacute;le mi v&scaron;ak vŕtalo hlavou, či na to rie&scaron;enie, ktor&eacute; som spravil bez použitia na to určen&eacute;ho modulu, predsalen nejak&yacute; neexistuje. Existuje. Vol&aacute; sa <a href="http://drupal.org/project/views_alpha_pager">Views Alpha Pager</a> a jeho jedinou chybou je, že pre Drupal 6, resp. pre Views 2 neexistuje vydanie. A tak bolo pravdepodobne moje rie&scaron;enie asi jedin&yacute;m možn&yacute;m (i keď vari&aacute;ci&iacute; naň m&ocirc;že byť viacero). Tak sa na to poďme pozrieť:Cel&yacute; trik je v tom, že p&iacute;smeno abecedy budeme Drupalu pods&uacute;vať v URI, teda v odkaze. Takže v&scaron;etky čl&aacute;nky zač&iacute;naj&uacute;ce na A bud&uacute; mať adresu <code>www.nasweb.sk/clanky/a</code>. Tak&yacute;to parameter pred&aacute;van&yacute; v URI sa vo Views terminol&oacute;gii vol&aacute; argument. Jeden si teda v na&scaron;om view aj hneď prid&aacute;me a nastav&iacute;me ho zhruba podľa priložen&eacute;ho obr&aacute;zku. <img src="http://drupal.sk/files/screen.png" /> Kľ&uacute;čov&yacute;m nastaven&iacute;m je v ňom tzv. <strong>Glossary mode</strong>, ktor&yacute; zaruč&iacute; pr&aacute;ve to, že si budeme m&ocirc;cť nastaviť limit pre počet p&iacute;smen v argumente. My kontrolujeme len prv&eacute;, takže limit bude celkom logicky 1. Toto je t&aacute; jednoduch&scaron;ia, klikacia časť. Ak chceme pridať nad view aj abecedn&yacute; index tak n&aacute;s čak&aacute; aj tro&scaron;ku p&iacute;sania k&oacute;du, i keď je to k&oacute;d veľmi primit&iacute;vny a v&auml;č&scaron;inu čas budeme aj tak použ&iacute;vať len CTRL+C a CTRL+V. Tento k&oacute;d bude vyzerať nejako takto: <code> &lt;div class=&quot;abeceda&quot;&gt; &lt;a href=&quot;http://www.nasweb.sk/clanky/a&quot;&gt;a&lt;/a&gt; &lt;a href=&quot;http://www.nasweb.sk/clanky/b&quot;&gt;b&lt;/a&gt; &lt;a href=&quot;http://www.nasweb.sk/clanky/c&quot;&gt;c&lt;/a&gt; </code> a tak ďalej až po Z. A nap&iacute;&scaron;eme ho, samozrejme, do hlavičky view. Nezabudnite zvoliť pr&iacute;slu&scaron;n&yacute; vstupn&yacute; form&aacute;t tak, aby akceptoval v&scaron;etky HTML tagy, ktor&eacute; ste použili, pretože ako som už naznačil, vari&aacute;ci&iacute; na tento n&aacute;pad m&ocirc;že byť viac a možno pr&iacute;dete na niečo in&eacute;, čo by sa v&aacute;m e&scaron;te zi&scaron;lo. Ja v&aacute;m pre tentokr&aacute;t m&ocirc;žem sľ&uacute;biť len to že ak sa mi podar&iacute; zistiť ako nastaviť variabiln&uacute; dĺžku argumentu, nap&iacute;&scaron;em e&scaron;te lep&scaron;&iacute; n&aacute;vod. Totižto, jedin&yacute;m probl&eacute;mom s ktor&yacute;m si zatiaľ neviem rady je nastavenie view tak aby bral do &uacute;vahy argumenty o r&ocirc;znej dĺžke. To znamen&aacute;, že čl&aacute;nok zač&iacute;naj&uacute;ci napr&iacute;klad slovom Drupal sa objav&iacute; na str&aacute;nke <code>www.nasweb.sk/clanok/d</code> ale aj <code>www.nasweb.sk/clanok/dru</code>. Zatiaľ som sa dozvedel len toľko, že si na to budem musieť nap&iacute;sať vlastn&yacute; argument handler. Ak sa mi to podar&iacute;, r&aacute;d sa oň s vami podel&iacute;m.</p>
+  </div>
+</div>
+<div id="node-588" class="section-3">
+  <h1 class="book-heading">Zdroje tretích strán</h1>
+  
+<p>Návody na drupal zo serverov tretích strán.</p>
+
+<ul>
+	<li><a
+	href="http://video.sospreskoly.org/video/Drupal/">http://video.sospreskoly.org/video/Drupal/</a> –
+	niekoľko zaujímavych videonávodov pre začiatočníkov.</li>
+</ul>
+
+<!-- by Texy2! -->  </div>
+</div>
+<div id="node-583" class="section-2">
+  <h1 class="book-heading">Vyvíjame tému </h1>
+  <p>Táto príručka obsahuje informácie o budovaní tém pre drupal.</p>
+  <div id="node-679" class="section-3">
+  <h1 class="book-heading">Ako vytvoriť template (tému/theme) pre jednoduchý Drupal web.</h1>
+  
+<p>Hoci je redakčný systém <a href="http://drupal.org/">Drupal</a>
+v súčasnosti považovaný za jedno z najlepších (ak nie vôbec najlepšie)
+riešení pre realizáciu dynamického webu pomocou voľne dostupných
+nástrojov, v oblasti ponuky vzhľadov (či tém, ak chcete) zásadne
+pokrivkáva. Nie je to len môj názor – stretol som sa s ním pri mnohých
+porovnaniach jednotlivých redakčných sytémov, či dokonca pri stretnutiach
+s klientami (pričom v oboch prípadoch vždy jasne víťazil <a
+href="http://wordpress.org/">WordPress</a>). To, prečo to tak je, mi síce
+ostáva záhadou, pretože že Drupal má v tomto smere veľmi bohaté
+možnosti, ale v tomto článku to nechcem ani nebudeme riešiť.</p>
+
+<p>Poďme sa radšej pozrieť na to ako pripravíme grafickú tému pokiaľ
+nechcem použiť žiadnu z voľne dostupných (teda nechceme aby náš web
+vyzeral ako ďalšie stovky iných). Dá sa to urobiť tak, že nájdeme voľne
+dostupnú grafickú tému najviac sa podobajúcej výsledku, ktorý chceme
+dosiahnúť (napríklad počtom a umiestnením regiónov). Ťažisko celej
+práce je potom na nekonečnom upravovaní príslušných .css a .tpl súborov
+za významnej nejakého developer nástroja pre váš prehliadač. Táto
+možnosť mne osobne pripadá ako najzdĺhavejšia a „najšpinavšia“.</p>
+
+<p>Druhou možnosťou je použitie <a
+href="http://drupal.org/project/zen">grafickej témy Zen</a>. Táto sama o sebe
+žiadnu grafiku neobsahuje – je to skôr balík podrobne zdokumentovaných
+súborov pre vytvorenie novej témy. Ak ste náhodou o nej nevedeli,
+odporúčam aspoň vyskúšať. Pre jednoduchý template je to však ako ísť
+s tankom na zajace a ja osobne som sa často cítil ako Alenka v ríši
+<em>div</em>ov.</p>
+
+<p>Tretia možnosť, a tu sa konečne dostávame k niečomu konkrétnemu, je
+grafickú tému vytvoriť. V tomto prípade pôjdeme úplne opačným
+smerom – nebudeme upravovať žiadnu existujúcu tému, ale vytvoríme si
+svoju vlastnú na zelenej lúke a do nej neskôr pridáme Drupal. Skôr, než
+začneme, znovu si pripomeňme že ide o návod ako vytvoriť grafický vzhľad
+pre veľmi jednoduchý web – taký, v ktorého prípade by predchádzajúce
+dve možnosti znamenali množstvo nadbytočného HTML/CSS kódu.</p>
+
+<p>Najprv povedzme Drupalu niečo o našej novej téme. Nech má hlavičku, pod
+ňou menu a pod ním tradičný trojstĺpcový layout s fixnou šírkou.
+V adresári sites/default/the­mes vytvoríme nový podadresár a pomenujeme ho
+napríklad <code>test_theme</code>. V ňom ako prvý vytvoríme súbor
+test_theme.info a vložíme doň tieto informácie:</p>
+
+<pre
+class="txt"><code>name = Testovacia téma
+description = Téma pre účely článku
+version = 1.0
+core = 6.x
+engine = phptemplate
+
+regions[menu] = "Menu"
+regions[content] = "Hlavný obsah"
+regions[left] = "Vľavo"
+regions[right] = "Vpravo"</code></pre>
+
+<p>V prvých piatoch riadkoch sme postupne definovali názov tejto témy
+(zobrazený v admin rozhraní na stránke so zoznamom vzhľadov), jej popis
+(tamtiež), verziu, ďalej verziu Drupalu s ktorou je téma kompatibilná a
+engine, ktorý bude táto téma používať. Štandardný
+<code>PHPtemplate</code> je fajn.</p>
+
+<p>V ďalších štyroch riadkoch sme definovali regióny, do ktorých budeme
+umiestňovať jednotlivé časti obsahu. Ak nechcete používať iné časti
+webu ako <code>left, right, content, header, footer</code>, tak ich nemusíte
+definovať vôbec – tieto vymenované predpokladá Drupal automaticky (a
+počnúc Drupalom 7 aj región <code>help</code>).</p>
+
+<p><strong>Čas tejto akcie: 5 minút.</strong></p>
+
+<p>Aby sme mali pekný zoznam tém na stránke ich administrácie, vytvorme
+z nášho grafického návrhu súbor <code>screenshot.png</code> a
+nakopírujeme ho do tohto adresára. Dodržte rozmer 150*90 pixelov.</p>
+
+<p><strong>Čas tejto akcie: 1 minúta.</strong></p>
+
+<p>Teraz sa pozrieme na samotné html. Náš čistý návrh bude vyzerať takto
+nejako:</p>
+
+<pre
+class="html"><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" lang="sk"&gt;
+        &lt;head&gt;
+                &lt;title&gt;Názov webu&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+                &lt;div id="wrapper"&gt;
+                        &lt;div id="header"&gt;&lt;/div&gt;
+                        &lt;div id="menu"&gt;Menu&lt;/div&gt;
+                        &lt;div id="left"&gt;Stĺpec vľavo&lt;/div&gt;
+                        &lt;div id="content"&gt;
+                                Obsah
+                        &lt;/div&gt;
+                        &lt;div id="right"&gt;Stĺpec vpravo&lt;/div&gt;
+                &lt;/div&gt;
+        &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<p>Tento zdrojový kód treba umiestniť do súboru ktorý sa volá page.tpl.php
+a hovorí Drupalu ako bude vyzerať layout stránky. Nie je ešte finálny –
+budeme ho upravovať.</p>
+
+<p><strong>Čas tejto akcie: 5 minút.</strong></p>
+
+<p>Analogicky k nemu bude css vyzerať podobne tomuto:</p>
+
+<pre
+class="css"><code>body            {margin:0px;padding:0px;font-family: Arial, "MS Trebuchet", sans-serif;color:#333;}
+
+#wrapper        {width:1024;margin-left:auto;margin-right:auto;}
+#header         {height:200px;background-image:url('images/header.jpg');}
+#menu           {height:30px;}
+#left           {width:212px;float:left;padding:0px;margin:0px;}
+#right          {width:212px;float:left;padding:0px;margin:0px;}
+#content        {width:600px;float:left;padding:0px;margin:0px;}</code></pre>
+
+<p>Pomenujeme ho <code>style.css</code> a uložíme do adresára k ostatným
+súborom. CSS súbor s týmto názvom prečíta Drupal automaticky. Ak vám
+nekontrolovane nabobtná a budete ho chcieť rozdeliť na viac css súborov,
+budete to Drupalu musieť povedať v súbore .info pomocou kľúča
+<code>stylesheets</code>. Všimnite si, že obrázok pre hlavičku webu
+„ťahám“ z adresára images – je to podadresár v adresári našej
+témy. Toto je, samozrejme, to úplne najnutnejšie css. Vy budete pravdepodobne
+chcieť iné rozmery jednotlivých častí webu, iný typ písma, pridať farbu
+pozadia alebo obrázok, atď. V tomto konkrétnom prípade bude napríklad
+pomocou css prerobiť menu na horizontálne, aby sa nám tam vmestilo.</p>
+
+<p><strong>Čas tejto akcie: 5 minút.</strong></p>
+
+<p>Poďme teraz späť k nášmu súboru HTML. Toto je ten moment, kedy téma
+prestane byť len statickou HTML stránkou pretože k nej pridáme „motor“
+z Drupalu. Robím sa to pomocou premenných, ktoré obsahujú Drupalom
+dynamicky vygenerovaný obsah. Pozrime sa najprv na hlavičku HTML. V nej
+budeme určite chcieť zahrnúť naše CSS a neskôr prípadne i javascriptové
+súbory. Môžme to urobiť tak, že tam príslušné tagy napíšeme
+„natvrdo“, ale prečo si komplikovať život – nech to Drupal urobí
+za nás.</p>
+
+<p>Miesto textu v tagu title teda napíšeme <code>&lt;?php print $head_title;
+?&gt;</code> a Drupal nám do hlavičky bude automaticky generovať text podľa
+aktuálne zobrazenej stránky. Pod tento tag môžme vložiť ďalšie tri
+premenné:</p>
+
+<pre
+class="php"><code>&lt;?php print $head; ?&gt;
+&lt;?php print $styles; ?&gt;
+&lt;?php print $scripts; ?&gt;</code></pre>
+
+<p>Prvá z nich obsahuje meta tagy, kľúčové slová a podobne, ostatné dve
+sú celkom zrejmé – jedná sa o odkazy k CSS štýlom a skriptom.</p>
+
+<p>Keď miesto textu <em>Menu</em> pridáme do <code>div#menu</code> podobným
+spôsobom premennú <code>$menu</code>, tak všetko, čo v administrácii
+blokov pridáte do regiónu s rovnakým názvom, sa v ňom automaticky
+objaví. V našom prípade tam pôjdu pravdepodobne primárne alebo sekundárne
+odkazy – nezabudnite vhodne upraviť CSS, ako som už naznačil vyššie.</p>
+
+<p>Do <code>div#content</code> pôjde teda celkom analogicky premenná
+<code>$content</code>, ale neukvapujte sa ešte. Nezabudnite na veľmi
+dôležité premenné <code>$tabs, $help, $messages</code>. Zatiaľčo absencia
+posledných dvoch by na vás uvalila len isté informačné embargo (obsahujú
+nápovedu a hlášky o výsledku jednotlivých akcií na webe), chýbajúca
+premenná <code>$tabs</code> by vás odstrihla od charakteristických
+Drupalovských záložiek, veľmi užitočných napríklad pre úpravy
+článkov, či konfiguráciu webu všeobecne. Keďže tieto premenné nie vždy
+niečo obsahujú, zobrazme ich len ak áno.</p>
+
+<pre
+class="php"><code>&lt;?php if ($tabs): print '&lt;div class="tabs"&gt;'.$tabs.'&lt;/div&gt;'; endif; ?&gt;
+&lt;?php if ($help) { ?&gt;&lt;div class="help"&gt;&lt;?php print $help ?&gt;&lt;/div&gt;&lt;?php } ?&gt;
+&lt;?php if ($messages) { ?&gt;&lt;div class="messages"&gt;&lt;?php print $messages ?&gt;&lt;/div&gt;&lt;?php } ?&gt;
+&lt;?php print $content; ?&gt;</code></pre>
+
+<p>Do <code>div#left, div#right</code> pôjdu teda celkom pochopiteľne
+premenné <code>$left, $right</code>. Výsledný <code>page.tpl.php</code> bude
+teda vyzerať takto:</p>
+
+<pre
+class="html"><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" lang="sk"&gt;
+&lt;head&gt;
+        &lt;title&gt;&lt;?php print $head_title; ?&gt;&lt;/title&gt;
+        &lt;?php print $head; ?&gt;
+        &lt;?php print $styles; ?&gt;
+        &lt;?php print $scripts; ?&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        &lt;div id="wrapper"&gt;
+                &lt;div id="header"&gt;&lt;/div&gt;
+                &lt;div id="menu"&gt;&lt;?php print $menu; ?&gt;&lt;/div&gt;
+                &lt;div id="left"&gt;&lt;?php print $left; ?&gt;&lt;/div&gt;
+                &lt;div id="content"&gt;
+                        &lt;?php if ($tabs): print '&lt;div class="tabs"&gt;'.$tabs.'&lt;/div&gt;'; endif; ?&gt;
+                &lt;?php if ($help) { ?&gt;&lt;div class="help"&gt;&lt;?php print $help ?&gt;&lt;/div&gt;&lt;?php } ?&gt;
+                &lt;?php if ($messages) { ?&gt;&lt;div class="messages"&gt;&lt;?php print $messages ?&gt;&lt;/div&gt;&lt;?php } ?&gt;
+                        &lt;?php print $content; ?&gt;
+                &lt;/div&gt;
+                &lt;div id="right"&gt;&lt;?php print $right; ?&gt;&lt;/div&gt;
+        &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<p><strong>Čas tejto akcie: 5 minút.</strong></p>
+
+<p>A tým je vaša téma hotová. Je to, pochopiteľne, veľmi jednoduchá
+grafická téma, ale vytvorili ste ju úplne sami a za menej ako polhodinku,
+pričom ste sa nemuseli hrabať v niekoho iného HTML a CSS súboroch ale máte
+solídny základ pre ďalšie jej úpravy. Pravdepodobne budete pridávať
+ďalšie regióny – chýba nám napríklad pätička stránky. Neskôr budete
+chcieť pomocou súborov <code>block.tpl.php</code>, <code>node.tpl.php</code>,
+<code>comment.tpl.php</code> upraviť vzhľad blokov, článkov či komentárov.
+To už je na vás a na vašom štúdiu možností Drupalu, ktorú sú, ako som
+už bol býval naznačil v úvode, veľmi široké.</p>
+
+<p><strong>Na tomto návode som chcel hlavne ukázať že sa dá ísť aj
+opačným smerom ako upravovať vzhľad pre Drupal. Dá sa totiž, ako ste
+videli, vkladať Drupal do hotového vzhľadu. Pri jednoduchých stránkach je
+to podľa mňa tá najrýchlejšia a najčistejšia ces­ta.</strong></p>
+<strong>Doporučená literatúra:</strong>
+<ol>
+	<li><a href="http://drupal.org/node/171205">Štruktúra theme.info
+	súboru</a></li>
+
+	<li><a
+	href="http://api.drupal.org/api/drupal/modules--system--page.tpl.php/6">Premenné
+	dostupné pre súbor page.tpl.php</a></li>
+</ol>
+
+<!-- by Texy2! -->  </div>
+</div>
+<div id="node-507" class="section-2">
+  <h1 class="book-heading">Vyvíjame moduly</h1>
+  
+<p>Na tejto stránke časom nájdete rady ako začať s vývojom vlastných
+modulov. Zatiaľ len niekoľko odkazov v anglickom jazyku: – <a
+href="http://drupal.org/contributors-guide">http://drupal.org/…butors-guide</a> –
+Príručka pre vývojárov modulov – <a
+href="http://api.drupal.org/">http://api.drupal.org</a> – vynikajúca
+dukumentácia jadra, funkcií a APIs – <a
+href="http://drupalcontrib.org/">http://drupalcontrib.org</a> – dokumentácia
+API komunitných modulov – <a
+href="http://views.doc.logrus.com/">http://views.doc.logrus.com</a> – Views
+2 API manuál – …</p>
+  <div id="node-411" class="section-3">
+  <h1 class="book-heading">Odporúčania pre vývojárov</h1>
+  
+<p>Sem môžete pridávať rôzne rady a tipy týkajúce sa napríkla PHP,
+Drupal API, Javscriptu a jQuery, o ktorých si myslíte, že by sa mohli
+ďalším vývojárom pri ich tvorbe zísť.</p>
+  <div id="node-412" class="section-4">
+  <h1 class="book-heading">Ako správne písať databázové dotazy v drupale</h1>
+  
+<p>Základnou funkciou na spúštanie databázových dotazov je <a
+href="http://api.drupal.org/apis/db_query">db_query()</a> Človek neznalý
+problematiky by mohol napísať SQL dotaz nasledovne</p>
+
+<pre
+class="php"><code>db_query("SELECT title FR OM node WHERE uid=".$_GET['uid']);</code></pre>
+
+<p>Takto napísaný dotaz je však náchylný na <a
+href="http://en.wikipedia.org/wiki/SQL_injection">SQL injection</a> – útok,
+pomocou ktorého je možné sa dostať k ľubovoľným dátam v databáze.
+Útočník by mohol správnym podsunutím vstupu (ako parameter uid pošle
+reťazec ‚1 UNION SELECT sid FR OM sessions‘) dosiahnuť aby sa vykonal
+napríklad dotaz:</p>
+
+<pre
+class="sql"><code>SELECT title FR OM node WHERE uid=1 UNION SELECT sid FR OM sessions</code></pre>
+
+<p>čím získa session id všetkých prihlásených užívateľov a môže sa
+za prihlásiť na účet ľubovoľného z nich (napríklad aj admina ak mal
+záznam v tabuľke sessions)</p>
+
+<p>Obrana proti SQL injection je overenie či je vstup požadovaného formátu a
+pri reťazcoch escapovanie znakov so špeciálnym významom (napríklad
+apostrofy). Toto vie aj spomínaná funkcia <a
+href="http://api.drupal.org/apis/db_query">db_query()</a>, len ju treba
+používať správnym a to nasledovným spôsobom: Namiesto vstupných
+premenných treba písať:</p>
+
+<ul>
+	<li>– %s – pre textový reťazec</li>
+
+	<li>– %d – pre celé číslo</li>
+
+	<li>– %f – pre desatinné číslo</li>
+
+	<li>– %b – pre binárne dáta</li>
+</ul>
+
+<p>pričom vstupné premenné budú ďalšími parametrami funkcie <a
+href="http://api.drupal.org/apis/db_query">db_query()</a> . Napríklad:</p>
+
+<pre
+class="php"><code>db_query("SELECT title FR OM node WHERE uid=%d", $_GET['uid']);</code></pre>
+
+<p>Pokiaľ je vstupných premenných v dotaze viac, každú nahradíme
+príslušným kódom (%x) a samotné premenné budú druhým, tretím, švrtým
+atď. parametrom funkcie <a
+href="http://api.drupal.org/apis/db_query">db_query()</a> . Tá okrem iného pri
+použití takejto syntaxe vyskladá databázový dotaz tak, aby SQL injection
+nebol možný.</p>
+
+<ul>
+	<li>V článku je v databázových dotazoch pridaných niekoľko medzier
+	navyše. Verím, že pozorný čitateľ si všimne kde. Dôvodom sú
+	bezpečnostné nastavenia serveru, kde beží drupal.sk</li>
+</ul>
+  </div>
+<div id="node-408" class="section-4">
+  <h1 class="book-heading">CCK pole s výberom štátu vo vybranom jazyku</h1>
+  
+<p>Pokiaľ potrebujte na dvojazyčnom webe CCK pole s výberom štátu ktoré
+sa zmení podľa vybraného jazyka môžete použiť nasledujúci
+kúsok kódu:</p>
+
+<pre
+class="php"><code>// jazyk
+global $language;
+
+// anglicke nazvy statov
+$countries['en']['AF'] = "Afghanistan";
+$countries['en']['AX'] = "Ĺland Islands";
+$countries['en']['AL'] = "Albania";
+$countries['en']['DZ'] = "Algeria";
+$countries['en']['AS'] = "American Samoa";
+$countries['en']['AD'] = "Andorra";
+$countries['en']['AO'] = "Angola";
+$countries['en']['AI'] = "Anguilla";
+$countries['en']['AQ'] = "Antarctica";
+$countries['en']['AG'] = "Antigua And Barbuda";
+$countries['en']['AR'] = "Argentina";
+$countries['en']['AM'] = "Armenia";
+$countries['en']['AW'] = "Aruba";
+$countries['en']['AU'] = "Australia";
+$countries['en']['AT'] = "Austria";
+$countries['en']['AZ'] = "Azerbaijan";
+$countries['en']['BS'] = "Bahamas";
+$countries['en']['BH'] = "Bahrain";
+$countries['en']['BD'] = "Bangladesh";
+$countries['en']['BB'] = "Barbados";
+$countries['en']['BY'] = "Belarus";
+$countries['en']['BE'] = "Belgium";
+$countries['en']['BZ'] = "Belize";
+$countries['en']['BJ'] = "Benin";
+$countries['en']['BM'] = "Bermuda";
+$countries['en']['BT'] = "Bhutan";
+$countries['en']['BO'] = "Bolivia";
+$countries['en']['BA'] = "Bosnia And Herzegovina";
+$countries['en']['BW'] = "Botswana";
+$countries['en']['BV'] = "Bouvet Island";
+$countries['en']['BR'] = "Brazil";
+$countries['en']['IO'] = "British Indian Ocean Territory";
+$countries['en']['BN'] = "Brunei Darussalam";
+$countries['en']['BG'] = "Bulgaria";
+$countries['en']['BF'] = "Burkina Faso";
+$countries['en']['BI'] = "Burundi";
+$countries['en']['KH'] = "Cambodia";
+$countries['en']['CM'] = "Cameroon";
+$countries['en']['CA'] = "Canada";
+$countries['en']['CV'] = "Cape Verde";
+$countries['en']['KY'] = "Cayman Islands";
+$countries['en']['CF'] = "Central African Republic";
+$countries['en']['TD'] = "Chad";
+$countries['en']['CL'] = "Chile";
+$countries['en']['CN'] = "China";
+$countries['en']['CX'] = "Christmas Island";
+$countries['en']['CC'] = "Cocos (Keeling) Islands";
+$countries['en']['CO'] = "Colombia";
+$countries['en']['KM'] = "Comoros";
+$countries['en']['CG'] = "Congo";
+$countries['en']['CD'] = "Congo, The Democratic Republic Of The";
+$countries['en']['CK'] = "Cook Islands";
+$countries['en']['CR'] = "Costa Rica";
+$countries['en']['CI'] = "Côte D'ivoire";
+$countries['en']['HR'] = "Croatia";
+$countries['en']['CU'] = "Cuba";
+$countries['en']['CY'] = "Cyprus";
+$countries['en']['CZ'] = "Czech Republic";
+$countries['en']['DK'] = "Denmark";
+$countries['en']['DJ'] = "Djibouti";
+$countries['en']['DM'] = "Dominica";
+$countries['en']['DO'] = "Dominican Republic";
+$countries['en']['EC'] = "Ecuador";
+$countries['en']['EG'] = "Egypt";
+$countries['en']['SV'] = "El Salvador";
+$countries['en']['GQ'] = "Equatorial Guinea";
+$countries['en']['ER'] = "Eritrea";
+$countries['en']['EE'] = "Estonia";
+$countries['en']['ET'] = "Ethiopia";
+$countries['en']['FK'] = "Falkland Islands (Malvinas)";
+$countries['en']['FO'] = "Faroe Islands";
+$countries['en']['FJ'] = "Fiji";
+$countries['en']['FI'] = "Finland";
+$countries['en']['FR'] = "France";
+$countries['en']['GF'] = "French Guiana";
+$countries['en']['PF'] = "French Polynesia";
+$countries['en']['TF'] = "French Southern Territories";
+$countries['en']['GA'] = "Gabon";
+$countries['en']['GM'] = "Gambia";
+$countries['en']['GE'] = "Georgia";
+$countries['en']['DE'] = "Germany";
+$countries['en']['GH'] = "Ghana";
+$countries['en']['GI'] = "Gibraltar";
+$countries['en']['GR'] = "Greece";
+$countries['en']['GL'] = "Greenland";
+$countries['en']['GD'] = "Grenada";
+$countries['en']['GP'] = "Guadeloupe";
+$countries['en']['GU'] = "Guam";
+$countries['en']['GT'] = "Guatemala";
+$countries['en']['GG'] = "Guernsey";
+$countries['en']['GN'] = "Guinea";
+$countries['en']['GW'] = "Guinea-Bissau";
+$countries['en']['GY'] = "Guyana";
+$countries['en']['HT'] = "Haiti";
+$countries['en']['HM'] = "Heard Island And Mcdonald Islands";
+$countries['en']['VA'] = "Holy See (Vatican City State)";
+$countries['en']['HN'] = "Honduras";
+$countries['en']['HK'] = "Hong Kong";
+$countries['en']['HU'] = "Hungary";
+$countries['en']['IS'] = "Iceland";
+$countries['en']['IN'] = "India";
+$countries['en']['ID'] = "Indonesia";
+$countries['en']['IR'] = "Iran, Islamic Republic Of";
+$countries['en']['IQ'] = "Iraq";
+$countries['en']['IE'] = "Ireland";
+$countries['en']['IM'] = "Isle Of Man";
+$countries['en']['IL'] = "Israel";
+$countries['en']['IT'] = "Italy";
+$countries['en']['JM'] = "Jamaica";
+$countries['en']['JP'] = "Japan";
+$countries['en']['JE'] = "Jersey";
+$countries['en']['JO'] = "Jordan";
+$countries['en']['KZ'] = "Kazakhstan";
+$countries['en']['KE'] = "Kenya";
+$countries['en']['KI'] = "Kiribati";
+$countries['en']['KP'] = "Korea, Democratic People's Republic Of";
+$countries['en']['KR'] = "Korea, Republic Of";
+$countries['en']['KW'] = "Kuwait";
+$countries['en']['KG'] = "Kyrgyzstan";
+$countries['en']['LA'] = "Lao People's Democratic Republic";
+$countries['en']['LV'] = "Latvia";
+$countries['en']['LB'] = "Lebanon";
+$countries['en']['LS'] = "Lesotho";
+$countries['en']['LR'] = "Liberia";
+$countries['en']['LY'] = "Libyan Arab Jamahiriya";
+$countries['en']['LI'] = "Liechtenstein";
+$countries['en']['LT'] = "Lithuania";
+$countries['en']['LU'] = "Luxembourg";
+$countries['en']['MO'] = "Macao";
+$countries['en']['MK'] = "Macedonia, The Former Yugoslav Republic Of";
+$countries['en']['MG'] = "Madagascar";
+$countries['en']['MW'] = "Malawi";
+$countries['en']['MY'] = "Malaysia";
+$countries['en']['MV'] = "Maldives";
+$countries['en']['ML'] = "Mali";
+$countries['en']['MT'] = "Malta";
+$countries['en']['MH'] = "Marshall Islands";
+$countries['en']['MQ'] = "Martinique";
+$countries['en']['MR'] = "Mauritania";
+$countries['en']['MU'] = "Mauritius";
+$countries['en']['YT'] = "Mayotte";
+$countries['en']['MX'] = "Mexico";
+$countries['en']['FM'] = "Micronesia, Federated States Of";
+$countries['en']['MD'] = "Moldova, Republic Of";
+$countries['en']['MC'] = "Monaco";
+$countries['en']['MN'] = "Mongolia";
+$countries['en']['ME'] = "Montenegro";
+$countries['en']['MS'] = "Montserrat";
+$countries['en']['MA'] = "Morocco";
+$countries['en']['MZ'] = "Mozambique";
+$countries['en']['MM'] = "Myanmar";
+$countries['en']['NA'] = "Namibia";
+$countries['en']['NR'] = "Nauru";
+$countries['en']['NP'] = "Nepal";
+$countries['en']['NL'] = "Netherlands";
+$countries['en']['AN'] = "Netherlands Antilles";
+$countries['en']['NC'] = "New Caledonia";
+$countries['en']['NZ'] = "New Zealand";
+$countries['en']['NI'] = "Nicaragua";
+$countries['en']['NE'] = "Niger";
+$countries['en']['NG'] = "Nigeria";
+$countries['en']['NU'] = "Niue";
+$countries['en']['NF'] = "Norfolk Island";
+$countries['en']['MP'] = "Northern Mariana Islands";
+$countries['en']['NO'] = "Norway";
+$countries['en']['OM'] = "Oman";
+$countries['en']['PK'] = "Pakistan";
+$countries['en']['PW'] = "Palau";
+$countries['en']['PS'] = "Palestinian Territory, Occupied";
+$countries['en']['PA'] = "Panama";
+$countries['en']['PG'] = "Papua New Guinea";
+$countries['en']['PY'] = "Paraguay";
+$countries['en']['PE'] = "Peru";
+$countries['en']['PH'] = "Philippines";
+$countries['en']['PN'] = "Pitcairn";
+$countries['en']['PL'] = "Poland";
+$countries['en']['PT'] = "Portugal";
+$countries['en']['PR'] = "Puerto Rico";
+$countries['en']['QA'] = "Qatar";
+$countries['en']['RE'] = "Réunion";
+$countries['en']['RO'] = "Romania";
+$countries['en']['RU'] = "Russian Federation";
+$countries['en']['RW'] = "Rwanda";
+$countries['en']['BL'] = "Saint Barthélemy";
+$countries['en']['SH'] = "Saint Helena";
+$countries['en']['KN'] = "Saint Kitts And Nevis";
+$countries['en']['LC'] = "Saint Lucia";
+$countries['en']['MF'] = "Saint Martin";
+$countries['en']['PM'] = "Saint Pierre And Miquelon";
+$countries['en']['VC'] = "Saint Vincent And The Grenadines";
+$countries['en']['WS'] = "Samoa";
+$countries['en']['SM'] = "San Marino";
+$countries['en']['ST'] = "Sao Tome And Principe";
+$countries['en']['SA'] = "Saudi Arabia";
+$countries['en']['SN'] = "Senegal";
+$countries['en']['RS'] = "Serbia";
+$countries['en']['SC'] = "Seychelles";
+$countries['en']['SL'] = "Sierra Leone";
+$countries['en']['SG'] = "Singapore";
+$countries['en']['SK'] = "Slovakia";
+$countries['en']['SI'] = "Slovenia";
+$countries['en']['SB'] = "Solomon Islands";
+$countries['en']['SO'] = "Somalia";
+$countries['en']['ZA'] = "South Africa";
+$countries['en']['GS'] = "South Georgia And The South Sandwich Islands";
+$countries['en']['ES'] = "Spain";
+$countries['en']['LK'] = "Sri Lanka";
+$countries['en']['SD'] = "Sudan";
+$countries['en']['SR'] = "Suriname";
+$countries['en']['SJ'] = "Svalbard And Jan Mayen";
+$countries['en']['SZ'] = "Swaziland";
+$countries['en']['SE'] = "Sweden";
+$countries['en']['CH'] = "Switzerland";
+$countries['en']['SY'] = "Syrian Arab Republic";
+$countries['en']['TW'] = "Taiwan, Province Of China";
+$countries['en']['TJ'] = "Tajikistan";
+$countries['en']['TZ'] = "Tanzania, United Republic Of";
+$countries['en']['TH'] = "Thailand";
+$countries['en']['TL'] = "Timor-Leste";
+$countries['en']['TG'] = "Togo";
+$countries['en']['TK'] = "Tokelau";
+$countries['en']['TO'] = "Tonga";
+$countries['en']['TT'] = "Trinidad And Tobago";
+$countries['en']['TN'] = "Tunisia";
+$countries['en']['TR'] = "Turkey";
+$countries['en']['TM'] = "Turkmenistan";
+$countries['en']['TC'] = "Turks And Caicos Islands";
+$countries['en']['TV'] = "Tuvalu";
+$countries['en']['UG'] = "Uganda";
+$countries['en']['UA'] = "Ukraine";
+$countries['en']['AE'] = "United Arab Emirates";
+$countries['en']['GB'] = "United Kingdom";
+$countries['en']['US'] = "United States";
+$countries['en']['UM'] = "United States Minor Outlying Islands";
+$countries['en']['UY'] = "Uruguay";
+$countries['en']['UZ'] = "Uzbekistan";
+$countries['en']['VU'] = "Vanuatu";
+$countries['en']['VE'] = "Venezuela";
+$countries['en']['VN'] = "Viet Nam";
+$countries['en']['VG'] = "Virgin Islands, British";
+$countries['en']['VI'] = "Virgin Islands, U.S.";
+$countries['en']['WF'] = "Wallis And Futuna";
+$countries['en']['EH'] = "Western Sahara";
+$countries['en']['YE'] = "Yemen";
+$countries['en']['ZM'] = "Zambia";
+$countries['en']['ZW'] = "Zimbabwe";
+
+// slovenske nazvy statov
+$countries['sk']['AF'] = "Afganistan";
+$countries['sk']['AX'] = "Alandy";
+$countries['sk']['AL'] = "Albánsko";
+$countries['sk']['DZ'] = "Alžírsko";
+$countries['sk']['AS'] = "Americká Samoa";
+$countries['sk']['AD'] = "Andorra";
+$countries['sk']['AO'] = "Angola";
+$countries['sk']['AI'] = "Anguilla";
+$countries['sk']['AQ'] = "Antarktída";
+$countries['sk']['AG'] = "Antigua a Barbuda";
+$countries['sk']['AR'] = "Argentína";
+$countries['sk']['AM'] = "Arménsko";
+$countries['sk']['AW'] = "Aruba";
+$countries['sk']['AU'] = "Austrália";
+$countries['sk']['AT'] = "Rakúsko";
+$countries['sk']['AZ'] = "Azerbajdžan";
+$countries['sk']['BS'] = "Bahamy";
+$countries['sk']['BH'] = "Bahrajn";
+$countries['sk']['BD'] = "Bangladéš";
+$countries['sk']['BB'] = "Barbados";
+$countries['sk']['BY'] = "Bielorusko";
+$countries['sk']['BE'] = "Belgicko";
+$countries['sk']['BZ'] = "Belize";
+$countries['sk']['BJ'] = "Benin";
+$countries['sk']['BM'] = "Bermudy";
+$countries['sk']['BT'] = "Bhután";
+$countries['sk']['BO'] = "Bolívia";
+$countries['sk']['BA'] = "Bosna a Hercegovina";
+$countries['sk']['BW'] = "Botswana";
+$countries['sk']['BV'] = "Bouvetov ostrov";
+$countries['sk']['BR'] = "Brazília";
+$countries['sk']['IO'] = "Britské indickooceánske územie";
+$countries['sk']['BN'] = "Brunej";
+$countries['sk']['BG'] = "Bulharsko";
+$countries['sk']['BF'] = "Burkina";
+$countries['sk']['BI'] = "Burundi";
+$countries['sk']['KH'] = "Kambodža";
+$countries['sk']['CM'] = "Kamerun";
+$countries['sk']['CA'] = "Kanada";
+$countries['sk']['CV'] = "Kapverdy";
+$countries['sk']['KY'] = "Kajmanie ostrovy";
+$countries['sk']['CF'] = "Stredoafrická republika";
+$countries['sk']['TD'] = "Čad";
+$countries['sk']['CL'] = "Čile";
+$countries['sk']['CN'] = "Čína";
+$countries['sk']['CX'] = "Vianočný ostrov";
+$countries['sk']['CC'] = "Kokosové ostrovy";
+$countries['sk']['CO'] = "Kolumbia";
+$countries['sk']['KM'] = "Komory";
+$countries['sk']['CG'] = "Kongo";
+$countries['sk']['CD'] = "Kongo (býv. Zair)";
+$countries['sk']['CK'] = "Cookove ostrovy";
+$countries['sk']['CR'] = "Kostarika";
+$countries['sk']['CI'] = "Pobrežie Slonoviny";
+$countries['sk']['HR'] = "Chorvátsko";
+$countries['sk']['CU'] = "Kuba";
+$countries['sk']['CY'] = "Cyprus";
+$countries['sk']['CZ'] = "Česko";
+$countries['sk']['ME'] = "Čierna Hora";
+$countries['sk']['DK'] = "Dánsko";
+$countries['sk']['DJ'] = "Džibutsko";
+$countries['sk']['DM'] = "Dominika";
+$countries['sk']['DO'] = "Dominikánska republika";
+$countries['sk']['EC'] = "Ekvádor";
+$countries['sk']['EG'] = "Egypt";
+$countries['sk']['SV'] = "Salvádor";
+$countries['sk']['GQ'] = "Rovníková Guinea";
+$countries['sk']['ER'] = "Eritrea";
+$countries['sk']['EE'] = "Estónsko";
+$countries['sk']['ET'] = "Etiópia";
+$countries['sk']['EU'] = "Európska únia";
+$countries['sk']['FK'] = "Falklandy";
+$countries['sk']['FO'] = "Faerské ostrovy";
+$countries['sk']['FJ'] = "Fidži";
+$countries['sk']['FI'] = "Fínsko";
+$countries['sk']['FR'] = "Francúzsko";
+$countries['sk']['GF'] = "Francúzska Guyana";
+$countries['sk']['PF'] = "Francúzska Polynézia";
+$countries['sk']['TF'] = "Francúzske južné územia";
+$countries['sk']['GA'] = "Gabon";
+$countries['sk']['GM'] = "Gambia";
+$countries['sk']['GE'] = "Gruzínsko";
+$countries['sk']['DE'] = "Nemecko";
+$countries['sk']['GH'] = "Ghana";
+$countries['sk']['GI'] = "Gibraltár";
+$countries['sk']['GR'] = "Grécko";
+$countries['sk']['GL'] = "Grónsko";
+$countries['sk']['GD'] = "Grenada";
+$countries['sk']['GP'] = "Guadeloupe";
+$countries['sk']['GU'] = "Guam";
+$countries['sk']['GT'] = "Guatemala";
+$countries['sk']['GG'] = "Guernsey";
+$countries['sk']['GN'] = "Guinea";
+$countries['sk']['GW'] = "Guinea-Bissau";
+$countries['sk']['GY'] = "Guyana";
+$countries['sk']['HT'] = "Haiti";
+$countries['sk']['HM'] = "Heardov ostrov";
+$countries['sk']['HN'] = "Honduras";
+$countries['sk']['HK'] = "Hongkong";
+$countries['sk']['HU'] = "Maďarsko";
+$countries['sk']['IS'] = "Island";
+$countries['sk']['IN'] = "India";
+$countries['sk']['ID'] = "Indonézia";
+$countries['sk']['IR'] = "Irán";
+$countries['sk']['IQ'] = "Irak";
+$countries['sk']['IE'] = "Írsko";
+$countries['sk']['IM'] = "Ostrov Man";
+$countries['sk']['IL'] = "Izrael";
+$countries['sk']['IT'] = "Taliansko";
+$countries['sk']['JM'] = "Jamajka";
+$countries['sk']['JP'] = "Japonsko";
+$countries['sk']['JE'] = "Jersey";
+$countries['sk']['JO'] = "Jordánsko";
+$countries['sk']['KZ'] = "Kazachstan";
+$countries['sk']['KE'] = "Keňa";
+$countries['sk']['KI'] = "Kiribati";
+$countries['sk']['KP'] = "Kórejská ľudovodemokratická republika";
+$countries['sk']['KR'] = "Kórejská republika";
+$countries['sk']['KW'] = "Kuvajt";
+$countries['sk']['KG'] = "Kirgizsko";
+$countries['sk']['LA'] = "Laos";
+$countries['sk']['LV'] = "Lotyšsko";
+$countries['sk']['LB'] = "Libanon";
+$countries['sk']['LS'] = "Lesotho";
+$countries['sk']['LR'] = "Libéria";
+$countries['sk']['LY'] = "Líbya";
+$countries['sk']['LI'] = "Lichtenštajnsko";
+$countries['sk']['LT'] = "Litva";
+$countries['sk']['LU'] = "Luxembursko";
+$countries['sk']['MO'] = "Macao";
+$countries['sk']['MK'] = "Macedónsko";
+$countries['sk']['MG'] = "Madagaskar";
+$countries['sk']['MW'] = "Malawi";
+$countries['sk']['MY'] = "Malajzia";
+$countries['sk']['MV'] = "Maldivy";
+$countries['sk']['ML'] = "Mali";
+$countries['sk']['MT'] = "Malta";
+$countries['sk']['MH'] = "Marshallove ostrovy";
+$countries['sk']['MQ'] = "Martinik";
+$countries['sk']['MR'] = "Mauritánia";
+$countries['sk']['MU'] = "Maurícius";
+$countries['sk']['YT'] = "Mayotte";
+$countries['sk']['MX'] = "Mexiko";
+$countries['sk']['FM'] = "Mikronézia";
+$countries['sk']['MD'] = "Moldavsko";
+$countries['sk']['MC'] = "Monako";
+$countries['sk']['MN'] = "Mongolsko";
+$countries['sk']['MS'] = "Montserrat";
+$countries['sk']['MA'] = "Maroko";
+$countries['sk']['MZ'] = "Mozambik";
+$countries['sk']['MM'] = "Mjanmarsko";
+$countries['sk']['NA'] = "Namíbia";
+$countries['sk']['NR'] = "Nauru";
+$countries['sk']['NP'] = "Nepál";
+$countries['sk']['NL'] = "Holandsko";
+$countries['sk']['AN'] = "Holandské Antily";
+$countries['sk']['NC'] = "Nová Kaledónia";
+$countries['sk']['NZ'] = "Nový Zéland";
+$countries['sk']['NI'] = "Nikaragua";
+$countries['sk']['NE'] = "Niger";
+$countries['sk']['NG'] = "Nigéria";
+$countries['sk']['NU'] = "Niue";
+$countries['sk']['NF'] = "Norfolk";
+$countries['sk']['MP'] = "Severné Mariány";
+$countries['sk']['NO'] = "Nórsko";
+$countries['sk']['OM'] = "Omán";
+$countries['sk']['PK'] = "Pakistan";
+$countries['sk']['PW'] = "Palau";
+$countries['sk']['PS'] = "Palestína";
+$countries['sk']['PA'] = "Panama";
+$countries['sk']['PG'] = "Papua-Nová Guinea";
+$countries['sk']['PY'] = "Paraguaj";
+$countries['sk']['PE'] = "Peru";
+$countries['sk']['PH'] = "Filipíny";
+$countries['sk']['PN'] = "Pitcairnove ostrovy";
+$countries['sk']['PL'] = "Poľsko";
+$countries['sk']['PT'] = "Portugalsko";
+$countries['sk']['PR'] = "Portoriko";
+$countries['sk']['QA'] = "Katar";
+$countries['sk']['RE'] = "Réunion";
+$countries['sk']['RO'] = "Rumunsko";
+$countries['sk']['RU'] = "Rusko";
+$countries['sk']['RW'] = "Rwanda";
+$countries['sk']['BL'] = "Svätý Bartolomej";
+$countries['sk']['SH'] = "Svätá Helena";
+$countries['sk']['KN'] = "Svätý Krištof a Nevis";
+$countries['sk']['LC'] = "Svätá Lucia";
+$countries['sk']['PM'] = "Svätý Peter a Michal";
+$countries['sk']['VC'] = "Svätý Vincent a Grenadíny";
+$countries['sk']['WS'] = "Samoa";
+$countries['sk']['SM'] = "San Maríno";
+$countries['sk']['ST'] = "Svätý Tomáš a Princov ostrov";
+$countries['sk']['SA'] = "Saudská Arábia";
+$countries['sk']['SN'] = "Senegal";
+$countries['sk']['RS'] = "Srbsko";
+$countries['sk']['SC'] = "Seychely";
+$countries['sk']['SL'] = "Sierra Leone";
+$countries['sk']['SG'] = "Singapur";
+$countries['sk']['SK'] = "Slovensko";
+$countries['sk']['SI'] = "Slovinsko";
+$countries['sk']['SB'] = "Šalamúnove ostrovy";
+$countries['sk']['SO'] = "Somálsko";
+$countries['sk']['ZA'] = "Južná Afrika";
+$countries['sk']['GS'] = "Južná Georgia a Južné Sandwichove ostrovy";
+$countries['sk']['ES'] = "Španielsko";
+$countries['sk']['LK'] = "Srí Lanka";
+$countries['sk']['SD'] = "Sudán";
+$countries['sk']['SR'] = "Surinam";
+$countries['sk']['SJ'] = "Špicbergy a Jan Mayen";
+$countries['sk']['SZ'] = "Svazijsko";
+$countries['sk']['SE'] = "Švédsko";
+$countries['sk']['CH'] = "Švajčiarsko";
+$countries['sk']['SY'] = "Sýria";
+$countries['sk']['TW'] = "Taiwan";
+$countries['sk']['TJ'] = "Tadžikistan";
+$countries['sk']['TZ'] = "Tanzánia";
+$countries['sk']['TH'] = "Thajsko";
+$countries['sk']['TL'] = "Východný Timor";
+$countries['sk']['TG'] = "Togo";
+$countries['sk']['TK'] = "Tokelau";
+$countries['sk']['TO'] = "Tonga";
+$countries['sk']['TT'] = "Trinidad a Tobago";
+$countries['sk']['TN'] = "Tunisko";
+$countries['sk']['TR'] = "Turecko";
+$countries['sk']['TM'] = "Turkménsko";
+$countries['sk']['TC'] = "Turks a Caicos";
+$countries['sk']['TV'] = "Tuvalu";
+$countries['sk']['UG'] = "Uganda";
+$countries['sk']['UA'] = "Ukrajina";
+$countries['sk']['AE'] = "Spojené arabské emiráty";
+$countries['sk']['GB'] = "Spojené kráľovstvo";
+$countries['sk']['US'] = "Spojené štáty";
+$countries['sk']['UM'] = "Menšie odľahlé ostrovy USA";
+$countries['sk']['UY'] = "Uruguaj";
+$countries['sk']['UZ'] = "Uzbekistan";
+$countries['sk']['VU'] = "Vanuatu";
+$countries['sk']['VA'] = "Vatikán";
+$countries['sk']['VE'] = "Venezuela";
+$countries['sk']['VN'] = "Vietnam";
+$countries['sk']['VG'] = "Britské Panenské ostrovy";
+$countries['sk']['VI'] = "Americké Panenské ostrovy";
+$countries['sk']['WF'] = "Wallis a Futuna";
+$countries['sk']['EH'] = "Západná Sahara";
+$countries['sk']['YE'] = "Jemen";
+$countries['sk']['ZM'] = "Zambia";
+$countries['sk']['ZW'] = "Zimbabwe";
+
+// vratime iba nazvy statov ktore mame v poli
+if (in_array($language-&gt;language, array('sk', 'en'))) {
+  return $countries[$language-&gt;language];
+}
+
+// inak vratime default anglicke nazvy
+return $countries['en'];</code></pre>
+
+<p>Použitie:</p>
+
+<ul>
+	<li>vytvoríte si nové CCK pole typu Text a vyberiete že sa má zobrazovať
+	ako Select list</li>
+
+	<li>v Allowed values (Povolených hodnotách) v sekcii PHP code vložíte
+	horeuvedený kód</li>
+</ul>
+  </div>
+</div>
+<div id="node-697" class="section-3">
+  <h1 class="book-heading">Vývoj modulov pre Drupal</h1>
+  
+<p>K napísaniu tohto príspevku ma motivoval posledný post používateľa
+jasom s názvom <a href="../../../../node/696/index.html">Semantic views: Drupal
+video návod od Jasom.net</a>. Niekedy pred skroo troma rokmi som v rámci
+našich <a href="http://www.cnl.sk/">labákových</a> seminárov začal robiť
+sériu ľahkých developerských vzdelávacích seminárov, z ktorých nakoniec
+vznikli len dva ;) Jedná sa o úvod do vývoja modulov v Drupal-e. V tom
+čase sa jednalo o verziu 5.x, čo je už dnes neaktuálne, ale čo sa modulov
+týka, tak až taká veľká zmena sa neudiala a teda minimálne ako odrazový
+mostík tieto dva príspevky niekomu môžu poslúžiť. Kvalita prého
+príspevku nie je valná, ale druhý je už úplne v pohode.</p>
+
+<h1>Drupal module development, časť 1.</h1>
+
+<p>Inštalácia, úvod do CCK a Views</p>
+
+<div id="video-player" align="center"><object
+classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="450" height="358"
+codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+	<param name="movie"
+	value="http://videoserver.cnl.sk/files/output/mediaplayer.swf" />
+	<param name="wmode" value="window" />
+	<param name="allowfullscreen" value="true" />
+	<param name="FlashVars"
+	value="file=http://videoserver.cnl.sk/files/output/drupal_mirek1.flv&amp;streamscript=lighttpd&amp;recommendations=http://videoserver.cnl.tuke.sk/recommendedvideos?nid=533&amp;image=http://videoserver.cnl.sk/files/output/drupal_mirek1.jpg&amp;rotatetime=3&amp;logo=http://videoserver.cnl.sk/files/output/logo_video.png&amp;autostart=false"
+	/>
+	<param name="quality" value="high" />
+	<embed allowscriptaccess="always"
+	src="http://videoserver.cnl.sk/files/output/mediaplayer.swf" width="450"
+	height="358" border="0" type="application/x-shockwave-flash"
+	pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="window"
+	allowfullscreen="true" quality="high"
+	flashvars="file=http://videoserver.cnl.sk/files/output/drupal_mirek1.flv&amp;streamscript=lighttpd&amp;recommendations=http://videoserver.cnl.tuke.sk/recommendedvideos?nid=533&amp;image=http://videoserver.cnl.sk/files/output/drupal_mirek1.jpg&amp;rotatetime=3&amp;logo=http://videoserver.cnl.sk/files/output/logo_video.png&amp;autostart=false"
+	/></object></div>
+
+<h1>Drupal module development, časť 2.</h1>
+
+<p>Úvod do tvorby vlastných modulov, post spracovanie odoslaných informácií
+z formulára vytvoreného pomocou CCK (validácia e-mailu, odoslanie
+potvrdzujúceho e-mailu)</p>
+
+<div id="video-player" align="center"><object
+classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="450" height="358"
+codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+	<param name="movie"
+	value="http://videoserver.cnl.sk/files/output/mediaplayer.swf" />
+	<param name="wmode" value="window" />
+	<param name="allowfullscreen" value="true" />
+	<param name="FlashVars"
+	value="file=http://videoserver.cnl.sk/files/output/drupal_mirek2.flv&amp;streamscript=lighttpd&amp;recommendations=http://videoserver.cnl.tuke.sk/recommendedvideos?nid=525&amp;image=http://videoserver.cnl.sk/files/output/drupal_mirek2.jpg&amp;rotatetime=3&amp;logo=http://videoserver.cnl.sk/files/output/logo_video.png&amp;autostart=false"
+	/>
+	<param name="quality" value="high" />
+	<embed allowscriptaccess="always"
+	src="http://videoserver.cnl.sk/files/output/mediaplayer.swf" width="450"
+	height="358" border="0" type="application/x-shockwave-flash"
+	pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="window"
+	allowfullscreen="true" quality="high"
+	flashvars="file=http://videoserver.cnl.sk/files/output/drupal_mirek2.flv&amp;streamscript=lighttpd&amp;recommendations=http://videoserver.cnl.tuke.sk/recommendedvideos?nid=525&amp;image=http://videoserver.cnl.sk/files/output/drupal_mirek2.jpg&amp;rotatetime=3&amp;logo=http://videoserver.cnl.sk/files/output/logo_video.png&amp;autostart=false"
+	/></object></div>
+
+<p>Pôvodný zdroj je umiestnený na stránkach <a
+href="http://www.videoserver.cnl.sk/">www.videoserver.cnl.sk/</a></p>
+
+<!-- by Texy2! -->  </div>
+</div>
+<div id="node-582" class="section-2">
+  <h1 class="book-heading">Ladíme výkon (pripravujeme)</h1>
+    <div id="node-360" class="section-3">
+  <h1 class="book-heading">Optimalizacia Drupalu</h1>
+  
+<p>Hladam „Drupalistu“, ktory by mi pomohol optimalizovat stranky <a
+href="http://www.nanicmama.sk/">www.nanicmama.sk</a>, <a
+href="http://www.artmama.sk/">www.artmama.sk</a> a <a
+href="http://www.tortyodmamy.sk/">www.tortyodmamy.sk</a>, stranky maju spolu
+okolo 3 500 000 zobrazeni mesacne, vo vecernej spicke vyskakuje load aj na
+40. Dve stranky, su predovsetkym o prezerani obrazkov, tam bude zrejme
+najvacsi problem.</p>
+  </div>
+<div id="node-590" class="section-3">
+  <h1 class="book-heading">Zdroje tretích strán</h1>
+  
+<p>* Optimalizácia Drupalu pre rozsiahle weby (anglicky): <a
+href="http://2bits.com/articles/drupal-performance-tuning-and-optimization-for-large-web-sites.html">http://2bits.com/…b-sites.html</a></p>
+  </div>
+</div>
+<div id="node-386" class="section-2">
+  <h1 class="book-heading">Prechod na Drupal (pripravujeme)</h1>
+    </div>
+</div>
+    
+  </body>
+
+<!-- Mirrored from www.drupal.sk/book/export/html/379 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 18:13:03 GMT -->
+</html>

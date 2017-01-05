@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sk" xml:lang="sk">
+  
+<!-- Mirrored from www.drupal.sk/book/export/html/412 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 20:34:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ako správne písať databázové dotazy v drupale</title>
+    <base  />
+    <link type="text/css" rel="stylesheet" href="http://drupal.sk/misc/print.css" />
+      </head>
+  <body>
+              <div class="section-1">
+                <div class="section-2">
+                <div class="section-3">
+          
+    <div id="node-412" class="section-4">
+  <h1 class="book-heading">Ako správne písať databázové dotazy v drupale</h1>
+  
+<p>Základnou funkciou na spúštanie databázových dotazov je <a
+href="http://api.drupal.org/apis/db_query">db_query()</a> Človek neznalý
+problematiky by mohol napísať SQL dotaz nasledovne</p>
+
+<pre
+class="php"><code>db_query("SELECT title FR OM node WHERE uid=".$_GET['uid']);</code></pre>
+
+<p>Takto napísaný dotaz je však náchylný na <a
+href="http://en.wikipedia.org/wiki/SQL_injection">SQL injection</a> – útok,
+pomocou ktorého je možné sa dostať k ľubovoľným dátam v databáze.
+Útočník by mohol správnym podsunutím vstupu (ako parameter uid pošle
+reťazec ‚1 UNION SELECT sid FR OM sessions‘) dosiahnuť aby sa vykonal
+napríklad dotaz:</p>
+
+<pre
+class="sql"><code>SELECT title FR OM node WHERE uid=1 UNION SELECT sid FR OM sessions</code></pre>
+
+<p>čím získa session id všetkých prihlásených užívateľov a môže sa
+za prihlásiť na účet ľubovoľného z nich (napríklad aj admina ak mal
+záznam v tabuľke sessions)</p>
+
+<p>Obrana proti SQL injection je overenie či je vstup požadovaného formátu a
+pri reťazcoch escapovanie znakov so špeciálnym významom (napríklad
+apostrofy). Toto vie aj spomínaná funkcia <a
+href="http://api.drupal.org/apis/db_query">db_query()</a>, len ju treba
+používať správnym a to nasledovným spôsobom: Namiesto vstupných
+premenných treba písať:</p>
+
+<ul>
+	<li>– %s – pre textový reťazec</li>
+
+	<li>– %d – pre celé číslo</li>
+
+	<li>– %f – pre desatinné číslo</li>
+
+	<li>– %b – pre binárne dáta</li>
+</ul>
+
+<p>pričom vstupné premenné budú ďalšími parametrami funkcie <a
+href="http://api.drupal.org/apis/db_query">db_query()</a> . Napríklad:</p>
+
+<pre
+class="php"><code>db_query("SELECT title FR OM node WHERE uid=%d", $_GET['uid']);</code></pre>
+
+<p>Pokiaľ je vstupných premenných v dotaze viac, každú nahradíme
+príslušným kódom (%x) a samotné premenné budú druhým, tretím, švrtým
+atď. parametrom funkcie <a
+href="http://api.drupal.org/apis/db_query">db_query()</a> . Tá okrem iného pri
+použití takejto syntaxe vyskladá databázový dotaz tak, aby SQL injection
+nebol možný.</p>
+
+<ul>
+	<li>V článku je v databázových dotazoch pridaných niekoľko medzier
+	navyše. Verím, že pozorný čitateľ si všimne kde. Dôvodom sú
+	bezpečnostné nastavenia serveru, kde beží drupal.sk</li>
+</ul>
+  </div>
+    </div></div></div>
+  </body>
+
+<!-- Mirrored from www.drupal.sk/book/export/html/412 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2017 20:34:57 GMT -->
+</html>
